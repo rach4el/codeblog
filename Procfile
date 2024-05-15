@@ -1,1 +1,1 @@
-web:gunicorn ridingreader.wsgi
+web: gunicorn ridingreader.wsgi
