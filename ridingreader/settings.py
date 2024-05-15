@@ -27,7 +27,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     '8000-rach4el-codeblog-x9o2k2w4u37.ws-eu111.gitpod.io', 
-    'herokuapp.com'
+    'herokuapp.com',
+    'ridingreader-cdc99d6e0d97.herokuapp.com',
 ]
 
 
