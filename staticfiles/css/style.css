@@ -6,15 +6,15 @@ body {
     font-family: Lato, sans-serif;
     font-size: 1.4rem;
     font-weight: 700;
-    color: #4A4A4F;
+    color: #8ca777;
 }
 
 .green-font{
-    color: #3ab65995;
+    color: #9c1d8b;
 }
 
 .italic {
-    font-style:italic
+    font-style: italic
 }
 
 .thin {
@@ -71,7 +71,7 @@ body {
 }
 
 .masthead-text {
-    background-color: #445261;
+    background-color: #bc7e3d;
     color: white;
     position: relative;
 }
@@ -88,7 +88,7 @@ body {
     right: 90%;
     height: 100%;
     width: 150%;
-    background: #445261;
+    background: #bc7e3d;
     -webkit-transform: skew(15deg);
     -moz-transform: skew(15deg);
     transform: skew(15deg);
@@ -97,7 +97,7 @@ body {
 
 .post-link {
     text-decoration: none;
-    color: #445261;
+    color: #bc7e3d;
 }
 
 .post-link:hover,
@@ -134,7 +134,7 @@ body {
 
 .link:hover,
 .link:active {
-    color: #445261;
+    color: #bc7e3d;
     text-decoration: underline;
 }
 
