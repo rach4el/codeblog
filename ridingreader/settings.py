@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    '8000-rach4el-codeblog-dbpf8q9w09h.ws-eu111.gitpod.io', 
+    '8000-rach4el-codeblog-dbpf8q9w09h.ws-eu114.gitpod.io', 
     'herokuapp.com',
     'ridingreader-cdc99d6e0d97.herokuapp.com',
 ]
