@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-4 text-center">
+            <img src="{% static 'images/nobody.jpg' %}" width="75%">
+        </div>
+        <div class="col-8">
+            <!-- Title goes between these h2 tags -->
+            <h2>About RidingReader</h2>
+            <!-- Content goes directly underneath this -->
+            <h3> RidingReader is designed to be for local equestrians wanting to discover the best trail routes in their area in the countryside, offering valuable knowledge of routes to maximalise enjoyment and minimalise risks, welcoming riders of all levels to join in with the local community.</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col text-right">
+            <!-- Updated on field goes in here -->
+            <p class="text-end"><em>Updated on: 14.05.2024</em></p>
+        </div>
+      </div>
+</div>
+{% endblock content %}
