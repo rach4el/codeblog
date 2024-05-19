@@ -3,11 +3,15 @@ from django.contrib.auth.models import User
 
 STATUS = ((0, "Draft"), (1, "Published"))
 
+SUGGESTED_RIDING_ABILITY = ((0, 'All Abilities'), (1, "Beginner"), (2, "Novice"), (3, "Intermidiate"), (4, "Advanced")) # riding ability dropdown choices
+    
+
 # Create your models here.
 
 class Post(models.Model):
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
+    Suggested_Riding_Ability = models.IntegerField(choices=SUGGESTED_RIDING_ABILITY, default=0) #Riding ability dropdown
     author = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="blog_posts"
     )

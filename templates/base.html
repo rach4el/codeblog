@@ -68,14 +68,19 @@
                     {% endif %}
                 </ul>
                 <span class="navbar-text text-muted">
-                    A blog for local equestrian enthusiasts to plan local trails.
+                    A blog for local equestrian enthusiasts to plan and explore nearby trails.
                 </span>
             </div>
         </div>
     </nav>
 
     <main class="flex-shrink-0 main-bg">
-
+        {% if user.is_authenticated %}
+        <p class="text-end m-3">Welcome Back to Riding Reader! Logged in as {{ user }}</p>
+        {% else %}
+        <p class="text-end m-3">Join in the Community:
+            <a href="{% url 'account_login' %}">Log in</a> or <a href="{% url 'account_signup' %}">Sign in</a>.</p>
+        {% endif %}
         {% block content %}
         <!-- Content Goes here -->
         {% endblock content %}
