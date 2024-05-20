@@ -1,16 +1,27 @@
 body {
-    background-color: #F9FAFC;
+    background-color: #F9F6F7;
 }
 
+.dm-serif-display-regular {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.dm-serif-display-regular-italic {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
 .logo {
-    font-family: Lato, sans-serif;
+    font-family: dm-serif-display, sans-serif;
     font-size: 1.4rem;
     font-weight: 700;
     color: #4A4A4F;
 }
 
 .green-font{
-    color: #3ab65995;
+    color: #AAAF88;
 }
 
 .italic {
@@ -22,15 +33,15 @@ body {
 }
 
 .light-bg {
-    background-color: #fff;
+    background-color: #F9F6F7;
 }
 
-.dark-bg {
-    background-color: #445261;
+.site-bg {
+    background-color: #F9F6F7;
 }
 
 .main-bg {
-    background-color: #F9FAFC;
+    background-color: #F9F6F7;
 }
 
 .card {
@@ -56,7 +67,7 @@ body {
 }
 
 .author {
-    color: white;
+    color: #6E4730;
     margin: 4px;
     text-transform: uppercase;
 }
@@ -71,8 +82,8 @@ body {
 }
 
 .masthead-text {
-    background-color: #efa454;
-    color: white;
+    background-color: #F9F6F7;
+    color: #6E4730;
     position: relative;
 }
 
@@ -88,7 +99,7 @@ body {
     right: 90%;
     height: 100%;
     width: 150%;
-    background: #efa454;
+    background: #F9F6F7;
     -webkit-transform: skew(15deg);
     -moz-transform: skew(15deg);
     transform: skew(15deg);
@@ -97,7 +108,7 @@ body {
 
 .post-link {
     text-decoration: none;
-    color: #efa454;
+    color: #6E4730;
 }
 
 .post-link:hover,
@@ -112,29 +123,29 @@ body {
 
 .post-subtitle {
     margin-left: 5%;
-    color: lightgray;
+    color: #6E4730;
 }
 
 .btn-signup,
 .btn-edit {
-    background-color: #188181;
+    background-color: #AAAF88;
     color: #fff;
 }
 
 .btn-signup:hover,
 .btn-signup:active {
-    background-color: #fff;
-    color: #23BBBB;
+    background-color: #D59041;
+    color: #FFF;
 }
 
 .link {
-    color: #23BBBB;
+    color: #6E4730;
     text-decoration: none;
 }
 
 .link:hover,
 .link:active {
-    color: #bc7e3d;
+    color: #D59041;
     text-decoration: underline;
 }
 
@@ -145,7 +156,7 @@ body {
 }
 
 .btn-delete {
-    color: #fff;
+    color: #6E4730;
     background: #E84610;
 }
 
