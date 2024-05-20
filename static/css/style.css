@@ -2,26 +2,20 @@ body {
     background-color: #F9F6F7;
 }
 
-.dm-serif-display-regular {
-    font-family: "DM Serif Display", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-.dm-serif-display-regular-italic {
-    font-family: "DM Serif Display", serif;
-    font-weight: 400;
-    font-style: italic;
-  }
-.logo {
-    font-family: dm-serif-display, sans-serif;
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: #4A4A4F;
+.text-h6 {
+    font-size: medium;
+    color: #b67e3d
 }
 
-.green-font{
-    color: #AAAF88;
+.logo {
+    font-family: sans-serif;
+    font-size: 2.6rem;
+    font-weight: 600;
+    color: #5b685c;
+}
+
+.orange-font{
+    color: #D59041;
 }
 
 .italic {
@@ -42,6 +36,9 @@ body {
 
 .main-bg {
     background-color: #F9F6F7;
+    border-color: #6E4730
+    border-wid
+    
 }
 
 .card {
@@ -58,7 +55,7 @@ body {
     bottom: 5%;
     min-width: 30%;
     left: -2px;
-    background-color: #188181;
+    background-color: #AAAF88;
 }
 
 .scale {
@@ -67,7 +64,7 @@ body {
 }
 
 .author {
-    color: #6E4730;
+    color: #fff;
     margin: 4px;
     text-transform: uppercase;
 }
@@ -102,8 +99,8 @@ body {
     background: #F9F6F7;
     -webkit-transform: skew(15deg);
     -moz-transform: skew(15deg);
-    transform: skew(15deg);
-    z-index: 100;
+    transform: skew(10deg);
+    z-index: 90;
 }
 
 .post-link {
@@ -113,12 +110,13 @@ body {
 
 .post-link:hover,
 .page-link {
-    color: #E84610;
+    color: #D59041;
+    background-color: #fff;
 }
 
 .post-title {
-    margin-top: 10%;
-    margin-left: 5%;
+    margin-top: 15%;
+    margin-left: 4.5%;
 }
 
 .post-subtitle {
@@ -141,6 +139,15 @@ body {
 .link {
     color: #6E4730;
     text-decoration: none;
+}
+
+.link-colour {
+    color:#D59041;
+    text-decoration: none;
+}
+
+.link-colour:hover {
+    color:#a6b832;
 }
 
 .link:hover,

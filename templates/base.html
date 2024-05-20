@@ -35,8 +35,8 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container-fluid">
-            <a class="navbar-brand" href="{% url 'home' %}"><span class="logo"><span class="green-font">R</span>iding<span
-                        class="thin">|</span><span class="green-font"><span class="italic">Reader</a></a>
+            <a class="navbar-brand" href="{% url 'home' %}"><span class="logo"><span class="orange-font">R</span>iding<span
+                        class="thin">|</span><span class="orange-font"><span class="italic">Reader</a></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -93,7 +93,7 @@
         <p class="text-end m-3">Welcome Back to Riding Reader! Logged in as {{ user }}</p>
         {% else %}
         <p class="text-end m-3">Join in the Community:
-            <a href="{% url 'account_login' %}">Log in</a> or <a href="{% url 'account_signup' %}">Sign up</a>.</p>
+            <a href="{% url 'account_login' %}" class="link-colour">Log in</a> or <a href="{% url 'account_signup' %}" class="link-colour">Sign up</a>.</p>
         {% endif %}
         {% block content %}
         <!-- Content Goes here -->

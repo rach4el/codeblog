@@ -26,6 +26,9 @@ class Post(models.Model):
     def __str__(self):
         return f"{self.title} | written by {self.author}"
 
+    def get_suggested_riding_ability_display(self):
+        return dict(SUGGESTED_RIDING_ABILITY).get(self.Suggested_Riding_Ability, "Unknown")
+
 
 class Comment(models.Model):
     post = models.ForeignKey(

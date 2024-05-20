@@ -1,26 +1,25 @@
-@import url('https://fonts.googleapis.com/css?family=DM%20Serif%20Display:700|Roboto%20Flex:400');
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+body {
+    background-color: #F9F6F7;
+}
+
+.text-h6 {
+    font-size: medium;
+    color: #b67e3d
+}
 
 .logo {
-    font-family: 'DM Serif Display';
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: #8ca777;
-}
-body {
-  font-family: 'DM Serif Display', 'Roboto-Flex';
-  font-weight: 400;
-}
-body {
-    background-color: #F9FAFC;
+    font-family: sans-serif;
+    font-size: 2.6rem;
+    font-weight: 600;
+    color: #5b685c;
 }
 
-.green-font{
-    color: #4B594C;
+.orange-font{
+    color: #D59041;
 }
 
 .italic {
-    font-style: italic
+    font-style:italic
 }
 
 .thin {
@@ -28,15 +27,18 @@ body {
 }
 
 .light-bg {
-    background-color: #fff;
+    background-color: #F9F6F7;
 }
 
-.dark-bg {
-    background-color: #445261;
+.site-bg {
+    background-color: #F9F6F7;
 }
 
 .main-bg {
-    background-color: #F9FAFC;
+    background-color: #F9F6F7;
+    border-color: #6E4730
+    border-wid
+    
 }
 
 .card {
@@ -53,7 +55,7 @@ body {
     bottom: 5%;
     min-width: 30%;
     left: -2px;
-    background-color: #188181;
+    background-color: #AAAF88;
 }
 
 .scale {
@@ -62,7 +64,7 @@ body {
 }
 
 .author {
-    color: white;
+    color: #fff;
     margin: 4px;
     text-transform: uppercase;
 }
@@ -76,23 +78,9 @@ body {
     width: 100%;
 }
 
-.dm-serif-display-regular {
-    font-family: 'DM Serif Display', 'Roboto-Flex', serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-.dm-serif-display-regular-italic {
-    font-family: 'DM Serif Display', 'Roboto-Flex', serif;
-    font-weight: 400;
-    font-style: italic;
-  }
-
 .masthead-text {
-    font-family:  'DM Serif Display', 'Roboto-Flex', serif;
-    font-weight: 400;
-    background-color: #bc7e3d;
-    color: white;
+    background-color: #F9F6F7;
+    color: #6E4730;
     position: relative;
 }
 
@@ -108,59 +96,63 @@ body {
     right: 90%;
     height: 100%;
     width: 150%;
-    background: #bc7e3d;
+    background: #F9F6F7;
     -webkit-transform: skew(15deg);
     -moz-transform: skew(15deg);
-    transform: skew(15deg);
-    z-index: 100;
+    transform: skew(10deg);
+    z-index: 90;
 }
 
 .post-link {
-    font-family: 'DM Serif Display', serif;
-    font-weight: 400;
     text-decoration: none;
-    color: #bc7e3d;
+    color: #6E4730;
 }
 
 .post-link:hover,
 .page-link {
-    color: #E84610;
+    color: #D59041;
+    background-color: #fff;
 }
 
 .post-title {
-    font-family: sans-serif, ;
-    font-weight: 1000;
-    margin-top: 10%;
-    margin-left: 5%;
+    margin-top: 15%;
+    margin-left: 4.5%;
 }
 
 .post-subtitle {
-    font-family: 'Roboto-flex';
-    font-weight: 700;
     margin-left: 5%;
-    color: lightgray;
+    color: #6E4730;
 }
 
 .btn-signup,
 .btn-edit {
-    background-color: #188181;
+    background-color: #AAAF88;
     color: #fff;
 }
 
 .btn-signup:hover,
 .btn-signup:active {
-    background-color: #fff;
-    color: #23BBBB;
+    background-color: #D59041;
+    color: #FFF;
 }
 
 .link {
-    color: #23BBBB;
+    color: #6E4730;
     text-decoration: none;
+}
+
+.link-colour {
+    color:#D59041;
+    text-decoration: none;
+}
+
+.link-colour:hover {
+    color:#a6b832;
 }
 
 .link:hover,
 .link:active {
-    color: #bc7e3d;
+    color: #D59041;
     text-decoration: underline;
 }
 
@@ -171,7 +163,7 @@ body {
 }
 
 .btn-delete {
-    color: #fff;
+    color: #6E4730;
     background: #E84610;
 }
 
