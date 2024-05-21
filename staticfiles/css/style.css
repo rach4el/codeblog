@@ -2,17 +2,21 @@ body {
     background-color: #F9F6F7;
 }
 
+/* Format for riding ability text and updated on text (additonal text */
+
 .text-h6 {
     font-size: medium;
     color: #b67e3d
 }
 
+/* Logo text and navbar tittle links formatting */
+
 .logo {
     font-family: sans-serif;
-    font-size: 2.6rem;
+    font-size: 41.6px;
     font-weight: 600;
-    color: #5b685c;
-}
+    color: #212529;
+    }
 
 .orange-font{
     color: #D59041;
@@ -26,6 +30,13 @@ body {
     font-weight: 300;
 }
 
+.nav-font {
+    font-size: 20px;
+}
+
+
+/* Site background colour formatting */
+
 .light-bg {
     background-color: #F9F6F7;
 }
@@ -36,10 +47,10 @@ body {
 
 .main-bg {
     background-color: #F9F6F7;
-    border-color: #6E4730
-    border-wid
-    
+    border-color: #6E4730    
 }
+
+/* Text of site containers formatting */
 
 .card {
     border: none;
@@ -50,6 +61,13 @@ body {
     position: relative;
 }
 
+.scale {
+    width: 100%;
+    height: auto;
+}
+
+/* Author text on main page formatting */
+
 .image-flash {
     position: absolute;
     bottom: 5%;
@@ -58,16 +76,57 @@ body {
     background-color: #AAAF88;
 }
 
-.scale {
-    width: 100%;
-    height: auto;
-}
-
 .author {
     color: #fff;
     margin: 4px;
     text-transform: uppercase;
 }
+
+/* Formatting for post tittle links, and other links  */
+.post-link {
+    text-decoration: none;
+    color: #6E4730;
+}
+
+.post-link:hover,
+.page-link {
+    color: #D59041;
+    background-color: #fff;
+}
+
+.post-title {
+    margin-top: 15%;
+    margin-left: 4.5%;
+}
+
+.post-subtitle {
+    margin-left: 5%;
+    color: #6E4730;
+}
+
+/* Formatting for link text such colours on all pages */
+
+.link {
+    color: #6E4730;
+    text-decoration: none;
+}
+
+.link-colour {
+    color:#D59041;
+    text-decoration: none;
+}
+
+.link-colour:hover {
+    color:#a6b832;
+}
+
+.link:hover,
+.link:active {
+    color: #D59041;
+    text-decoration: underline;
+}
+
+/* Formatting for post tittle and image on post detail page */
 
 .masthead {
     margin-top: 10px;
@@ -103,26 +162,7 @@ body {
     z-index: 90;
 }
 
-.post-link {
-    text-decoration: none;
-    color: #6E4730;
-}
-
-.post-link:hover,
-.page-link {
-    color: #D59041;
-    background-color: #fff;
-}
-
-.post-title {
-    margin-top: 15%;
-    margin-left: 4.5%;
-}
-
-.post-subtitle {
-    margin-left: 5%;
-    color: #6E4730;
-}
+/* Buttons formatting */
 
 .btn-signup,
 .btn-edit {
@@ -134,26 +174,6 @@ body {
 .btn-signup:active {
     background-color: #D59041;
     color: #FFF;
-}
-
-.link {
-    color: #6E4730;
-    text-decoration: none;
-}
-
-.link-colour {
-    color:#D59041;
-    text-decoration: none;
-}
-
-.link-colour:hover {
-    color:#a6b832;
-}
-
-.link:hover,
-.link:active {
-    color: #D59041;
-    text-decoration: underline;
 }
 
 .btn-like {
@@ -174,10 +194,93 @@ body {
     border: none;
 }
 
+/* Comment Approval pending formatting */
+
 .faded {
     color: rgb(172, 175, 175);
 }
 
 .approval {
     color: rgb(222, 146, 168);
+}
+
+/* About Page formatting */
+
+.about-title {
+    Font-family: 'Roboto Flex', sans-serif;
+    font-weight: 500;
+    margin-top: 1px;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    height: fit-content;
+    width: 100%;
+}
+
+.about-text {
+    font-family: 'Roboto Flex', sans-serif;
+    background-color: #F9F6F7;
+    color: #6E4730;
+    position: relative;
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    margin: 5px;
+    overflow: hidden;
+    padding: 20px;
+    background: #F9F6F7;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+}
+
+.about-logo {
+    font-family: sans-serif;
+    font-size: 1.8rem;
+    font-weight: 450;
+    color: #5b685c;
+}
+
+.about-brand-text {
+    color: #212529;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-indent: -2em
+}
+
+/* Formatting for media query on about page */
+
+@media (max-width: 768px) {
+
+
+    .about-image {
+        width: 100%; /* image width adjusted for smaller screen sizes */
+        margin-bottom: 20px; /* Space added below image */
+        order: -1;
+    }
+    
+    .about-logo {
+        align-self: stretch;
+        margin-left: 10%;
+        order: 0;
+    }
+
+    .about-container {
+        align-items: center;
+        width: 150%;
+    }
+
+    .about-text {
+        order: 1; /* Image is viewed before text to give an appropriate view of text and image */
+    }
+
+    .updated-on {
+        bottom: 0;
+        left: 5;
+        margin-left: 3%;
+    }
 }
