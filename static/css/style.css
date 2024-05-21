@@ -18,8 +18,12 @@ body {
     color: #212529;
     }
 
-.orange-font{
+.orange-font {
     color: #D59041;
+}
+
+.green-font {
+    color: #AAAF88;
 }
 
 .italic {
@@ -221,6 +225,7 @@ body {
     Font-family: 'Roboto Flex', sans-serif;
     font-weight: 500;
     margin-top: 1px;
+    color: #6E4730;
     overflow: hidden;
     position: relative;
     display: inline-block;
@@ -228,6 +233,10 @@ body {
     width: 100%;
 }
 
+.about-underline {
+    text-decoration: underline;
+    text-decoration-color: #AAAF88;
+}
 .about-text {
     font-family: 'Roboto Flex', sans-serif;
     background-color: #F9F6F7;
@@ -244,23 +253,20 @@ body {
     overflow: hidden;
     padding: 20px;
     background: #F9F6F7;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px #D59041;
     border-radius: 3px;
-}
-
-.about-logo {
-    font-family: sans-serif;
-    font-size: 1.8rem;
-    font-weight: 450;
-    color: #5b685c;
 }
 
 .about-brand-text {
     color: #212529;
     font-family: sans-serif;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 600;
     text-indent: -2em
+}
+
+.img-about {
+    border-radius: 30px;
 }
 
 /* Formatting for media query on about page */

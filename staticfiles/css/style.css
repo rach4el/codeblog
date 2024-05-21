@@ -176,6 +176,17 @@ body {
     color: #FFF;
 }
 
+.btn-next {
+    background-color: #AAAF88;
+    color: #fff;
+}
+
+.btn-next:hover,
+.btn-next:active {
+    background-color: #D59041;
+    color: #FFF;
+}
+
 .btn-like {
     color: #E84610;
     border: none;
