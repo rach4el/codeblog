@@ -36,6 +36,23 @@ body {
 
 .nav-font {
     font-size: 20px;
+    position: relative;
+    margin-left: 10px;
+}
+
+.nav-desc {
+    display: flex;
+    margin-right: 3vh;
+    justify-content: text-end;
+}
+
+.nav-font:active,
+.nav-font:hover {
+    scale: 120%;
+    text-decoration: underline;
+    text-decoration-color: #D59041;
+    display: inline-block;
+
 }
 
 
@@ -52,6 +69,45 @@ body {
 .main-bg {
     background-color: #F9F6F7;
     border-color: #6E4730    
+}
+
+/* Footer Formatting */
+
+footer {
+    display: flex;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.media-icons {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    gap: 60px;
+}
+
+.media-icons a {
+    color: #fff;
+    text-decoration: None;
+}
+
+.media-icons a:hover {
+    color: #6E4730;
+    transform: scale(0.5);
+    transition: transform 0.3s;
+
+}
+
+.footer-container {
+    text-align: center;
+    width: 100%;
+    height: 2.5vh;
+    background-color: #D59041;
+    position: fixed;
+    bottom: 0;
+    z-index: 10;
+    align-items: center;
 }
 
 /* Text of site containers formatting */
@@ -96,6 +152,7 @@ body {
 .page-link {
     color: #D59041;
     background-color: #fff;
+    margin-bottom: 6vh;
 }
 
 .post-title {
@@ -300,4 +357,41 @@ body {
         left: 5;
         margin-left: 3%;
     }
+
+    /* Formatting media query for home page */
+
+    /* Sign-up Page formatting media*/
+ 
+    .d-flex {
+        align-items: center;
+    }
+
+    /* Homepage formatting */
+    .nav-desc {
+        flex-direction: column;
+        margin-left: 20px;
+    }
+
+    @media (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
+    
+      }
+      @media (device-width: 1024px) and (device-height: 768px) and (orientation:landscape) {
+    
+      }
 }
+    /* Footer media query */
+@media (max-width: 768px) {
+        .media-icons a{
+            flex-direction: column;
+        } 
+        .footer-container{
+            width:100%;
+            justify-content: center;
+            height: 3vh;
+            text-align: center;
+        }
+        .media-icons {
+            padding-bottom: 2px;
+            padding-top: 2px;
+        }
+    }

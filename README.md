@@ -59,11 +59,13 @@ Target Audience: The primary target audience include local equestrians who aim t
 
 Sources :
 
--Font Awesome was used for icons and the fonts used were derived from Google Fonts.
+-Font Awesome and flaticon were used for icons and the fonts used were derived from Google Fonts. 
 
--Wireframes, logo and flowcharts were created using Canva.
+The font Roboto flex from google fonts as my chosen favicon design for clear UX design and branding using a colour from my projects colour scheme. The reasoning behind this was to have clear logo favicon for clear design and Roboto is a user friendly, and described by google to be highly-readable which provides clear headers as well as highly-readable body text.
 
--A special thanks to all the other indivudals in our cohort for their continuous support throughout the course.
+-Wireframes, and flowcharts were created using Canva.
+
+-A special thanks to my course leader Iris and all the other indivudals in our cohort for their continuous support throughout the course.
 
 I used this site to generate a persona and created user stories: https://founderpal.ai/user-persona-generator
 
@@ -73,11 +75,20 @@ Favicon:
 
 -I used a favicon generator for favicon design (https://favicon.io/favicon-generator/).
 
-The font DM Serif Display from google fonts as my chosen favicon design for clear UX design and branding using a colour from my projects colour scheme. The reasoning behind this was to have clear logo favicon for clear design and DM Sans is described by google as a sans serif design, intended for use at smaller text sizes. DM Sans offers a clean, modern appearance that works well in minimalist design. This sans serif typeface features a geometric form with rounded corners that give it a friendly yet professional look.
+
 
 Images:
 
-all other images from:
+Icons on the about page :
+
+From Flaticon:
+
+Target: (https://www.flaticon.com/free-icon/target_3659651?term=goals&page=1&position=11&origin=search&related_id=3659651)
+
+Leadership: (https://www.flaticon.com/free-icons/leadership)
+
+
+All other images from:
 
 -Image Creator from Microsoft Designer - Bing (https://www.bing.com/images/create).
 
@@ -88,7 +99,18 @@ https://coolors.co/
 
 other project inspiration:
 
-loosely based on:
+Based on:
+
+CodeInstitute Tutorial - I Think Therefore I Blog
+
+Other Inspiration:
+
+CSS media query for ipad:
+https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariCSSRef/Articles/OtherStandardCSS3Features.html
+
+
+Cohort Projects:
+
 https://github.com/hiboibrahim/thebookbooth1/tree/main
 
 
