@@ -332,8 +332,8 @@ footer {
 
 
     .about-image {
-        width: 100%; /* image width adjusted for smaller screen sizes */
-        margin-bottom: 20px; /* Space added below image */
+        width: 100%; 
+        margin-bottom: 20px; 
         order: -1;
     }
     
@@ -349,7 +349,7 @@ footer {
     }
 
     .about-text {
-        order: 1; /* Image is viewed before text to give an appropriate view of text and image */
+        order: 1; 
     }
 
     .updated-on {
@@ -358,40 +358,48 @@ footer {
         margin-left: 3%;
     }
 
-    /* Formatting media query for home page */
-
-    /* Sign-up Page formatting media*/
- 
-    .d-flex {
-        align-items: center;
-    }
-
     /* Homepage formatting */
+
     .nav-desc {
+        align-items: center;
+        flex-direction: row;
+        margin-left: 15px;
+    }
+}
+
+@media (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
+    .media-icons a {
         flex-direction: column;
-        margin-left: 20px;
+        padding-top: 1vh;
+        line-height: 20px;
+        scale: 95%
     }
 
-    @media (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
-    
-      }
-      @media (device-width: 1024px) and (device-height: 768px) and (orientation:landscape) {
-    
-      }
-}
+    .footer-container {
+        width:100%;
+        justify-content: center;
+        height: 3vh;
+        text-align: center;
+     }
+                
+ }
+
     /* Footer media query */
+
 @media (max-width: 768px) {
-        .media-icons a{
-            flex-direction: column;
-        } 
-        .footer-container{
-            width:100%;
-            justify-content: center;
-            height: 3vh;
-            text-align: center;
-        }
-        .media-icons {
-            padding-bottom: 2px;
-            padding-top: 2px;
-        }
+    .media-icons a{
+        flex-direction: column;
+    } 
+
+    .footer-container{
+        width:100%;
+        justify-content: center;
+        height: 3vh;
+        text-align: center;
     }
+
+    .media-icons {
+        padding-bottom: 2px;
+        padding-top: 2px;
+    }
+ }
