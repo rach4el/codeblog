@@ -117,6 +117,11 @@ footer {
     background-color: transparent;
 }
 
+.border-outline {
+    border-color:#6E4730;
+    border-radius: 3px;
+}
+
 .image-container {
     position: relative;
 }
@@ -225,8 +230,7 @@ footer {
 
 /* Buttons formatting */
 
-.btn-signup,
-.btn-edit {
+.btn-signup{
     background-color: #AAAF88;
     color: #fff;
 }
@@ -248,6 +252,17 @@ footer {
     color: #FFF;
 }
 
+.btn-edit {
+    background-color: #D59041;
+    color: #fff;
+}
+
+.btn-edit:hover,
+.btn-edit:active {
+    background-color: #AAAF88;
+    color: #FFF;
+}
+
 .btn-like {
     color: #E84610;
     border: none;
@@ -255,18 +270,48 @@ footer {
 }
 
 .btn-delete {
-    color: #6E4730;
+    color: #fff;
+    background: #000;
+}
+
+.btn-delete:hover,
+.btn-delete:active {
+    color: #fff;
     background: #E84610;
+}
+
+.btn-danger {
+    color: #fff;
+    background: #000;
+}
+
+.btn-danger:hover,
+.btn-danger:active {
+    color: #fff;
+    background: #E84610;
+}
+
+.btn-secondary {
+    color: #fff;
+    background: #AAAF88;
+}
+
+.btn-secondary:active,
+.btn-secondary:hover {
+    color: #fff;
+    background: #Bc7e3d;
 }
 
 .btn-like:hover,
 .btn-like:active {
     color: #E84610;
     background: transparent;
-    border: none;
+    border: #E84610;
 }
 
-/* Comment Approval pending formatting */
+
+
+/* Comment delete warning and approval pending formatting */
 
 .faded {
     color: rgb(172, 175, 175);
@@ -274,6 +319,10 @@ footer {
 
 .approval {
     color: rgb(222, 146, 168);
+}
+
+.warning {
+    color: #E84610;
 }
 
 /* About Page formatting */
