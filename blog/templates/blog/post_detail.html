@@ -13,10 +13,10 @@
                 <p class="post-subtitle">{{ post.author }} | {{ post.created_on }} | {{post.get_suggested_riding_ability_display }}</p>
             </div>
             <div class="d-none d-md-block col-md-6 masthead-image">
+                {% if "placeholder" in post.featured_image.url %}
                 <img src="{% static 'images/default.jpg' %}" class="scale" alt="placeholder">
                 {% else %}
-                <img src="{{ post.featured_image.url }}" class="scale"
-                  alt="{{ post.title }}">
+                <img src="{{ post.featured_image.url }}" class="scale" alt="{{ post.title }}">
                 {% endif %}
             </div>
         </div>
@@ -74,7 +74,7 @@
                         comment_id="{{ comment.id }}">Edit</button>
                     {% endif %}
                 </div>
-                <!-- Our for loop ends here -->
+                <!-- For loop ends here -->
                 {% endfor %}
             </div>
         </div>
