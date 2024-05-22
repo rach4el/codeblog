@@ -36,6 +36,7 @@ body {
 
 .nav-font {
     font-size: 20px;
+    font-weight: 600;
     position: relative;
     margin-left: 10px;
 }
@@ -48,11 +49,25 @@ body {
 
 .nav-font:active,
 .nav-font:hover {
-    scale: 120%;
-    text-decoration: underline;
-    text-decoration-color: #D59041;
+    scale: 130%;
+    text-shadow: 3px;
     display: inline-block;
 
+}
+
+.nav-font.active {
+    position: relative;
+    font-weight: 750;
+}
+
+.nav-font.active:after {
+    content: "";
+    position: absolute;
+    bottom: 0px; 
+    left: 0;
+    width: 100%;
+    height: 2px; 
+    background-color: #D59041; 
 }
 
 
@@ -115,6 +130,11 @@ footer {
 .card {
     border: none;
     background-color: transparent;
+}
+
+.border-outline {
+    border-color:#6E4730;
+    border-radius: 3px;
 }
 
 .image-container {
@@ -225,8 +245,7 @@ footer {
 
 /* Buttons formatting */
 
-.btn-signup,
-.btn-edit {
+.btn-signup{
     background-color: #AAAF88;
     color: #fff;
 }
@@ -248,6 +267,17 @@ footer {
     color: #FFF;
 }
 
+.btn-edit {
+    background-color: #D59041;
+    color: #fff;
+}
+
+.btn-edit:hover,
+.btn-edit:active {
+    background-color: #AAAF88;
+    color: #FFF;
+}
+
 .btn-like {
     color: #E84610;
     border: none;
@@ -255,18 +285,48 @@ footer {
 }
 
 .btn-delete {
-    color: #6E4730;
+    color: #fff;
+    background: #000;
+}
+
+.btn-delete:hover,
+.btn-delete:active {
+    color: #fff;
     background: #E84610;
+}
+
+.btn-danger {
+    color: #fff;
+    background: #000;
+}
+
+.btn-danger:hover,
+.btn-danger:active {
+    color: #fff;
+    background: #E84610;
+}
+
+.btn-secondary {
+    color: #fff;
+    background: #AAAF88;
+}
+
+.btn-secondary:active,
+.btn-secondary:hover {
+    color: #fff;
+    background: #Bc7e3d;
 }
 
 .btn-like:hover,
 .btn-like:active {
     color: #E84610;
     background: transparent;
-    border: none;
+    border: #E84610;
 }
 
-/* Comment Approval pending formatting */
+
+
+/* Comment delete warning and approval pending formatting */
 
 .faded {
     color: rgb(172, 175, 175);
@@ -274,6 +334,10 @@ footer {
 
 .approval {
     color: rgb(222, 146, 168);
+}
+
+.warning {
+    color: #E84610;
 }
 
 /* About Page formatting */
@@ -332,8 +396,8 @@ footer {
 
 
     .about-image {
-        width: 100%; /* image width adjusted for smaller screen sizes */
-        margin-bottom: 20px; /* Space added below image */
+        width: 100%; 
+        margin-bottom: 20px; 
         order: -1;
     }
     
@@ -349,7 +413,7 @@ footer {
     }
 
     .about-text {
-        order: 1; /* Image is viewed before text to give an appropriate view of text and image */
+        order: 1; 
     }
 
     .updated-on {
@@ -358,40 +422,48 @@ footer {
         margin-left: 3%;
     }
 
-    /* Formatting media query for home page */
-
-    /* Sign-up Page formatting media*/
- 
-    .d-flex {
-        align-items: center;
-    }
-
     /* Homepage formatting */
+
     .nav-desc {
+        align-items: center;
+        flex-direction: row;
+        margin-left: 15px;
+    }
+}
+
+@media (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
+    .media-icons a {
         flex-direction: column;
-        margin-left: 20px;
+        padding-top: 1vh;
+        line-height: 20px;
+        scale: 95%
     }
 
-    @media (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
-    
-      }
-      @media (device-width: 1024px) and (device-height: 768px) and (orientation:landscape) {
-    
-      }
-}
+    .footer-container {
+        width:100%;
+        justify-content: center;
+        height: 3vh;
+        text-align: center;
+     }
+                
+ }
+
     /* Footer media query */
+
 @media (max-width: 768px) {
-        .media-icons a{
-            flex-direction: column;
-        } 
-        .footer-container{
-            width:100%;
-            justify-content: center;
-            height: 3vh;
-            text-align: center;
-        }
-        .media-icons {
-            padding-bottom: 2px;
-            padding-top: 2px;
-        }
+    .media-icons a{
+        flex-direction: column;
+    } 
+
+    .footer-container{
+        width:100%;
+        justify-content: center;
+        height: 3vh;
+        text-align: center;
     }
+
+    .media-icons {
+        padding-bottom: 2px;
+        padding-top: 2px;
+    }
+ }
