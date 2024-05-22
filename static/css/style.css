@@ -163,6 +163,11 @@ footer {
 }
 
 /* Formatting for post tittle links, and other links  */
+
+.profile-image {
+    width: 75%;
+}
+
 .post-link {
     text-decoration: none;
     color: #6E4730;
