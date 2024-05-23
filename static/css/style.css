@@ -368,15 +368,12 @@ footer {
     background-color: #F9F6F7;
     color: #6E4730;
     position: relative;
+    font-weight: 400;
 }
 
 .about-container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    width: 100%;
+    display: flexbox;
     margin: 5px;
-    overflow: hidden;
     padding: 20px;
     background: #F9F6F7;
     box-shadow: 0 0 10px #D59041;
@@ -415,6 +412,7 @@ footer {
     .about-container {
         align-items: center;
         width: 150%;
+        overflow-x: hidden;
     }
 
     .about-text {
