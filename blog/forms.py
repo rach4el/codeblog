@@ -4,7 +4,7 @@ from django import forms
 class PostForm(forms.ModelForm):
     class Meta:
         model = Post
-        fields = ['title', 'Suggested_Riding_Ability', 'featured_image', 'content', 'excerpt']
+        fields = ['title', 'suggested_riding_ability', 'featured_image', 'content', 'county', 'excerpt']
         exclude = ['slug', 'status', 'author']  
 
     def __init__(self, *args, **kwargs):

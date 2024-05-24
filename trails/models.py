@@ -23,4 +23,4 @@ class CreatePost(models.Model):
         return f"New post request{self.title} | created by {self.Creator}"
 
     def get_suggested_riding_ability_display(self):
-        return dict(SUGGESTED_RIDING_ABILITY).get(self.Suggested_Riding_Ability, "Unknown")
+        return dict(SUGGESTED_RIDING_ABILITY).get(self.suggested_riding_ability, "Unknown")

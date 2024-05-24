@@ -29,14 +29,14 @@
                             <a href="{% url 'post_detail' post.slug %}" class="post-link">
                                 <h2 class="card-title">{{ post.title }}</h2>
                                 <h3 class="text-h6">
-                                    {{ post.get_suggested_riding_ability_display }}         
+                                    {{ post.get_suggested_iding_ability_display }}         
                                 </h3>
                                 <p class="card-text">{{ post.excerpt }}</p>
                             </a>
 
                             <hr>
                             <p class="text-h6">
-                                {{ post.created_on }} 
+                                {{ post.county }}  | {{ post.created_on }} 
                             </p>
                         </div>
                     </div>
