@@ -13,14 +13,14 @@ class CreatePost(models.Model):
     content = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
     excerpt = models.TextField(blank=True)
-    approved = models.BooleanField(default=False)
+    approved = models.BooleanField('Approved', default=False)
     updated_on = models.DateTimeField(auto_now=True)
 
     class Meta:
         ordering = ["-created_on"]
 
     def __str__(self):
-        return f"New post request{self.title} | created by {self.author}"
+        return f"New post request{self.title} | created by {self.Creator}"
 
     def get_suggested_riding_ability_display(self):
         return dict(SUGGESTED_RIDING_ABILITY).get(self.Suggested_Riding_Ability, "Unknown")
