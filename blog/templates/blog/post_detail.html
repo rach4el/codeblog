@@ -3,23 +3,21 @@
 {% load crispy_forms_tags %}
 
 {% block content %}
-<div class="masthead">
-    <div class="container">
-        <div class="row g-0">
-            <div class="col-md-6 masthead-text">
-                <!-- Post title goes in these h1 tags -->
-                <h1 class="post-title">{{ post.title }}</h1>
-                <!-- Post author goes before the | the post's created date goes after and suggested riding ability goes after second | -->
-                <p class="post-subtitle">{{ post.author }} | {{ post.created_on }} | {{post.get_suggested_riding_ability_display }}</p>
-            </div>
-            <div class="d-none d-md-block col-md-6 masthead-image">
-                {% if "placeholder" in post.featured_image.url %}
-                <img src="{% static 'images/default.jpg' %}" class="scale" alt="placeholder">
-                {% else %}
-                <img src="{{ post.featured_image.url }}" class="scale" alt="{{ post.title }}">
-                {% endif %}
-            </div>
-        </div>
+
+
+<div class="masthead-text">
+    <!-- Post title goes in these h1 tags -->
+    <h1 class="post-title">{{ post.title }}</h1>
+    <!-- Post author goes before the | the post's created date goes after and suggested riding ability goes after second | -->
+    <p class="post-subtitle">{{ post.author }} | {{ post.created_on }} | {{post.get_suggested_riding_ability_display }}</p>
+</div>
+<div class="container text-center">
+    <div class="justify-content-center text-center masthead-image">
+        {% if "placeholder" in post.featured_image.url %}
+        <img src="{% static 'images/default.jpg' %}" class="scale" alt="placeholder">
+        {% else %}
+        <img src="{{ post.featured_image.url }}" class="scale" alt="{{ post.title }}">
+        {% endif %}
     </div>
 </div>
 <div class="container">

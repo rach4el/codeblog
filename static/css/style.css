@@ -186,6 +186,8 @@ footer {
 }
 
 .post-subtitle {
+    font-variant-caps: normal;
+    font-size: medium;
     margin-left: 5%;
     color: #6E4730;
 }
@@ -214,38 +216,48 @@ footer {
 
 /* Formatting for post tittle and image on post detail page */
 
-.masthead {
-    margin-top: 10px;
-    overflow: hidden;
-    position: relative;
-    display: inline-block;
-    height: 33vh;
-    width: 100%;
-}
 
 .masthead-text {
     background-color: #F9F6F7;
+    font-variant-caps: small-caps;
     color: #6E4730;
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 30px;
     position: relative;
+    padding: 0px;
+    margin-top: 20px;
+    text-align: center;
 }
-
 .masthead-image {
     position: relative;
     overflow: hidden;
+    scale: 75%;
+    max-width: 1000px;
+    border-radius: 40px;
+    justify-content: center;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 .masthead-image:after {
+    justify-content: center;
     content: "";
-    position: absolute;
-    top: 0;
-    right: 90%;
-    height: 100%;
-    width: 150%;
-    background: #F9F6F7;
-    -webkit-transform: skew(15deg);
-    -moz-transform: skew(15deg);
-    transform: skew(10deg);
-    z-index: 90;
+    position: relative;
+    top: auto;
+    scale: 100%;
+}
+
+@media (min-width: 768px) {
+    .masthead-image {
+        order:-1;
+      
+    }
+  
+    .masthead {
+      order: 0
+    }
 }
 
 /* Buttons formatting */
@@ -443,15 +455,10 @@ footer {
 .faq-border {
     display: flex;
     box-shadow: 0 0 10px #D59041;
-    border-radius: 3px;
     max-width: 1000px;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    display: flex;
-}
-.about-bold {
-    font-weight: 700;
 }
 
 .about-text {
