@@ -18,12 +18,12 @@ def create_post(request):
     if request.method == 'POST':
         form = PostForm(request.POST, request.FILES)
         if form.is_valid():
+            form.request = request  
             post = form.save(commit=False)
-            post.author = request.user
-            post.status = 3 
+            post.status = 3
             post.save()
             messages.add_message(request, messages.SUCCESS, 'Thank you for your post submission. Your post has been submitted successfully and is awaiting approval!')
-            return redirect('/create/')  
+            return redirect('/create/') 
     else:
         form = PostForm()
     return render(request, 'create_post.html', {'form': form})

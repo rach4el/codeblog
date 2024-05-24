@@ -1,10 +1,42 @@
 {% extends 'base.html' %}
+{% load crispy_forms_tags %}
 
 {% block content %}
-  <h2>Create a new post</h2>
-  <form method="post" enctype="multipart/form-data">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Create</button>
-  </form>
+<br>
+<br>
+<h1 class="about-text about-underline text-center">Create a New Post!</h1>
+<br>
+<div class="container form-container">
+  <div class="row">
+      <div class="form-container text-center">
+
+        <form enctype="multipart/form-data" class="about-container  about-text  ">
+          {% csrf_token %}
+          <div>
+            {{ form.title|as_crispy_field }}
+          </div>
+          <div>
+            {{ form.Suggested_Riding_Ability|as_crispy_field }}
+          </div>
+          <div>
+            {{ form.featured_image|as_crispy_field }}
+          </div>
+          <div>
+            {{ form.content|as_crispy_field }}
+          </div>
+          <div>
+            {{ form.excerpt|as_crispy_field }}
+          </div>
+          <button class= "btn btn-secondary" type="submit" class="form-btn">Create</button>
+        </form>
+      </div>
+      <div class="faded text-center">
+          <p>
+            All new posts are subject to admin review, we look forward to your new post and want to thank you for your intent to contribute to our community!
+          </p>
+        </div>
+  </div>
+</div>
+<br>
+<br>
 {% endblock %}

@@ -27,56 +27,105 @@
             <div class="about-container">
                 <div class="section">
                     {% if about.title %}
-                        <h3 class="about-title about-underline">{{ about.title }}</h3>
+                        <h2 class="about-title about-underline">{{ about.title }}</h2>
                     {% else %}
-                        <h3 class="about-title about-underline">About Us</h3>
+                        <h2 class="about-title about-underline">About Us</h2>
                     {% endif %}
                     {% if about.content %}
-                        <h3 class="about-text">{{ about.content | safe}}</h3>
+                        <h4 class="about-text">{{ about.content | safe}}</h4>
                     {% else %}
-                        <h3 class="about-text">
+                        <h4 class="about-text">
                             RidingReader is designed to be for local equestrians wanting to discover the best trail routes in their area in the countryside.
                             <br>
                             <br>
                             RidingReader offers valuable knowledge of routes to maximize enjoyment and minimize risks, welcoming riders of all levels to join in with the local community.
-                        </h3>
+                        </h4>
                     {% endif %}
                 </div>
             </div>
         </div>
     </div>
     <div class="row">
-        <div class="col text-right">
+        <div class="text-right">
             <!-- Updated on field -->
             <p class="text-end updated-on"><em>{{ about.updated_on }} </em></p>
         </div>
     </div>
     <br>
+    <hr>
     <br>
     <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    <div class="faq-border justify-content-center about-collaborate row">
+        <div class="about-collaborate row justify-content-center">
+            <div class="col-12 text-center my-5">>
+                <h3 class="about-title about-underline">
+                        Frequently Asked Questions
+                </h3>
+                <br>
+                <h5 class="about-text">
+                    Here you'll find answers to our most frquently asked questions!
+                </h5>
+                <h5 class="about-text about-underline">
+                    What are the riding level categories?
+                </h5>
+                <h5 class="about-var about-text">
+                    All Levels: Suitable for everyone, from beginners to advanced riders.
+                </h5>
+                <h5 class="about-var about-text">
+                    Beginner: These routes are mostly flat trails with minimal obstacles.
+                </h5>
+                <h5 class="about-var about-text">
+                    Novice: Routes for those processing bility to trot and short canter.
+                </h5>
+                <h5 class="about-var about-text">
+                    Intermediate: Riders who can easily walk, trot and gallop over different terrain.
+                </h5>
+                <h5 class="about-var about-text">
+                    Advanced: For experienced riders, these routes may be physically challenging.
+                </h5>
+                <br>
+                <br>
+                <h5 class="about-text about-underline">
+                    Can I add comments to a trail post?
+                </h5>
+                <h5 class="about-text">
+                    Yes, you can. Once logged in, click on a trail post to add your comment. It will be reviewed by the admin before being published.
+                </h5>
+                <br>
+                <h5 class="about-text about-underline">
+                    How can I stay updated on the newest trails?
+                </h5>
+                <h5 class="about-text">
+                    Our trails are always listed in order of newest first, that way you'll always be presented with the newest posts!
+                </h5>
+                <br>
+                <h5 class="about-text about-underline">
+                    How can I contribute by posting a new trail route?
+                </h5>
+                <h5 class="about-text">
+                    Log in or sign up and visit the "Create" section. Fill in the trail details and submit. The admin team will review your post, if approved it will be posted!
+                </h5>
+                <br>
+                <h5 class="about-text about-underline">
+                    What are the guidelines for posting comments or creating trail routes?
+                </h5>
+                <h5 class="about-text">
+                    Yes, all content must be respectful and relevant. The admin team reviews all submissions.
+                </h5>
+                <br>
+                <br>
+            </div>
+        </div>
+    </div>
     <br>
     <br>
     <br>
     <hr>
     <!-- Collaborate request form-->
-    <div class="row justify-content-center">
-        <div class="col-12 col-md-6 my-5">
-            <h2>Let's collaborate!</h2>
-            <p>I believe in the power of shared knowledge and collective effort.
+    <div class="about-collaborate row justify-content-center">
+        <div class="col-12 text-center my-5">
+            <h2 class="about-text">Let's collaborate!</h2>
+            <p class="about-text">I believe in the power of shared knowledge and collective effort.
                 Whether you have a project in mind, wish to co-author
                 an article, or simply want to brainstorm some ideas,
                 I'm excited to hear from you. Fill out the form
@@ -84,7 +133,7 @@
             <form method="post">
                 {{ collaborate_form | crispy }}
                 {% csrf_token %}
-                <button class="btn btn-secondary" type="submit">Submit</button>
+                <button class="btn-secondary text-center" type="submit">Submit</button>
             </form>
         </div>
     </div>

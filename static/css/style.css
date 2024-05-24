@@ -345,9 +345,116 @@ footer {
     color: #E84610;
 }
 
+/* Create Form page formatting */
+
+  .create-title {
+    text-decoration: underline;
+    text-decoration-color: #AAAF88;
+    color: #6E4730;
+    height: fit-content;
+    width: 100%;
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  .form-padding {
+    display: flex;
+    Font-family: 'Roboto Flex', sans-serif;
+    color: #6E4730;
+    height: fit-content;
+    width: 100%;
+  }
+
+  .form-text {
+    font-family: 'Roboto Flex', sans-serif;
+    background-color: #F9F6F7;
+    color: #6E4730;
+    position: relative;
+    font-weight: 400;
+  }
+  
+  .form-control {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #D59041;
+    border-radius: 3px;
+    order: 1;
+  }
+  
+  .form-control:focus {
+    border-color: #AAAF88;
+    box-shadow: 0 0 10px #AAAF88;
+  }
+  
+  .form-btn {
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    background-color: #D59041;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .form-btn:hover,
+  .form-btn:active {
+    background-color: #AAAF88;
+    color: #fff;
+  }
+
+
+  @media (max-width: 768px) {
+    
+    @media (max-width: 768px) {
+
+        .form-container {
+            display: flex;
+            align-items: center;
+            width: 200%;
+            order: 1
+        }
+
+        }
+        .form-container {
+            margin-right: 20px;
+            margin-left: 20px;
+            width: 90%;
+            text-align: center;
+        }
+        .form-group {
+            text-align: center;
+        }
+        .form-control {
+            width: 90%;
+            text-align: center;
+        }
+        .form-btn {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+
 /* About Page formatting */
 
-.about-title {
+.faq-border {
+    display: flex;
+    box-shadow: 0 0 10px #D59041;
+    border-radius: 3px;
+    max-width: 1000px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+.about-bold {
+    font-weight: 700;
+}
+
+.about-text {
     Font-family: 'Roboto Flex', sans-serif;
     font-weight: 500;
     margin-top: 1px;
@@ -363,6 +470,28 @@ footer {
     text-decoration: underline;
     text-decoration-color: #AAAF88;
 }
+
+.about-underline2 {
+    text-decoration: underline;
+    text-decoration-color: #D59041;
+}
+
+.about-underline3 {
+    text-decoration: underline;
+    text-decoration-color: #6E4730;
+}
+
+.about-ital {
+    font-style: italic;
+}
+
+.about-var {
+    font-variant: small-caps;
+}
+
+
+
+
 .about-text {
     font-family: 'Roboto Flex', sans-serif;
     background-color: #F9F6F7;
@@ -409,6 +538,15 @@ footer {
         order: 0;
     }
 
+    .faq-border {
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        width: 95%;
+        text-align: center;
+    }
+
     .about-container {
         align-items: center;
         width: 150%;
@@ -423,6 +561,10 @@ footer {
         bottom: 0;
         left: 5;
         margin-left: 3%;
+    }
+
+    .about-collaborate {
+        order: 2
     }
 
     /* Homepage formatting */

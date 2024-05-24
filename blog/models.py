@@ -2,7 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
 
-STATUS = ((0, "Draft"), (1, "Published"), (2, "Pending Approval"))
+STATUS = ((0, "Draft"), (1, "Published"))
 
 SUGGESTED_RIDING_ABILITY = ((0, 'All Abilities'), (1, "Beginner"), (2, "Novice"), (3, "Intermidiate"), (4, "Advanced")) # riding ability dropdown choices
     
