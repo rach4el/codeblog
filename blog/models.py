@@ -2,12 +2,11 @@ from django.db import models
 from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
 
+# Post model
+
 STATUS = ((0, "Draft"), (1, "Published"))
 
-SUGGESTED_RIDING_ABILITY = ((0, 'All Abilities'), (1, "Beginner"), (2, "Novice"), (3, "Intermidiate"), (4, "Advanced")) # riding ability dropdown choices
-    
-
-# Create your models here.
+SUGGESTED_RIDING_ABILITY = ((0, 'All Abilities'), (1, "Beginner"), (2, "Novice"), (3, "Intermediate"), (4, "Advanced")) # riding ability dropdown choices
 
 class Post(models.Model):
     title = models.CharField(max_length=200, unique=True)
@@ -23,6 +22,9 @@ class Post(models.Model):
     excerpt = models.TextField(blank=True)
     county = models.CharField(max_length=100, null=True)
     updated_on = models.DateTimeField(auto_now=True)
+    upvotes = models.ManyToManyField(User, related_name='upvoted_posts', through='Upvote')
+    downvotes = models.ManyToManyField(User, related_name='downvoted_posts', through='Downvote')
+    
     class Meta:
         ordering = ["-created_on"]
 
@@ -32,6 +34,15 @@ class Post(models.Model):
     def get_suggested_riding_ability_display(self):
         return dict(SUGGESTED_RIDING_ABILITY).get(self.suggested_riding_ability, "Unknown")
 
+class Upvote(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    post = models.ForeignKey(Post, on_delete=models.CASCADE)
+    created_at = models.DateTimeField(auto_now_add=True)
+
+class Downvote(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    post = models.ForeignKey(Post, on_delete=models.CASCADE)
+    created_at = models.DateTimeField(auto_now_add=True)
 
 class Comment(models.Model):
     post = models.ForeignKey(
