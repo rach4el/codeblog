@@ -17,29 +17,20 @@ from django.urls import reverse
 @login_required
 def upvote_post(request, slug):
     post = get_object_or_404(Post, slug=slug)
-    if request.method == 'POST':
-        if not Upvote.objects.filter(user=request.user, post=post).exists():
-            upvote = Upvote(user=request.user, post=post)
-            upvote.save()
+    if request.user in post.downvotes.all():
+        Downvote.objects.filter(user=request.user, post=post).delete()
+    if not Upvote.objects.filter(user=request.user, post=post).exists():
+        Upvote.objects.create(user=request.user, post=post)
     return redirect('post_detail', slug=slug)
 
 @login_required
 def downvote_post(request, slug):
     post = get_object_or_404(Post, slug=slug)
-    if request.method == 'POST':
-        if not Downvote.objects.filter(user=request.user, post=post).exists():
-            downvote = Downvote(user=request.user, post=post)
-            downvote.save()
+    if request.user in post.upvotes.all():
+        Upvote.objects.filter(user=request.user, post=post).delete()
+    if not Downvote.objects.filter(user=request.user, post=post).exists():
+        Downvote.objects.create(user=request.user, post=post)
     return redirect('post_detail', slug=slug)
-
-from django.shortcuts import get_object_or_404, redirect
-from .models import Post
-
-def upvote_post(request, slug):
-    post = get_object_or_404(Post, slug=slug)
-    return redirect('post_detail', slug=slug)
-
-
 
 # Post form function
 

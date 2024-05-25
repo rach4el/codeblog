@@ -24,6 +24,7 @@ class Post(models.Model):
     updated_on = models.DateTimeField(auto_now=True)
     upvotes = models.ManyToManyField(User, related_name='upvoted_posts', through='Upvote')
     downvotes = models.ManyToManyField(User, related_name='downvoted_posts', through='Downvote')
+
     
     class Meta:
         ordering = ["-created_on"]
@@ -33,6 +34,12 @@ class Post(models.Model):
 
     def get_suggested_riding_ability_display(self):
         return dict(SUGGESTED_RIDING_ABILITY).get(self.suggested_riding_ability, "Unknown")
+
+    def total_upvotes(self):
+        return self.upvotes.count()
+
+    def total_downvotes(self):
+        return self.downvotes.count()
 
 class Upvote(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)

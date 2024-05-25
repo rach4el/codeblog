@@ -38,22 +38,21 @@
         <div class="col-12">
             <strong class="text-secondary">
                 <i class="far fa-comments"></i> {{ comment_count }}
+                {% if user.is_authenticated %}
+                <form method="post" action="{% url 'upvote_post' post.slug %}">
+                    {% csrf_token %}
+                    <button type="submit" class="btn btn-primary">
+                        Upvote {{ post.upvotes.count }}
+                    </button>
+                </form>
+                <form method="post" action="{% url 'downvote_post' post.slug %}">
+                    {% csrf_token %}
+                    <button type="submit" class="btn btn-danger">
+                        Downvote {{ post.downvotes.count }}
+                    </button>
+                </form>
+                {% endif %}
             </strong>
-            <!-- Upvote and Downvote buttons -->
-            {% if user.is_authenticated %}
-            <form method="post" action="{% url 'upvote_post' post.slug %}">
-                {% csrf_token %}
-                <button type="submit" class="btn btn-link">
-                    <i class="fas fa-thumbs-up"></i> Upvote
-                </button>
-            </form>
-            <form method="post" action="{% url 'downvote_post' post.slug %}">
-                {% csrf_token %}
-                <button type="submit" class="btn btn-link">
-                    <i class="fas fa-thumbs-down"></i> Downvote
-                </button>
-            </form>
-            {% endif %}
         </div>
         <div class="col-12">
             <hr>
