@@ -3,7 +3,7 @@ from django.views import generic
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.http import HttpResponseRedirect
-from .models import Post, Comment
+from .models import Post, Comment, SUGGESTED_RIDING_ABILITY
 from .forms import CommentForm, PostForm
 from django.shortcuts import redirect
 
@@ -34,6 +34,24 @@ class PostList(generic.ListView):
     queryset = Post.objects.filter(status=1).order_by("-created_on")
     template_name = "blog/index.html"
     paginate_by = 6
+
+    def get_queryset(self):
+        queryset = super().get_queryset()
+        suggested_riding_ability = self.request.GET.get('suggested_riding_ability')
+        county = self.request.GET.get('county')
+
+        if suggested_riding_ability:
+            queryset = queryset.filter(suggested_riding_ability=suggested_riding_ability)
+        if county:
+            queryset = queryset.filter(county=county)
+
+        return queryset
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['SUGGESTED_RIDING_ABILITY'] = dict(SUGGESTED_RIDING_ABILITY)
+        context['counties'] = Post.objects.values_list('county', flat=True).distinct()
+        return context
     
 # Post detail function
 def post_detail(request, slug):

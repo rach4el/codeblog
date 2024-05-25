@@ -262,6 +262,31 @@ footer {
 
 /* Buttons formatting */
 
+.btn-category {
+    background-color: #AAAF88;
+    color: #fff;
+}
+
+.btn-category:hover,
+.btn-category:active,
+.btn-category-.focus {
+    background-color: #D59041;
+    color: #FFF;
+}
+
+.btn-filter {
+    background-color: #AAAF88;
+    color: #fff;
+}
+
+.btn-filter:hover,
+.btn-filter:active,
+.btn-filter.focus {
+    background-color: #D59041;
+    color: #FFF;
+}
+
+
 .btn-signup{
     background-color: #AAAF88;
     color: #fff;
