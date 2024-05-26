@@ -13,8 +13,9 @@ class CreatePost(models.Model):
     creator = models.ForeignKey(User, on_delete=models.CASCADE, related_name="blog_poster")
     featured_image = CloudinaryField('image', default='placeholder')
     content = models.TextField()
-    created_on = models.DateTimeField(auto_now_add=True)
-    excerpt = models.TextField(blank=True)
+    created_on = models.DateTimeField(auto_now_add=True, editable=False)
+    county = models.CharField(max_length=100, null=True)
+    excerpt = models.TextField(blank=False)
     approved = models.IntegerField(choices=APPROVED, default=0)
     updated_on = models.DateTimeField(auto_now=True)
 
@@ -23,7 +24,7 @@ class CreatePost(models.Model):
         verbose_name_plural = "Suggestion Posts"
 
     def __str__(self):
-        return f"New post request{self.title} | created by {self.Creator}"
+        return f"New post request{self.title} | created by {self.creator}"
 
     def get_suggested_riding_ability_display(self):
         return dict(SUGGESTED_RIDING_ABILITY).get(self.suggested_riding_ability, "Unknown")

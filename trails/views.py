@@ -21,12 +21,17 @@ def Add_a_Trail(request):
             createpost.approved = False  
             createpost.save()
             messages.add_message(request, messages.SUCCESS, 'Thank you for your post submission. Your post has been submitted successfully and is awaiting approval!')
-            return redirect('trails')  
+            return redirect('suggest')  
+        else:
+            print("Form invalid")
+            for field, errors in create_post_form.errors.items():
+                for error in errors:
+                    print(f"Error in {field}: {error}")
     else:
         create_post_form = CreatePostForm()
     
     return render(
-        request, 'trails/addpost.html',
+        request, 'trails/suggestpost.html',
         {
             "create_post_form": create_post_form,
         }
