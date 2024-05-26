@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<br>
+<br>
+<h1 class="about-text about-underline text-center">Contact Us</h1>
+<br>
+<div class="container form-container">
+  <div class="row">
+      <div class="form-container text-center">
+
+        <form enctype="multipart/form-data" class="about-container  about-text" action="{% url 'contact_us' %}">
+          {% csrf_token %}
+          <div>
+            {{ form.query_title|as_crispy_field }}
+          </div>
+          <div>
+            {{ form.query_image|as_crispy_field }}
+          </div>
+          <div>
+            {{ form.content|as_crispy_field }}
+          </div>
+          <button class= "btn btn-secondary" type="submit" class="form-btn">Submit</button>
+        </form>
+      </div>
+      <div class="faded text-center">
+          <p>
+            All new queries are reviewed by our admin team, we look forwward to hearing from you and want to thank you for your consideration!
+          </p>
+        </div>
+  </div>
+</div>
+<br>
+<br>
+{% endblock %}
