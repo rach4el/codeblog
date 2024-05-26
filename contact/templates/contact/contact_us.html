@@ -4,7 +4,7 @@
 {% block content %}
 <br>
 <br>
-<h1 class="about-text about-underline text-center">Contact Us</h1>
+<h1 class="about-text bold about-underline text-center">Contact Us</h1>
 <br>
 <div class="container form-container">
   <div class="row">
@@ -35,22 +35,24 @@
 <br>
   <!-- Display the user's submissions -->
 {% if submissions %}
-  <div class="container">
-    <h3>Your Contact Us Submissions:</h3>
+  <div class="container about-text">
+    <h4>Your Contact Us Submissions:</h4>
       <div class="row">
         {% for submission in submissions %}
-          <div class="col-md-8 card mb-4 mt-3">
+          <div class="text-center col-md-8 card mb-4 mt-3">
             <div class="card-body">
               <h5>{{ submission.query_title }}</h5>
               <p>{{ submission.content }}</p>
               {% if submission.query_image %}
-              <img src="{{ submission.query_image.url }}" alt="Image" class="img-fluid">
+              <img src="{{ submission.query_image.url }}" alt="Image" class="img-fluid" style="border-radius: 30px;">
               {% endif %}
               <p><strong>Status:</strong> {{ submission.get_resolved_display }}</p>
               {% if submission.admin_response %}
                 <p><strong>Admin Response:</strong> {{ submission.admin_response }}</p>
               {% endif %}
-              <a href="{% url 'edit_submission' submission.id %}" class="btn btn-primary">Edit</a>
+              <p><strong>Updated on: </strong>{{ submission.updated_on }} </p>
+              <p><strong>Created on: </strong>{{ submission.created_on }}</p>
+              <a href="{% url 'edit_submission' submission.id %}" class="btn btn-secondary">Edit</a>
               <a href="{% url 'confirm_delete' submission.id %}" class="btn btn-danger">Delete</a>
             </div>
           </div>

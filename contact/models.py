@@ -4,7 +4,7 @@ from cloudinary.models import CloudinaryField
 
 RESOLVED_CHOICES = ((0, "Open Query"), (1, "Resolved"))
 
-# contact us model 
+# Contact us model 
 
 class ContactUs(models.Model):
     query_title = models.CharField(max_length=200)

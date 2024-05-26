@@ -69,22 +69,34 @@
                     What are the riding level categories?
                 </h5>
                 <h5 class="about-var about-text">
-                    All Levels: Suitable for everyone, from beginners to advanced riders.
+                    <strong>All Levels: </strong> Suitable for everyone, from beginners to advanced riders.
                 </h5>
                 <h5 class="about-var about-text">
-                    Beginner: These routes are mostly flat trails with minimal obstacles.
+                    <strong>Beginner: </strong> These routes are mostly flat trails with minimal obstacles.
                 </h5>
                 <h5 class="about-var about-text">
-                    Novice: Routes for those processing bility to trot and short canter.
+                    <strong>Novice: </strong> Routes for those processing bility to trot and short canter.
                 </h5>
                 <h5 class="about-var about-text">
-                    Intermediate: Riders who can easily walk, trot and gallop over different terrain.
+                    <strong>Intermediate:  </strong> Riders who can easily walk, trot and gallop over different terrain.
                 </h5>
                 <h5 class="about-var about-text">
-                    Advanced: For experienced riders, these routes may be physically challenging.
+                    <strong>Advanced:  </strong> For experienced riders, these routes may be physically challenging.
                 </h5>
                 <br>
                 <br>
+                <h5 class="about-text about-underline">
+                    What are the guidelines for posting comments or creating trail routes?
+                </h5>
+                <h5 class="about-text">
+                    All content must be respectful and relevant. The admin team reviews all submissions.
+                </h5>
+                <h5 class="about-text about-underline">
+                    How can I stay updated on the newest trails?
+                </h5>
+                <h5 class="about-text">
+                    Our trails are always listed in order of newest first, you can also use our category filter to see the newest posts for your level or area to that way you'll always be presented with the newest posts first!
+                </h5>
                 <h5 class="about-text about-underline">
                     Can I add comments to a trail post?
                 </h5>
@@ -93,10 +105,10 @@
                 </h5>
                 <br>
                 <h5 class="about-text about-underline">
-                    How can I stay updated on the newest trails?
+                    How can I contact you if i have a question?
                 </h5>
                 <h5 class="about-text">
-                    Our trails are always listed in order of newest first, that way you'll always be presented with the newest posts!
+                    Log in or sign up, visit our "Contact" section. Fill in and complete a contact request, once submitted, you can edit delete, or view an admin's response.
                 </h5>
                 <br>
                 <h5 class="about-text about-underline">
@@ -104,13 +116,6 @@
                 </h5>
                 <h5 class="about-text">
                     Log in or sign up and visit the "Create" section. Fill in the trail details and submit. The admin team will review your post, if approved it will be posted!
-                </h5>
-                <br>
-                <h5 class="about-text about-underline">
-                    What are the guidelines for posting comments or creating trail routes?
-                </h5>
-                <h5 class="about-text">
-                    Yes, all content must be respectful and relevant. The admin team reviews all submissions.
                 </h5>
                 <br>
                 <br>
@@ -133,7 +138,7 @@
             <form method="post">
                 {{ collaborate_form | crispy }}
                 {% csrf_token %}
-                <button class="btn-secondary text-center" type="submit">Submit</button>
+                <button class="btn-secondary rounded text-center" type="submit">Submit</button>
             </form>
         </div>
     </div>
