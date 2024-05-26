@@ -17,7 +17,7 @@ def Add_a_Trail(request):
         create_post_form = CreatePostForm(request.POST, request.FILES)
         if create_post_form.is_valid():
             createpost = create_post_form.save(commit=False)
-            createpost.Creator = request.user
+            createpost.creator = request.user
             createpost.approved = False  
             createpost.save()
             messages.add_message(request, messages.SUCCESS, 'Thank you for your post submission. Your post has been submitted successfully and is awaiting approval!')

@@ -6,7 +6,7 @@ class CreatePostForm(forms.ModelForm):
     class Meta:
         model = CreatePost
         fields = ['title', 'suggested_riding_ability', 'featured_image', 'content', 'excerpt']
-        exclude = ['slug', 'approved', 'Creator']  
+        exclude = ['slug', 'approved', 'creator']  
         
     def __init__(self, *args, **kwargs):
         self.request = kwargs.pop('request', None) 
