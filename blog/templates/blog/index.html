@@ -3,14 +3,15 @@
 
 {% block content %}
 
+
 <!-- index.html content starts here -->
 <br>
 <h1 class="about-text about-underline text-center">Trail Routes
     <i class="fas fa-route" style="color: #D5986b;"></i>
 </h1>
 <div class="container-fluid">
+    <!-- Filter Options -->
     <div class="row">
-        <!-- Filter Options -->
         <div class="col-12 mt-3">
             <div class="dropdown">
                 <button class="btn-category btn-secondary rounded dropdown-toggle" type="button" id="filterDropdown" data-bs-toggle="dropdown" aria-expanded="false">
@@ -42,64 +43,77 @@
             </div>
         </div>
     </div>
+
+    <!-- Blog Entries Column -->
     <div class="row">
-        <!-- Blog Entries Column -->
         <div class="col-12 mt-3 left">
             <div class="row">
-                {% for post in post_list %}
-                <div class="col-md-4">
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            <div class="image-container">
-                                {% if "placeholder" in post.featured_image.url %}
-                                <img class="card-img-top" src="{% static 'images/default.jpg' %}"
-                                  alt="placeholder image">
-                                {% else %}
-                                <img style="border-radius: 25px;" class="card-img-top" src=" {{ post.featured_image.url }}"
-                                  alt="{{ post.title }}">
-                                {% endif %}
-                                <div class="image-flash">
-                                    <p class="author">Author: {{ post.author }}</p>
+                {% if post_list %}
+                    {% for post in post_list %}
+                        <div class="col-md-4">
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <div class="image-container">
+                                        {% if "placeholder" in post.featured_image.url %}
+                                            <img class="card-img-top" src="{% static 'images/default.jpg' %}" alt="placeholder image">
+                                        {% else %}
+                                            <img style="border-radius: 25px;" class="card-img-top" src="{{ post.featured_image.url }}" alt="{{ post.title }}">
+                                        {% endif %}
+                                        <div class="image-flash">
+                                            <p class="author">Author: {{ post.author }}</p>
+                                        </div>
+                                    </div>
+                                    <a href="{% url 'post_detail' post.slug %}" class="post-link">
+                                        <h2 class="text-center card-title">{{ post.title }}</h2>
+                                        <h3 class="text-center text-h6">
+                                            {{ post.get_suggested_riding_ability_display }} | <i class="fa-regular fa-heart"></i> {{ post.upvotes.count }}
+                                        </h3>
+                                        <p class="text-center card-text">{{ post.excerpt }}</p>
+                                    </a>
+                                    <hr>
+                                    <p class="text-center text-h6">
+                                        {{ post.county }} | {{ post.created_on }}
+                                    </p>
                                 </div>
                             </div>
-                            <a href="{% url 'post_detail' post.slug %}" class="post-link">
-                                <h2 class="text-center card-title">{{ post.title }}</h2>
-                                <h3 class="text-center text-h6">
-                                    {{ post.get_suggested_riding_ability_display }} | <i class="fa-regular fa-heart"></i> {{ post.upvotes.count }}      
-                                </h3>
-                                <p class="text-center card-text">{{ post.excerpt }}</p>
-                            </a>
-
-                            <hr>
-                            <p class="text-center text-h6">
-                            {{ post.county }} | {{ post.created_on }}
-                            </p>
                         </div>
-                    </div>
+                        {% if forloop.counter|divisibleby:3 %}
+                            </div><div class="row">
+                        {% endif %}
+                    {% endfor %}
                 </div>
-                {% if forloop.counter|divisibleby:3 %}
-            </div>
-            <div class="row">
-                {% endif %}
-                {% endfor %}
-
             </div>
         </div>
     </div>
+</div>
+{% else %}
+<br>
+<br>
+<br>
+<br> <!-- Spacing for filter dropdown no results-->
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div>
+    <p class=" text-center about-text">No results found matching your category filter selected criteria, please try again.</p>
+</div> 
+{% endif %}
+<div class="container-fluid">
+    <!-- Next and prev buttons -->
     {% if is_paginated %}
-    <nav aria-label="Page navigation">
-        <ul class="pagination justify-content-center">
-        {% if page_obj.has_previous %}
-        <li>
-        <a href="?page={{ page_obj.previous_page_number }}"
-        class="page-link">&laquo; PREV</a>
-        </li>
-        {% endif %}
-            {% if page_obj.has_next %}
-            <li><a href="?page={{ page_obj.next_page_number }}" class="btn-next page-link"> NEXT &raquo;</a></li>
-            {% endif %}
-        </ul>
-    </nav>
+        <nav aria-label="Page navigation">
+            <ul class="pagination justify-content-center">
+                {% if page_obj.has_previous %}
+                    <li><a href="?page={{ page_obj.previous_page_number }}" class="btn-next page-link">&laquo; PREV</a></li>
+                {% endif %}
+                {% if page_obj.has_next %}
+                    <li><a href="?page={{ page_obj.next_page_number }}" class="btn-next page-link">NEXT &raquo;</a></li>
+                {% endif %}
+            </ul>
+        </nav>
     {% endif %}
 </div>
 

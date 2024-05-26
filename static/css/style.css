@@ -127,6 +127,12 @@ footer {
 
 /* Text of site containers formatting */
 
+.dropdown-menu {
+    z-index: 1050;
+    position: relative;
+    
+}
+
 .card {
     border: none;
     background-color: transparent;
