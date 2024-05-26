@@ -18,19 +18,29 @@
                 </span>
             </h2>
             <!--Add a Trail form  -->
-            <div class="about-container">
-                <div class="section">
-                    <h3 class="about-title about-underline">Suggest a Trail</h3>
-                        <h3 class="about-text"> 
-                            <form method="post" enctype="multipart/form-data">
-                                {% csrf_token %}
-                                {{ create_post_form.as_p }}
-                                <button class="btn btn-secondary" type="submit">Submit</button>
-                            </form>
-                        </h3>
-                </div>
-            </div>
+<br>
+<br>
+<h1 class="about-text about-underline text-center">Contact Us</h1>
+<br>
+<div class="container form-container">
+  <div class="row">
+      <div class="form-container text-center">
+
+        <form method="post" enctype="multipart/form-data" class="about-container  about-text" action="{% url 'trails' %}">
+          {% csrf_token %}
+          <div>
+            {{ create_post_form.as_p }}
+          </div>
+          <button class= "btn btn-secondary" type="submit" class="form-btn">Submit</button>
+        </form>
+      </div>
+      <div class="faded text-center">
+          <p>
+            All new queries are reviewed by our admin team, we look forwward to hearing from you and want to thank you for your consideration!
+          </p>
         </div>
-    </div>
-   
-{% endblock content %}
+  </div>
+</div>
+<br>
+<br>
+{% endblock %}
