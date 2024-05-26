@@ -9,7 +9,7 @@ from django.http import HttpResponseRedirect
 from django.shortcuts import redirect
 from django.urls import reverse
 
-
+# View for the suggest page
 
 @login_required
 def Add_a_Trail(request):

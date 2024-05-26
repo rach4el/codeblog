@@ -6,6 +6,8 @@ SUGGESTED_RIDING_ABILITY = ((0, 'All Abilities'), (1, "Beginner"), (2, "Novice")
 
 APPROVED = ((0, "Open Suggestion"), (1, "Published"))
 
+# Model for the suggest page createpost (doesn't get posted to main posts_list page)
+
 class CreatePost(models.Model):
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)

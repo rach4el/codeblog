@@ -1,6 +1,7 @@
 from .models import CreatePost
 from django import forms
 
+# Form model for the Suggest page
 
 class CreatePostForm(forms.ModelForm):
     class Meta:
