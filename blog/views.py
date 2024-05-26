@@ -1,15 +1,36 @@
-from django.shortcuts import render, get_object_or_404, reverse
+from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.views import generic
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.http import HttpResponseRedirect
-from .models import Post, Comment, SUGGESTED_RIDING_ABILITY
+from .models import Post, Comment, SUGGESTED_RIDING_ABILITY, Upvote, Downvote
 from .forms import CommentForm, PostForm
 from django.shortcuts import redirect
+from django.urls import reverse
 
 
 
 # Create your views here.
+
+# Upvote /downvote 
+
+@login_required
+def upvote_post(request, slug):
+    post = get_object_or_404(Post, slug=slug)
+    if request.user in post.downvotes.all():
+        Downvote.objects.filter(user=request.user, post=post).delete()
+    if not Upvote.objects.filter(user=request.user, post=post).exists():
+        Upvote.objects.create(user=request.user, post=post)
+    return redirect('post_detail', slug=slug)
+
+@login_required
+def downvote_post(request, slug):
+    post = get_object_or_404(Post, slug=slug)
+    if request.user in post.upvotes.all():
+        Upvote.objects.filter(user=request.user, post=post).delete()
+    if not Downvote.objects.filter(user=request.user, post=post).exists():
+        Downvote.objects.create(user=request.user, post=post)
+    return redirect('post_detail', slug=slug)
 
 # Post form function
 
@@ -24,7 +45,13 @@ def create_post(request):
             post.save()
             messages.add_message(request, messages.SUCCESS, 'Thank you for your post submission. Your post has been submitted successfully and is awaiting approval!')
             return redirect('/create/') 
+        else:
+            print("form invalid")
+            for field, errors in form.errors.items():
+                for error in errors:
+                    print(f"Error in {field}: {error}")
     else:
+        
         form = PostForm()
     return render(request, 'create_post.html', {'form': form})
 

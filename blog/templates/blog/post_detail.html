@@ -33,21 +33,41 @@
             </div>
         </div>
     </div>
-    <!-- Displaying count of comments -->
+    <!-- Displaying count of comments, Upvotes, downvotes, and upvote/downvote button -->
     <div class="row">
         <div class="col-12">
+            {% if user.is_authenticated %}
+            <div class="btn-group" role="group" aria-label="Upvote and Downvote">
+                <form method="post" action="{% url 'upvote_post' post.slug %}">
+                    {% csrf_token %}
+                    <button type="submit" class="btn btn-secondary">
+                        <i class="fa-solid fa fa-heart" style="color: #ea2a50;"></i> {{ post.upvotes.count }}
+                    </button>
+                </form>
+                <form method="post" action="{% url 'downvote_post' post.slug %}">
+                    {% csrf_token %}
+                    <button type="submit" class="btn btn-danger">
+                        <i class="fa-regular fa fa-thumbs-down"></i> {{ post.downvotes.count }}
+                    </button>
+                </form>
+            </div>
+            {% endif %}
             <strong class="text-secondary">
-                <i class="far fa-comments"></i> {{ comment_count }}
+                <i class="fa-duotone fa fa-comments"></i> {{ comment_count }}
             </strong>
         </div>
+    </div>
         <div class="col-12">
             <hr>
         </div>
     </div>
     <!-- Displaying Comments -->
+    <br>
+<div class="container">
+    <h3>Comments:</h3>
+</div>
     <div class="row">
-        <div class="col-md-8 card mb-4  mt-3 ">
-            <h3>Comments:</h3>
+        <div class=" col-md-8 card mb-4  mt-3 ">
             <div class="card-body">
                 <!-- We want a for loop inside the empty control tags to iterate through each comment in comments -->
                 {% for comment in comments %}

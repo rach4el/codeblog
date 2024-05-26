@@ -4,25 +4,31 @@
 {% block content %}
 <br>
 <br>
-<h1 class="about-text about-underline text-center">Suggest a New Post!</h1>
+<h1 class="about-text about-underline text-center">Contact Us</h1>
 <br>
 <div class="container form-container">
   <div class="row">
       <div class="form-container text-center">
 
-        <form enctype="multipart/form-data" action="{% url 'trails' %}" method="post" class="about-container about-text">
+        <form enctype="multipart/form-data" action="{% url 'contact_us' %}" method="post" class="about-container  about-text" >
           {% csrf_token %}
           <div>
-            {{ create_post_form.as_p }}
+            {{ form.query_title|as_crispy_field }}
           </div>
-          <button class= "btn btn-secondary" type="submit">Submit</button>
+          <div>
+            {{ form.query_image|as_crispy_field }}
+          </div>
+          <div>
+            {{ form.content|as_crispy_field }}
+          </div>
+          <button class= "btn btn-secondary" type="submit" class="form-btn">Submit</button>
         </form>
       </div>
       <div class="faded text-center">
           <p>
             All new queries are reviewed by our admin team, we look forwward to hearing from you and want to thank you for your consideration!
           </p>
-      </div>
+        </div>
   </div>
 </div>
 <br>

@@ -51,7 +51,7 @@
                                 <img class="card-img-top" src="{% static 'images/default.jpg' %}"
                                   alt="placeholder image">
                                 {% else %}
-                                <img class="card-img-top" src=" {{ post.featured_image.url }}"
+                                <img style="border-radius: 25px;" class="card-img-top" src=" {{ post.featured_image.url }}"
                                   alt="{{ post.title }}">
                                 {% endif %}
                                 <div class="image-flash">
@@ -59,16 +59,16 @@
                                 </div>
                             </div>
                             <a href="{% url 'post_detail' post.slug %}" class="post-link">
-                                <h2 class="card-title">{{ post.title }}</h2>
-                                <h3 class="text-h6">
-                                    {{ post.get_suggested_iding_ability_display }}         
+                                <h2 class="text-center card-title">{{ post.title }}</h2>
+                                <h3 class="text-center text-h6">
+                                    {{ post.get_suggested_riding_ability_display }} | <i class="fa-regular fa-heart"></i> {{ post.upvotes.count }}      
                                 </h3>
-                                <p class="card-text">{{ post.excerpt }}</p>
+                                <p class="text-center card-text">{{ post.excerpt }}</p>
                             </a>
 
                             <hr>
-                            <p class="text-h6">
-                                {{ post.county }}  | {{ post.created_on }} 
+                            <p class="text-center text-h6">
+                            {{ post.county }} | {{ post.created_on }}
                             </p>
                         </div>
                     </div>
