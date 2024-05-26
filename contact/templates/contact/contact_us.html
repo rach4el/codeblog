@@ -33,4 +33,35 @@
 </div>
 <br>
 <br>
+  <!-- Display the user's submissions -->
+{% if submissions %}
+  <div class="container">
+    <h3>Your Contact Us Submissions:</h3>
+      <div class="row">
+        {% for submission in submissions %}
+          <div class="col-md-8 card mb-4 mt-3">
+            <div class="card-body">
+              <h5>{{ submission.query_title }}</h5>
+              <p>{{ submission.content }}</p>
+              {% if submission.query_image %}
+              <img src="{{ submission.query_image.url }}" alt="Image" class="img-fluid">
+              {% endif %}
+              <p><strong>Status:</strong> {{ submission.get_resolved_display }}</p>
+              {% if submission.admin_response %}
+                <p><strong>Admin Response:</strong> {{ submission.admin_response }}</p>
+              {% endif %}
+              <a href="{% url 'edit_submission' submission.id %}" class="btn btn-primary">Edit</a>
+              <a href="{% url 'confirm_delete' submission.id %}" class="btn btn-danger">Delete</a>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    {% else %}
+      <p>You haven't submitted any contact us queries yet.</p>
+    {% endif %}
+  </div>
+
+</div>
+<br>
+<br>
 {% endblock %}

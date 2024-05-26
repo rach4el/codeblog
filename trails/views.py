@@ -20,7 +20,7 @@ def Add_a_Trail(request):
             createpost.creator = request.user
             createpost.approved = False  
             createpost.save()
-            messages.add_message(request, messages.SUCCESS, 'Thank you for your post submission. Your post has been submitted successfully and is awaiting approval!')
+            messages.add_message(request, messages.SUCCESS, 'Thank you for your suggestion. Your submission has been successfully passed on to our admin team and is awaiting approval!')
             return redirect('suggest')  
         else:
             print("Form invalid")

@@ -14,6 +14,7 @@ class ContactUs(models.Model):
     resolved = models.IntegerField(choices=RESOLVED_CHOICES, default=0)
     updated_on = models.DateTimeField(auto_now=True)
     author = models.ForeignKey(User, on_delete=models.CASCADE, related_name="contact_queries")
+    admin_response = models.TextField(blank=True, null=True) 
 
     class Meta:
         ordering = ["-created_on"]
@@ -22,3 +23,10 @@ class ContactUs(models.Model):
 
     def __str__(self):
         return f"New query request {self.query_title} | created by {self.author}"
+
+    
+    def can_edit_or_delete(self, user):
+        """
+        Check if the user has permission to edit or delete this contact query.
+        """
+        return user == self.author
