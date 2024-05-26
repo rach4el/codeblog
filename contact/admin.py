@@ -4,7 +4,7 @@ from .models import ContactUs
 # Contact us class requests appear in admin with authory unchangable from origin
 
 class ContactUsAdmin(admin.ModelAdmin):
-    list_display = ('query_title', 'author', 'created_on', 'resolved')
+    list_display = ('query_title', 'author', 'created_on', 'resolved', 'updated_on')
     list_filter = ('resolved',)
     search_fields = ('query_title', 'content', 'author__username')
     readonly_fields = ('author',)

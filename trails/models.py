@@ -4,6 +4,8 @@ from cloudinary.models import CloudinaryField
 
 SUGGESTED_RIDING_ABILITY = ((0, 'All Abilities'), (1, "Beginner"), (2, "Novice"), (3, "Intermediate"), (4, "Advanced"))
 
+APPROVED = ((0, "Open Suggestion"), (1, "Published"))
+
 class CreatePost(models.Model):
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
@@ -13,7 +15,7 @@ class CreatePost(models.Model):
     content = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
     excerpt = models.TextField(blank=True)
-    approved = models.BooleanField('Approved', default=False)
+    approved = models.IntegerField(choices=APPROVED, default=0)
     updated_on = models.DateTimeField(auto_now=True)
 
     class Meta:

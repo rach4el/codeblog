@@ -1,14 +1,20 @@
 
-from django.shortcuts import render, redirect
+from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
+from django.views import generic
 from .models import CreatePost
 from .forms import CreatePostForm
+from django.http import HttpResponseRedirect
+from django.shortcuts import redirect
+from django.urls import reverse
+
+
 
 @login_required
 def Add_a_Trail(request):
     if request.method == 'POST':
-        create_post_form = CreatePostForm(data=request.POST, files=request.FILES)
+        create_post_form = CreatePostForm(request.POST, request.FILES)
         if create_post_form.is_valid():
             createpost = create_post_form.save(commit=False)
             createpost.Creator = request.user

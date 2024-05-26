@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404, reverse
+from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.views import generic
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
@@ -45,7 +45,13 @@ def create_post(request):
             post.save()
             messages.add_message(request, messages.SUCCESS, 'Thank you for your post submission. Your post has been submitted successfully and is awaiting approval!')
             return redirect('/create/') 
+        else:
+            print("form invalid")
+            for field, errors in form.errors.items():
+                for error in errors:
+                    print(f"Error in {field}: {error}")
     else:
+        
         form = PostForm()
     return render(request, 'create_post.html', {'form': form})
 

@@ -10,7 +10,7 @@
   <div class="row">
       <div class="form-container text-center">
 
-        <form enctype="multipart/form-data" class="about-container  about-text" action="{% url 'contact_us' %}">
+        <form enctype="multipart/form-data" action="{% url 'contact_us' %}" method="post" class="about-container  about-text" >
           {% csrf_token %}
           <div>
             {{ form.query_title|as_crispy_field }}

@@ -1,44 +1,28 @@
 {% extends 'base.html' %}
-{% block content %}
-{% load static %}
 {% load crispy_forms_tags %}
 
-
+{% block content %}
 <br>
 <br>
-<div class="container mt-5">
-    <div class="row">
-        <div class="col-8">
-            <!-- Add a Trail Title logo -->
-            <h2>
-                <span class="about-logo about-brand-text">
-                    <span class="orange-font">R</span>iding
-                    <span class="green-font thin">|</span>
-                    <span class="orange-font italic">Reader</span>
-                </span>
-            </h2>
-            <!--Add a Trail form  -->
-<br>
-<br>
-<h1 class="about-text about-underline text-center">Contact Us</h1>
+<h1 class="about-text about-underline text-center">Suggest a New Post!</h1>
 <br>
 <div class="container form-container">
   <div class="row">
       <div class="form-container text-center">
 
-        <form method="post" enctype="multipart/form-data" class="about-container  about-text" action="{% url 'trails' %}">
+        <form enctype="multipart/form-data" action="{% url 'trails' %}" method="post" class="about-container about-text">
           {% csrf_token %}
           <div>
             {{ create_post_form.as_p }}
           </div>
-          <button class= "btn btn-secondary" type="submit" class="form-btn">Submit</button>
+          <button class= "btn btn-secondary" type="submit">Submit</button>
         </form>
       </div>
       <div class="faded text-center">
           <p>
             All new queries are reviewed by our admin team, we look forwward to hearing from you and want to thank you for your consideration!
           </p>
-        </div>
+      </div>
   </div>
 </div>
 <br>
