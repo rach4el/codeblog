@@ -5,7 +5,7 @@ from .models import ContactUs
 from .forms import ContactUsForm
 from django.urls import reverse
 
-# contact us form view
+# Contact us form view
 
 @login_required
 def contact_us(request):
