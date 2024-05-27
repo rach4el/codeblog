@@ -58,7 +58,7 @@
     <div class="faq-border justify-content-center about-collaborate row">
         <div class="about-collaborate row justify-content-center">
             <div class="col-12 text-center my-5">>
-                <h3 class="about-title about-underline">
+                <h3 class="about-title about-underline" style="font-variant: small-caps; font-size: 35px;">
                         Frequently Asked Questions
                 </h3>
                 <br>
@@ -108,14 +108,14 @@
                     How can I contact you if i have a question?
                 </h5>
                 <h5 class="about-text">
-                    Log in or sign up, visit our "Contact" section. Fill in and complete a contact request, once submitted, you can edit delete, or view an admin's response.
+                    Log in or sign up, visit our <a href="{% url 'contact_us' %}" class="link-colour">"Contact"</a> section. Fill in and complete a contact request, once submitted, you can edit delete, or view an admin's response.
                 </h5>
                 <br>
                 <h5 class="about-text about-underline">
                     How can I contribute by posting a new trail route?
                 </h5>
                 <h5 class="about-text">
-                    Log in or sign up and visit the "Create" section. Fill in the trail details and submit. The admin team will review your post, if approved it will be posted!
+                    <a href="{% url 'account_login' %}" class="link-colour">Log in</a> or <a href="{% url 'account_signup' %}" class="link-colour">Sign up</a> and visit our <a href="{% url 'create_post' %}" class="link-colour"> "Create" </a> section. Fill in the trail details and submit. The admin team will review your post, if approved it will be posted!
                 </h5>
                 <br>
                 <br>

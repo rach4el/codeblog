@@ -7,16 +7,15 @@
 
 {% block content %}
 
-<div class="container">
+<br>
+<div class="about-text text-center container-fluid">
     <div class="row">
-        <div class="col-md-8 mt-3 offset-md-2">
-            <h3>{% trans "Sign In" %}</h3>
+            <h3 class=" about-title about-underline">{% trans "Log In" %}</h3>
 
-            <p>{% blocktrans %}Welcome back to the Riding Reader Community. To leave a comment or like a post, please log in. If
-                you
-                have not created an account yet, then <a class="link" href="{{ signup_url }}">sign up</a>
-                first.{% endblocktrans %}</p>
-        </div>
+            <p>{% blocktrans %}<strong>Welcome back to the Riding Reader Community!</strong> </p>
+            <p>To contact our team, create, suggest, comment or like a post, please log in below. </p>
+            <p>Don't have an account yet? Then please <a class="link-colour" href="{{ signup_url }}">Sign up</a> first.</p>
+            {% endblocktrans %}</p>
     </div>
     <div class="row">
         <div class="col-md-8 mt-3 offset-md-2">
