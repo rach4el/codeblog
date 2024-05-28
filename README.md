@@ -2,8 +2,7 @@
 
 [View the live project here.](https://ridingreader-cdc99d6e0d97.herokuapp.com/)
 
-<h2 align="center"><img src="![complete mockup](https://github.com/rach4el/codeblog/assets/98865636/dbf2d4f1-68fd-4c6d-b6a9-d04ac10c4169)"></h2>
-
+![complete mockup](https://github.com/rach4el/codeblog/assets/98865636/dbf2d4f1-68fd-4c6d-b6a9-d04ac10c4169)
 
 ### User Persona
 Emma is a passionate equestrian who loves exploring local countryside trails with her horse. She is frustrated with the lack of easily accessible information on safe and scenic riding routes.
@@ -57,12 +56,6 @@ The primary target audience include local equestrians who aim to easily discover
 
 *   ### Wireframes
 
-    -   Home Page Wireframe - [View](https://github.com/)
-
-    -   Mobile Wireframe - [View](https://github.com/)
-
-    -   Contact Us Page Wireframe - [View](https://github.com/)
-
     ## Iphone Wireframes
     ![Iphone Homepage wireframe](https://github.com/rach4el/codeblog/assets/98865636/e72dcef8-816d-436f-8bb4-e77c4f229d37)
     ![Iphone About Wireframe](https://github.com/rach4el/codeblog/assets/98865636/c35dbc91-f195-416b-9f14-1959e9f58ba2)
@@ -70,7 +63,7 @@ The primary target audience include local equestrians who aim to easily discover
     ![Iphone Contact wireframe](https://github.com/rach4el/codeblog/assets/98865636/da250e10-69be-4c16-b9ff-af88ca855ea1)
     ![Iphone log in wireframe](https://github.com/rach4el/codeblog/assets/98865636/b62374cd-e928-4b42-a0c2-d8c66d99e682)
     ![Iphone Suggest wireframe](https://github.com/rach4el/codeblog/assets/98865636/20c9236b-1a9a-4815-8f2f-792175c44c9c)
-    ![iphone Delete Wireframe](https://github.com/rach4el/codeblog/assets/98865636/9a9b79e9-3e7a-4312-8c39-ac9c7884fca3)
+![image](https://github.com/rach4el/codeblog/assets/98865636/c54881be-1e33-46f6-b386-03310fd31357)
     ![Iphone submit wireframe](https://github.com/rach4el/codeblog/assets/98865636/daa44d6f-38e6-478e-8d06-47cc48e9be51)
     ![Iphone edit wireframe](https://github.com/rach4el/codeblog/assets/98865636/76fb509f-7f47-4bff-830d-3fa34311cb0d)
     ![image](https://github.com/rach4el/codeblog/assets/98865636/85180d59-aa20-4d51-846a-9c231ccaaaa4)
@@ -89,7 +82,7 @@ The primary target audience include local equestrians who aim to easily discover
     ![S Wireframe](https://github.com/rach4el/codeblog/assets/98865636/33f48674-f198-42e8-b321-7cd1a0df694d)
     ![Log in Wireframe](https://github.com/rach4el/codeblog/assets/98865636/4d362559-812b-4a64-83f9-b4e52fbf0c7c)
     ![image](https://github.com/rach4el/codeblog/assets/98865636/b9288814-35df-447c-a0d2-50fd46577399)
-    - ![image](https://github.com/rach4el/codeblog/assets/98865636/c512d233-01cf-4614-b6e5-141f156dc9c6)
+    ![image](https://github.com/rach4el/codeblog/assets/98865636/c512d233-01cf-4614-b6e5-141f156dc9c6)
     ![image](https://github.com/rach4el/codeblog/assets/98865636/b1b2baeb-71e7-45ae-ba0a-8a711759d475)
 
 
@@ -131,10 +124,12 @@ The primary target audience include local equestrians who aim to easily discover
     This part of the page stays the same throughout all pages of the site.
 
     __Category Filter__
+     - The category filter allows the user to specify criteria that is relevant to them to show them posts most in alignment with their needs, this promotes user engagement and fulfills a purpose to make the site more fit for purpose to the users requirements.
+       
     ![image](https://github.com/rach4el/codeblog/assets/98865636/8a29822d-43ae-45b3-88e5-d150de1431b6)
 
 
-    - The category filter allows the user to specify criteria that is relevant to them to show them posts most in alignment with their needs, this promotes user engagement and fulfills a purpose to make the site more fit for purpose to the users requirements.
+   
    
     __Comment Section__
     ![image](https://github.com/rach4el/codeblog/assets/98865636/eae525ac-ef20-44c1-b22d-fee3727cb7bd)
@@ -211,9 +206,9 @@ __The Post Detail Page__
 
 
   - The footer section includes links to the relevant social media sites (imaginery). The links will open to a new tab to allow easy navigation for the user.
-  - 
+  
   - The footer is valuable to the user as it encourages them to keep connected via social media.
-  - 
+      vc v
   - The footer created has an an effect on the icons to let the users know that the site is reponding.
 
     __The Sign Up Page__
