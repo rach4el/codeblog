@@ -208,7 +208,7 @@ __The Post Detail Page__
   - The footer section includes links to the relevant social media sites (imaginery). The links will open to a new tab to allow easy navigation for the user.
   
   - The footer is valuable to the user as it encourages them to keep connected via social media.
-      vc v
+      
   - The footer created has an an effect on the icons to let the users know that the site is reponding.
 
     __The Sign Up Page__
