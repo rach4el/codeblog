@@ -256,6 +256,7 @@ __The Post Detail Page__
 
 ###  Database Design
 -Entity Relationship Diagram
+![image](https://github.com/rach4el/codeblog/assets/98865636/032142ba-7b8b-4eff-bf4a-87a174cb40ef)
 ## Data models
 # Blog Post model
 ![image](https://github.com/rach4el/codeblog/assets/98865636/c8ccfddb-825b-41e6-98fa-b71ddb8e88f7)
