@@ -68,10 +68,9 @@ Site owner wants to be able to be contactable for potential collaborators
 
 -   Interactive elements
 
--   - __Navigation Bar__
-
-  - Featured on all three pages, the full responsive navigation bar includes links to the Logo, Home page, Create page, Suggest Page, Contact page, About Page, Register page, Log in page, or Log out Page. The nav bar is identical in styling and shows which page they are on by underlining the current page for easy navigation.
-  - 
+-    __Navigation Bar__
+   Featured on all three pages, the full responsive navigation bar includes links to the Logo, Home page, Create page, Suggest Page, Contact page, About Page, Register page, Log in page, or Log out Page. The nav bar is identical in styling and shows which page they are on by underlining the current page for easy navigation.
+    
   - This section will allow the user to easily navigate from page to page across all devices without having to revert back to the previous page via the ‘back’ button.
 
   - The navbar does differ in which page links are shown depending on if a user is logged in. If a user is logged in they will see the Logo redirecting to the homepage, the Home, Create, Suggest, Contact, About, and Log out page links.
@@ -101,19 +100,22 @@ Site owner wants to be able to be contactable for potential collaborators
   - There is also a display of post likes to promote engagement and catch the users eye if potentially a post has a lot of likes, this also provides feedback to the admin on the most popular posts to help increase engagement when creating and publishing a post in the future. The count of dislikes on a post is purposely left out of the main home page view as this could have the undesired opposite effect. The home page always shows the most recently post published first therefore, users will only need to click or refresh the home page to see the newest posts presented.
 
  __The Create Page__
-  The Create page allows users to Create a post to be published, this also allows admin to make a post to additionally add content to the site, this is engaging for the user if they want to contribute information and share their valuable knowledge to their community. The form has a tittle, suggested riding ability, image, content, summary and county field which upon completion will display a success message to let the user know their submission has been passed on to the admin team to review and if applicable gets published, promoting user engagement. The Create page form is similar and in keeping with the other site pages forms and follows the colour scheme theme. The form is centrally focussed to promote accessibility to many devices.
+ 
+ - The Create page allows users to Create a post to be published, this also allows admin to make a post to additionally add content to the site, this is engaging for the user if they want to contribute information and share their valuable knowledge to their community. The form has a tittle, suggested riding ability, image, content, summary and county field which upon completion will display a success message to let the user know their submission has been passed on to the admin team to review and if applicable gets published, promoting user engagement. The Create page form is similar and in keeping with the other site pages forms and follows the colour scheme theme. The form is centrally focussed to promote accessibility to many devices.
 
 
 
   __The Suggest Page__
-  The suggest page allows users to suggest a post if they are unsure of a route and would like to contribute information without it being published, this also allows admin to make a post and investigate a potential post to additionally add content to the site, this is engaging for the user if they want to still contribute information but would like their route to be verified to fit the sites purpose. Additionlly, if a route gets suggested commonly by users this can allow admin to prioritise investigating routes to produce content for the site further engaging users. The form has a tittle, suggested riding ability, image, content, summary and county field which upon completion will display a success message to let the user know their suggestion has been passed on to the admin team further promoting user engagement. The suggest page form is similar and in keeping with the other site pages forms and follows the colour scheme theme. The form is centrally focussed to promote accessibility to many devices.
+  
+ - The suggest page allows users to suggest a post if they are unsure of a route and would like to contribute information without it being published, this also allows admin to make a post and investigate a potential post to additionally add content to the site, this is engaging for the user if they want to still contribute information but would like their route to be verified to fit the sites purpose. Additionlly, if a route gets suggested commonly by users this can allow admin to prioritise investigating routes to produce content for the site further engaging users. The form has a tittle, suggested riding ability, image, content, summary and county field which upon completion will display a success message to let the user know their suggestion has been passed on to the admin team further promoting user engagement. The suggest page form is similar and in keeping with the other site pages forms and follows the colour scheme theme. The form is centrally focussed to promote accessibility to many devices.
 
 
 
    __The Contact Page__
-The Contact page contains a unique form for the user to complete where users can contact the RidingReader admin to answer any queries they may have, the form has a query title, and content fields which are manditory to submit to complete the form, the image field isnt maditory purposefully so that uploads are optional and if needed, if for example there was a technical issue with the site, users could upload any images to show the admin exactly what the problem their experiencing looks like. Upon submitting the form the user will be given a success message to let the user know their message has been passed on and they can continue to the rest of the site knwoing their query will be read. 
+   
+- The Contact page contains a unique form for the user to complete where users can contact the RidingReader admin to answer any queries they may have, the form has a query title, and content fields which are manditory to submit to complete the form, the image field isnt maditory purposefully so that uploads are optional and if needed, if for example there was a technical issue with the site, users could upload any images to show the admin exactly what the problem their experiencing looks like. Upon submitting the form the user will be given a success message to let the user know their message has been passed on and they can continue to the rest of the site knwoing their query will be read. 
 
-further down the contact us page there is a contact us submission area where users can view, edit and delete any query. Further they can view the status of their query whether it is still an open query or has been resolved by admin response. The admin response field does not appear when the use first submits their query, it appears when the admin logs into the admin panel and edits the query. Each user will only be able to view their own queries to avoid revealing or dissuading users from contacting the site admin team. Furthermore the query will display a creatd on and updated on field, the created on field is read only and cannot be changed on purpose so the user and admin both know how long a query has been going on, the updated on field will update as the query is edited by both user and admin, this can allow the user to see when the admin responded to their query.
+- further down the contact us page there is a contact us submission area where users can view, edit and delete any query. Further they can view the status of their query whether it is still an open query or has been resolved by admin response. The admin response field does not appear when the use first submits their query, it appears when the admin logs into the admin panel and edits the query. Each user will only be able to view their own queries to avoid revealing or dissuading users from contacting the site admin team. Furthermore the query will display a creatd on and updated on field, the created on field is read only and cannot be changed on purpose so the user and admin both know how long a query has been going on, the updated on field will update as the query is edited by both user and admin, this can allow the user to see when the admin responded to their query.
 
    
  
@@ -133,20 +135,20 @@ __The Sign out Page__
   - Once signed out is confirmed they are redirected to the homepage where a success message is displayed to show the user they have been signed out.
 
 
-  - __The Log in Page__
+   __The Log in Page__
 
   - This page will allow the user to log into Riding Reader to enable engagement community, to Create, Suggest, like, dislike, or comment on a post, or contact the the site admin. The user will be asked to a username and password. This page also links to the sign up page. If a navbar page link to the Create, Suggest or Contact is clicked and the user is not signed in then the links will navigate the user to this log in page. Once a user signs in by verifying the account information they will be re-directed to the homepage and a success message is displayed to say they have been successfully signed in as (username)                                                                            
 
-  -   - __The Edit Submission Page__
+     __The Edit Submission Page__
 
   - This page will allow the user to edit their contact us submission query, they can edit the title edit the image submitted or clear the image submitted, and also edit the content, this is to enable engagement, and allow the user to update or edit their submission to give further detail or correct a typing error. The page has a save changes button to save their changes which if clicked redirects the user back to the contact page where they can view their changes. Upon returning to the contact page after editting their submission a success message will be shown to confirm that their changes have been submitted successfully.
 
-  -   - __The Delete Submisson Page__
+    __The Delete Submisson Page__
 
   - This page will allow the user to delete their contact us query, this page can be accessed if a user submits a contact us query and clicks the delete button, the delete submission page prompts the user to verify the want to delete their contact us query submission, by asking if they are sure they want to delete this submission, followed by a delete and cancel button. Upon returning to the contact page after deleting their submission a success message will be shown to confirm that their submission has been deleted successfully.
 
 
-  - 
+    
 ## Technologies and Tools utilised
 
 The technologies utilised in this project included JavaScript, CSS, HTML, Django, Python, Dockerfile, Shell
@@ -178,32 +180,32 @@ Google and Stack: Used for research, bug resolution, information gathering and o
 -   HTML5
 -   CSS
 -   Python
--   
+  
 ### Frameworks, Libraries & Programs Used
 
 1. [Bootstrap 4.4.1:](https://getbootstrap.com/docs/4.4/getting-started/introduction/)
     - Bootstrap was used to assist with the responsiveness and styling of the website.
-    - 
+      
 1. [Google Fonts:](https://fonts.google.com/)
     - Google fonts were used to import the 'Roboto Flex' font into the style.css file which is used on all pages throughout the project.
-    - 
+      
 1. [Font Awesome:](https://fontawesome.com/)
     - Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes.
 1. [jQuery:](https://jquery.com/)
     - jQuery came with Bootstrap to make the navbar responsive but was also used for the smooth scroll function in JavaScript.
-    - 
+      
 1. [Git](https://git-scm.com/)
     - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
-    - 
+      
 1. [GitHub:](https://github.com/)
     - GitHub is used to store the projects code after being pushed from Git.
-    - 
+      
 1. [Canva:](https://www.canva.com/)
     - Canva was used to create flowcharts, resizing images and editing photos for the website.
-    - 
+      
 1. [Balsamiq:](https://balsamiq.com/)
     - Balsamiq was used to create the [wireframes](https://github.com/) during the design process.
-    - 
+      
 
 ## Testing
 
@@ -216,7 +218,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 ### Testing
 
--   The Website was tested on Google Chrome, Internet Explorer, Microsoft Edge and Safari browsers.
+-   The Website was tested on Google Chrome, Microsoft Edge and Safari browsers.
 -   The website was viewed on a variety of devices such as Desktop, Laptop, iPhone14, iPhone SE, Google Nest Hub, Galaxy, IPhone 14 Pro Max, Ipad Mini, Surface Pro 7, Asus Zenbook fold, & more.
 -   A large amount of testing was done to ensure that all pages were linking correctly.
 -   Friends and family members were asked to visit the site and documentation to point out any bugs and/or user experience issues.
@@ -233,7 +235,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 ## Deployment
 
-I followed the deployment steps used for CodeInstitutes Django blog to deploy this application. The instructions were primarily sourced from the follow-along videos and text steps provided on the Code Institute LMS.
+- I followed the deployment steps used for CodeInstitutes Django blog to deploy this application. The instructions were primarily sourced from the follow-along videos and text steps provided on the Code Institute LMS.
 
 ## Credits
 
@@ -243,25 +245,26 @@ I followed the deployment steps used for CodeInstitutes Django blog to deploy th
 
 ### Other Code Inspiration:
 
-I found this site veyr useful to help make CSS media query for ipad:
+- I found this site veyr useful to help make CSS media query for ipad:
 https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariCSSRef/Articles/OtherStandardCSS3Features.html
 
-I also found this video on media queries to help understand and make other media queries and container queries:
+- I also found this video on media queries to help understand and make other media queries and container queries:
 
 Learn how to use Media queries & Container queries
 (https://www.youtube.com/watch?v=2rlWBZ17Wes&ab_channel=KevinPowell)
 
-I also found this video on python very useful in understanding of python and making the formatting of my models: 
+- I also found this video on python very useful in understanding of python and making the formatting of my models: 
 
 "Python *ARGS & **KWARGS are awesome! 📦"
 (https://www.youtube.com/watch?v=Vh__2V2tXUM&ab_channel=BroCode)
 
-I also found this video on understanding for loops, nested loops and more loops in javascript very helpful:
+- I also found this video on understanding for loops, nested loops and more loops in javascript very helpful:
 
 "Loops in Java | Conditional Statements in Java | Java Tutorial For Beginners | Simplilearn|"
 (https://www.youtube.com/watch?v=hs45eeZ326U&ab_channel=Simplilearn)
 
-I also fond this video very helpful in understanding Django database models:
+- I also fond this video very helpful in understanding Django database models:
+  
 "Django Models | Crash Course | Field Types, Connections, and Model Functions"
 (https://www.youtube.com/watch?v=RbJOmgTX63M&ab_channel=CodeWithStein)
 
@@ -275,10 +278,10 @@ I also fond this video very helpful in understanding Django database models:
     Image Creator from Microsoft Designer - Bing (https://www.bing.com/images/create).
     
 -   Favicon: I used a favicon generator to create a favicon design (https://favicon.io/favicon-generator/).
--   
+  
 ### Acknowledgements
 
--   -A special thanks to my course leader and all the other indivudals in our cohort for their continuous               support throughout the course.
+-   A special thanks to my course leader and all the other indivudals in our cohort for their continuous               support throughout the course.
 
 -   Tutor support at Code Institute for their support.
 
