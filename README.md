@@ -2,7 +2,8 @@
 
 [View the live project here.](https://ridingreader-cdc99d6e0d97.herokuapp.com/)
 
-<h2 align="center"><img src=""></h2>
+<h2 align="center"><img src="![complete mockup](https://github.com/rach4el/codeblog/assets/98865636/dbf2d4f1-68fd-4c6d-b6a9-d04ac10c4169)"></h2>
+
 
 ### User Persona
 Emma is a passionate equestrian who loves exploring local countryside trails with her horse. She is frustrated with the lack of easily accessible information on safe and scenic riding routes.
@@ -62,6 +63,45 @@ The primary target audience include local equestrians who aim to easily discover
 
     -   Contact Us Page Wireframe - [View](https://github.com/)
 
+    ## Iphone Wireframes
+    ![Iphone Homepage wireframe](https://github.com/rach4el/codeblog/assets/98865636/e72dcef8-816d-436f-8bb4-e77c4f229d37)
+    ![Iphone About Wireframe](https://github.com/rach4el/codeblog/assets/98865636/c35dbc91-f195-416b-9f14-1959e9f58ba2)
+    ![iphone Create Wireframe](https://github.com/rach4el/codeblog/assets/98865636/71bdf19c-4ed7-41dd-9278-3895fd19c2ca)
+    ![Iphone Contact wireframe](https://github.com/rach4el/codeblog/assets/98865636/da250e10-69be-4c16-b9ff-af88ca855ea1)
+    ![Iphone log in wireframe](https://github.com/rach4el/codeblog/assets/98865636/b62374cd-e928-4b42-a0c2-d8c66d99e682)
+    ![Iphone Suggest wireframe](https://github.com/rach4el/codeblog/assets/98865636/20c9236b-1a9a-4815-8f2f-792175c44c9c)
+    ![iphone Delete Wireframe](https://github.com/rach4el/codeblog/assets/98865636/9a9b79e9-3e7a-4312-8c39-ac9c7884fca3)
+    ![Iphone submit wireframe](https://github.com/rach4el/codeblog/assets/98865636/daa44d6f-38e6-478e-8d06-47cc48e9be51)
+    ![Iphone edit wireframe](https://github.com/rach4el/codeblog/assets/98865636/76fb509f-7f47-4bff-830d-3fa34311cb0d)
+    ![image](https://github.com/rach4el/codeblog/assets/98865636/85180d59-aa20-4d51-846a-9c231ccaaaa4)
+    ![image](https://github.com/rach4el/codeblog/assets/98865636/3739a512-c1b1-4415-9581-e7a8a1ea5436)
+
+
+
+    ## Desktop Wireframes 
+    ![Homepage web wireframe](https://github.com/rach4el/codeblog/assets/98865636/bd3e56e5-de44-4bf7-abe8-b7a272d3284b)
+    ![About Wireframe](https://github.com/rach4el/codeblog/assets/98865636/62c13c4a-2fba-421a-b2d0-a14a20b650ea)
+    ![Sign up Wireframe](https://github.com/rach4el/codeblog/assets/98865636/e5aefd99-0f66-4b57-9301-8336dfcd1c75)
+    ![Contact Wireframe](https://github.com/rach4el/codeblog/assets/98865636/a479a95e-1e99-4a9c-b5d0-9187f8a36954)
+    ![Create Wireframe](https://github.com/rach4el/codeblog/assets/98865636/4f63d47f-f789-401f-ac38-fd6acd684c6f)
+    ![Delete Wireframe](https://github.com/rach4el/codeblog/assets/98865636/99088363-22fb-4d7a-aaa0-236ebad254a3)
+    ![Edit Wireframe](https://github.com/rach4el/codeblog/assets/98865636/bf566e68-e5ce-4b14-967c-65d69237d03c)
+    ![S Wireframe](https://github.com/rach4el/codeblog/assets/98865636/33f48674-f198-42e8-b321-7cd1a0df694d)
+    ![Log in Wireframe](https://github.com/rach4el/codeblog/assets/98865636/4d362559-812b-4a64-83f9-b4e52fbf0c7c)
+    ![image](https://github.com/rach4el/codeblog/assets/98865636/b9288814-35df-447c-a0d2-50fd46577399)
+    - ![image](https://github.com/rach4el/codeblog/assets/98865636/c512d233-01cf-4614-b6e5-141f156dc9c6)
+    ![image](https://github.com/rach4el/codeblog/assets/98865636/b1b2baeb-71e7-45ae-ba0a-8a711759d475)
+
+
+
+
+
+
+
+    
+
+
+
 ### Existing Features
 
 -   Responsive on all tested device sizes
@@ -69,6 +109,12 @@ The primary target audience include local equestrians who aim to easily discover
 -   Interactive elements
 
     __Navigation Bar__
+    ![image](https://github.com/rach4el/codeblog/assets/98865636/0d25ba6e-2bb2-4059-af14-a0fb3d4a7553)
+    ![image](https://github.com/rach4el/codeblog/assets/98865636/02120611-214f-4877-8f14-bb9e20c7be23)
+    ![image](https://github.com/rach4el/codeblog/assets/98865636/65e84c8b-3cc6-450d-9d98-9155c3290352)
+
+
+
   
    Featured on all three pages, the full responsive navigation bar includes links to the Logo, Home page, Create page, Suggest Page, Contact page, About Page, Register page, Log in page, or Log out Page. The nav bar is identical in styling and shows which page they are on by underlining the current page for easy navigation.
     
@@ -84,7 +130,33 @@ The primary target audience include local equestrians who aim to easily discover
   - If the user is not logged in it will display Join the Commnuity: Log in or Sign up with the corresponding words linking to their respective pages. This promotes engagement and encourges users to log in or sign up. The links have been coloured specifically to catch the users eye and to encourage users to create an account or sign up. Aditionally it is useful and informative to the user to let them know if they are logged in or not.
     This part of the page stays the same throughout all pages of the site.
 
+    __Category Filter__
+    ![image](https://github.com/rach4el/codeblog/assets/98865636/8a29822d-43ae-45b3-88e5-d150de1431b6)
+
+
+    - The category filter allows the user to specify criteria that is relevant to them to show them posts most in alignment with their needs, this promotes user engagement and fulfills a purpose to make the site more fit for purpose to the users requirements.
+   
+    __Comment Section__
+    ![image](https://github.com/rach4el/codeblog/assets/98865636/eae525ac-ef20-44c1-b22d-fee3727cb7bd)
+    ![image](https://github.com/rach4el/codeblog/assets/98865636/20a08a37-53c6-4d0c-90ad-f7c252223184)
+    ![image](https://github.com/rach4el/codeblog/assets/98865636/1297fb97-f572-49fc-a9fd-f8cb43cf2b7e)
+
+
+
+    - The comment section allows users to leave a message on a post if logged in. If their post is submitted correctly, it will show as awaiting approval, the admin team can approve ot delete comments, once the comment is approved it will be seen under the post detail section of the post detail page, this feature shows the comment text body, the author who created the comment and the time and date it was posted.
+    - This feature also has the ability for the user to update, edit, or delete ther comment giving them delete confirmation response and a succesfully updated response to give the user feedback to show their comment has been submitted, edited and deleted.
+      The chat bubble icons just above the comment section under the post detail show the number of comments submitted on the post.
+
+
+    __Like and Dislike buttons__
+    ![image](https://github.com/rach4el/codeblog/assets/98865636/1297fb97-f572-49fc-a9fd-f8cb43cf2b7e)
+
+    - The likes and dislike buttons allow users to dislike or like a post, each user can either like or dislike, but they cannot dislike and also like. The buttons display the current count of likes or dislikes for each posts, this is displayed in the post detail page under the post detail content, and the like count is also displayed on the main page to draw the users attention to a popular post while also serving as way to give back to the admin on the most popular posts to improve post content in the future.
+
+
      __The About Page__
+    ![image](https://github.com/rach4el/codeblog/assets/98865636/712f0d4b-6500-4785-9269-5e88408b1550)
+
 
   - The about page includes a photograph with is eye catching and in-keeping with the sites theme of countryside, equestrians, with a text section explaining about the site, the text and image can both be updated by the admin to allow the admin to produce a view that is up-to-date. The About text immdiately explains the sites purpose and goals.
 
@@ -93,6 +165,7 @@ The primary target audience include local equestrians who aim to easily discover
 - Additionally, there is also a code collaborate form which allows the site admin to be contactable for any potential client or other professional, or hobbyist coder wishing to collaborate on a project. The page will display a submission success message if completed as required. The site admin can view these collaborate requests in the admin panel.
 
   __The Home Page__
+    ![Laptop screenshot](https://github.com/rach4el/codeblog/assets/98865636/5321deff-bf0d-4351-b88e-b9c05399b51b)
 
   - The home Page includes a list of all posts with a category filter allowing users to specify criteria for the page to filter and show the most relevant results, categories can be filtered by suggested riding ability and county to make the posts more relevant for their selection and encourage engagement.
     
@@ -100,36 +173,58 @@ The primary target audience include local equestrians who aim to easily discover
   
   - There is also a display of post likes to promote engagement and catch the users eye if potentially a post has a lot of likes, this also provides feedback to the admin on the most popular posts to help increase engagement when creating and publishing a post in the future. The count of dislikes on a post is purposely left out of the main home page view as this could have the undesired opposite effect. The home page always shows the most recently post published first therefore, users will only need to click or refresh the home page to see the newest posts presented.
 
+__The Post Detail Page__
+
+
+
+
+- The Post detail page providers the user will the main information to complete the sites goals, the Post title is large and styled to relate to Equestrian or horse stable ideas, the post image will give the user a view of relavant point or map route, Under the image is the main text content giving instructions for equestrians to follow to complete a route. Under the post detail body text there are like and dislike buttons which allow a user to either like or dislike while showing the count of likes or dislikes. Next to the like and dislike buttons is a count of comments.
+- The section under the buttons and count of comments displays comments if a user has submitted on, users can edit, update and delete comments with success messages for each action. Each comment a user submits will need to be approved by admin to be seen by other site users to avoid unwanted or comments that are offensive, making the comment section secure and upholding the sites integrity.
+  
  __The Create Page__
+![image](https://github.com/rach4el/codeblog/assets/98865636/2da6fb2a-c3fe-4009-836d-afe089179273)
+
  
  - The Create page allows users to Create a post to be published, this also allows admin to make a post to additionally add content to the site, this is engaging for the user if they want to contribute information and share their valuable knowledge to their community. The form has a tittle, suggested riding ability, image, content, summary and county field which upon completion will display a success message to let the user know their submission has been passed on to the admin team to review and if applicable gets published, promoting user engagement. The Create page form is similar and in keeping with the other site pages forms and follows the colour scheme theme. The form is centrally focussed to promote accessibility to many devices.
 
 
 
   __The Suggest Page__
+![image](https://github.com/rach4el/codeblog/assets/98865636/1d7f02a5-d799-4875-bddd-805bcdbc7cdc)
+
   
  - The suggest page allows users to suggest a post if they are unsure of a route and would like to contribute information without it being published, this also allows admin to make a post and investigate a potential post to additionally add content to the site, this is engaging for the user if they want to still contribute information but would like their route to be verified to fit the sites purpose. Additionlly, if a route gets suggested commonly by users this can allow admin to prioritise investigating routes to produce content for the site further engaging users. The form has a tittle, suggested riding ability, image, content, summary and county field which upon completion will display a success message to let the user know their suggestion has been passed on to the admin team further promoting user engagement. The suggest page form is similar and in keeping with the other site pages forms and follows the colour scheme theme. The form is centrally focussed to promote accessibility to many devices.
 
 
 
    __The Contact Page__
-   
+   ![image](https://github.com/rach4el/codeblog/assets/98865636/4e2a122f-a9d4-4160-9dc1-701892d6a2f0)
+
 - The Contact page contains a unique form for the user to complete where users can contact the RidingReader admin to answer any queries they may have, the form has a query title, and content fields which are manditory to submit to complete the form, the image field isnt maditory purposefully so that uploads are optional and if needed, if for example there was a technical issue with the site, users could upload any images to show the admin exactly what the problem their experiencing looks like. Upon submitting the form the user will be given a success message to let the user know their message has been passed on and they can continue to the rest of the site knwoing their query will be read. 
 
 - further down the contact us page there is a contact us submission area where users can view, edit and delete any query. Further they can view the status of their query whether it is still an open query or has been resolved by admin response. The admin response field does not appear when the use first submits their query, it appears when the admin logs into the admin panel and edits the query. Each user will only be able to view their own queries to avoid revealing or dissuading users from contacting the site admin team. Furthermore the query will display a creatd on and updated on field, the created on field is read only and cannot be changed on purpose so the user and admin both know how long a query has been going on, the updated on field will update as the query is edited by both user and admin, this can allow the user to see when the admin responded to their query.
 
    
  
-    __The Footer__ 
+    __The Footer__
+  ![image](https://github.com/rach4el/codeblog/assets/98865636/48a30732-2eac-4ce3-9ef3-95e0cd8c4292)
 
-  - The footer section includes links to the relevant social media sites (imaginery). The links will open to a new tab to allow easy navigation for the user. 
+
+  - The footer section includes links to the relevant social media sites (imaginery). The links will open to a new tab to allow easy navigation for the user.
+  - 
   - The footer is valuable to the user as it encourages them to keep connected via social media.
+  - 
+  - The footer created has an an effect on the icons to let the users know that the site is reponding.
 
     __The Sign Up Page__
+    ![image](https://github.com/rach4el/codeblog/assets/98865636/c892f86a-4c99-4c5c-b87d-d8968e3803e0)
+
 
   - This page will allow the user to get signed up to Riding Reader to enable engagement community, to Create, Suggest, like, dislike, or comment on a post, or contact the the site admin. The user will be asked to submit a username and email address, and create a password. This page also links to the log in page.
 
     __The Sign out Page__
+    ![image](https://github.com/rach4el/codeblog/assets/98865636/d486fd45-1ff2-4ba6-86f2-883ca44331ce)
+
 
   - This page will allow the user to sign out of their Riding Reader account to end their logged in session.
   - When the user clicks the Logout link in the navbar they are directed to the sign Out page where they are asked to verify is they want to sign out with a question, under the question is the sign out button, which will Log a user out of their account they will not longer be able to Create, Suggest, like, dislike, or comment on a post, or contact the the site admin unless they sign in again.
@@ -137,14 +232,19 @@ The primary target audience include local equestrians who aim to easily discover
 
 
        __The Log in Page__
+    ![image](https://github.com/rach4el/codeblog/assets/98865636/f846ddfc-35cb-482a-99b6-40348d1a2239)
+
 
   - This page will allow the user to log into Riding Reader to enable engagement community, to Create, Suggest, like, dislike, or comment on a post, or contact the the site admin. The user will be asked to a username and password. This page also links to the sign up page. If a navbar page link to the Create, Suggest or Contact is clicked and the user is not signed in then the links will navigate the user to this log in page. Once a user signs in by verifying the account information they will be re-directed to the homepage and a success message is displayed to say they have been successfully signed in as (username)                                                                            
 
      __The Edit Submission Page__
+    ![image](https://github.com/rach4el/codeblog/assets/98865636/f292dd57-2405-4d09-9dd9-43066231b411)
+
 
   - This page will allow the user to edit their contact us submission query, they can edit the title edit the image submitted or clear the image submitted, and also edit the content, this is to enable engagement, and allow the user to update or edit their submission to give further detail or correct a typing error. The page has a save changes button to save their changes which if clicked redirects the user back to the contact page where they can view their changes. Upon returning to the contact page after editting their submission a success message will be shown to confirm that their changes have been submitted successfully.
 
     __The Delete Submisson Page__
+    ![image](https://github.com/rach4el/codeblog/assets/98865636/badf2cdf-9638-4898-b9f5-79afa8496f85)
 
   - This page will allow the user to delete their contact us query, this page can be accessed if a user submits a contact us query and clicks the delete button, the delete submission page prompts the user to verify the want to delete their contact us query submission, by asking if they are sure they want to delete this submission, followed by a delete and cancel button. Upon returning to the contact page after deleting their submission a success message will be shown to confirm that their submission has been deleted successfully.
 
