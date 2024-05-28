@@ -170,6 +170,8 @@ The primary target audience include local equestrians who aim to easily discover
 
 __The Post Detail Page__
 
+![image](https://github.com/rach4el/codeblog/assets/98865636/3a183d61-855d-4ca3-9dee-9fa07f45c7d9)
+![image](https://github.com/rach4el/codeblog/assets/98865636/5758483e-99b1-4250-b9ab-be7947d94de4)
 
 
 
