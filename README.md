@@ -242,6 +242,18 @@ __The Post Detail Page__
     ![image](https://github.com/rach4el/codeblog/assets/98865636/badf2cdf-9638-4898-b9f5-79afa8496f85)
 
   - This page will allow the user to delete their contact us query, this page can be accessed if a user submits a contact us query and clicks the delete button, the delete submission page prompts the user to verify the want to delete their contact us query submission, by asking if they are sure they want to delete this submission, followed by a delete and cancel button. Upon returning to the contact page after deleting their submission a success message will be shown to confirm that their submission has been deleted successfully.
+ 
+#### Future Features
+- Add a rating system to the comment section to give users a chance to give feedback on posts
+- Add a different homepage or start page to immdiately let users know what RidingReader's purpose is and to engage users with a hero image and sign up links
+- Re-drect users to sign up page or log in page when a post link is clicked on index view
+- Add a Chats or Topics sectio to allow users to discuess Equestrian life and engage the community
+###  Database Design
+-Entity Relationship Diagram
+- Data models
+  
+-flow chart for RidingReader
+
 
 
     
