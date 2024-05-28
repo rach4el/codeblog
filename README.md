@@ -335,7 +335,15 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 -   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/)
 -   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/)
 
+## Validation
 
+# HTML
+
+# CSS
+
+# Python
+
+# Javascript
 
 ### Testing
 
@@ -343,6 +351,59 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 -   The website was viewed on a variety of devices such as Desktop, Laptop, iPhone14, iPhone SE, Google Nest Hub, Galaxy, IPhone 14 Pro Max, Ipad Mini, Surface Pro 7, Asus Zenbook fold, & more.
 -   A large amount of testing was done to ensure that all pages were linking correctly.
 -   Friends and family members were asked to visit the site and documentation to point out any bugs and/or user experience issues.
+
+## Responsiveness:
+- Google chrome was used throughout the project to check responsiveness on different devices as listing above in the testing section, this included varies screen sizes for mobile, labtop, and tablet devices and media queries were created to ensure good visabilty and responsiveness.
+  # Google Chrome
+  ![image](https://github.com/rach4el/codeblog/assets/98865636/240bb160-6220-482e-87ce-b66baed30111)
+  ![image](https://github.com/rach4el/codeblog/assets/98865636/ba721dc7-98fa-4181-8140-1ef5e4b3de7e)
+  ![image](https://github.com/rach4el/codeblog/assets/98865636/f2d8db35-8d6b-48d7-823e-420d1fb2cc38)
+  ![image](https://github.com/rach4el/codeblog/assets/98865636/ad4c5ddc-ce34-44ed-b49f-7119578dee0e)
+  ![image](https://github.com/rach4el/codeblog/assets/98865636/0e1ee81d-3c06-49c5-839d-ab5efae0c03c)
+  ![image](https://github.com/rach4el/codeblog/assets/98865636/b38451d7-a71f-4399-8238-fe22c6e763e5)
+  ![image](https://github.com/rach4el/codeblog/assets/98865636/647fb13f-dd5f-4ac4-8ae7-bfe586e6d24e)
+  ![image](https://github.com/rach4el/codeblog/assets/98865636/fa021fdd-9017-423b-b2c4-d13e0b82cdf7)
+  ![image](https://github.com/rach4el/codeblog/assets/98865636/79e23840-8add-4410-95ea-480bc6cb86d1)
+  ![image](https://github.com/rach4el/codeblog/assets/98865636/5ada2693-dac9-4425-b3fc-e67e97f2744d)
+  ![image](https://github.com/rach4el/codeblog/assets/98865636/f041de34-4e38-406a-a5f7-df69c6a77e76)
+  ![image](https://github.com/rach4el/codeblog/assets/98865636/f300bd69-f4ee-44bb-9feb-656b662384fe)
+  ![image](https://github.com/rach4el/codeblog/assets/98865636/553c5aa9-672b-4f1b-9f35-2661d7752b2b)
+  ![image](https://github.com/rach4el/codeblog/assets/98865636/80afee8d-3260-4e8a-bb93-48eaf87b776d)
+
+  # Microsft Edge
+  ![image](https://github.com/rach4el/codeblog/assets/98865636/1010a60b-11f6-45e5-9c39-c52e3b0c8e71)
+  ![image](https://github.com/rach4el/codeblog/assets/98865636/41c7187d-8020-4c19-a9c3-79e05877169d)
+  ![image](https://github.com/rach4el/codeblog/assets/98865636/8370126d-9314-482a-8c1a-ffcedafaa467)
+  ![image](https://github.com/rach4el/codeblog/assets/98865636/d65abf62-c33b-4639-8773-e2f43c4069d3)
+  ![image](https://github.com/rach4el/codeblog/assets/98865636/9936f263-634c-4b91-be57-c5624e63ab41)
+  ![image](https://github.com/rach4el/codeblog/assets/98865636/9ca8c3f9-8872-433d-975b-243feb95dc2f)
+  ![image](https://github.com/rach4el/codeblog/assets/98865636/8173aedf-2b81-41e8-8f59-cabf144fbde4)
+  ![image](https://github.com/rach4el/codeblog/assets/98865636/7717db87-a840-4e65-9a5f-2a36f9411cb9)
+  ![image](https://github.com/rach4el/codeblog/assets/98865636/c11b00b9-cd0b-4757-a452-93f2f0f54495)
+  ![image](https://github.com/rach4el/codeblog/assets/98865636/aedb276b-302d-44ea-80d5-db21e294b920)
+  ![image](https://github.com/rach4el/codeblog/assets/98865636/9795e0ba-6fda-4d06-978d-aa62719cfe21)
+  ![image](https://github.com/rach4el/codeblog/assets/98865636/12fde13d-29e8-4680-80ba-04c18c43e71c)
+  ![image](https://github.com/rach4el/codeblog/assets/98865636/ee771bea-b8be-4f93-b1ee-4534fe899f83)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+- 
 
 ### Known Bugs
 
