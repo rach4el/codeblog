@@ -248,6 +248,12 @@ __The Post Detail Page__
 - Add a different homepage or start page to immdiately let users know what RidingReader's purpose is and to engage users with a hero image and sign up links
 - Re-drect users to sign up page or log in page when a post link is clicked on index view
 - Add a Chats or Topics sectio to allow users to discuess Equestrian life and engage the community
+
+### Agile
+- This project developed using Agile principles, managed through a project board on GitHub. Creating user stories and defining acceptance criteria provided a clear roadmap and ease for udnerstanding user, site woner and admin needs. Using the project board on Github helps stay on task and meet targets for the application's features and functionalities. This approach helped me stay focused and minimized distractions.
+![User stories screenshot 1](https://github.com/rach4el/codeblog/assets/98865636/e06e0357-5612-436d-8eba-7e50c2f647d9)
+
+
 ###  Database Design
 -Entity Relationship Diagram
 ## Data models
