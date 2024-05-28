@@ -250,13 +250,20 @@ __The Post Detail Page__
 - Add a Chats or Topics sectio to allow users to discuess Equestrian life and engage the community
 ###  Database Design
 -Entity Relationship Diagram
-- Data models
-  
--flow chart for RidingReader
+## Data models
+# Blog Post model
+![image](https://github.com/rach4el/codeblog/assets/98865636/c8ccfddb-825b-41e6-98fa-b71ddb8e88f7)
+# About Model
+![image](https://github.com/rach4el/codeblog/assets/98865636/13a9236a-c7c6-4a93-84aa-b6b555984b29)
+# Collaborate Request Model
+![image](https://github.com/rach4el/codeblog/assets/98865636/663e6352-0704-4b42-b383-230419f2afba)
+# Contact Us Model
+![image](https://github.com/rach4el/codeblog/assets/98865636/ba91389e-352f-4cbc-bb55-210803eaffaa)
+# Suggest Create Post Model
+![image](https://github.com/rach4el/codeblog/assets/98865636/2d1d76f2-8ea6-417f-a7d7-147b0df5ce16)
+## Flow chart for RidingReader
+![image](https://github.com/rach4el/codeblog/assets/98865636/afca0666-cc7f-4bfd-ac4b-57d2e7e44721)
 
-
-
-    
 ## Technologies and Tools utilised
 
 The technologies utilised in this project included JavaScript, CSS, HTML, Django, Python, Dockerfile, Shell
