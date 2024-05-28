@@ -395,26 +395,6 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
   ![image](https://github.com/rach4el/codeblog/assets/98865636/12fde13d-29e8-4680-80ba-04c18c43e71c)
   ![image](https://github.com/rach4el/codeblog/assets/98865636/ee771bea-b8be-4f93-b1ee-4534fe899f83)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-- 
-
 ### Known Bugs
 
 -   On some devices the footer becomes very small and can be hard to see, a lot of media queries were created to aid in solving this bug although the testing of this available and was not done on every device manufactured.
