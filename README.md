@@ -330,7 +330,11 @@ Google and Stack: Used for research, bug resolution, information gathering and o
 1. [Canva:](https://www.canva.com/)
     - Canva was used to create flowcharts, resizing images and editing photos for the website.
       
-1. [Balsamiq:](https://balsamiq.com/)
+1. [Lucidchart:](https://www.canva.com/)
+    - Lucidchart was used to create diagrams for this readme.
+    - 
+      
+1. [Balsamiq:](https://www.lucidchart.com/)
     - Balsamiq was used to create the [wireframes](https://github.com/) during the design process.
       
 
