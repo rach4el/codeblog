@@ -336,9 +336,24 @@ Google and Stack: Used for research, bug resolution, information gathering and o
       
 1. [Balsamiq:](https://www.lucidchart.com/)
     - Balsamiq was used to create the [wireframes](https://github.com/) during the design process.
-      
 
-## Testing
+## Link Testing
+| Link | Expected Outcome | Grade |
+| --- | ---| ---- |
+| Logo | Navigates user to home posts lists view | Pass |
+| Home | Navigates the user to home posts lists view | Pass |
+| Create | Navigates the user to Create Page if logged in or the log in page if not signed in| Pass |
+| About | Navigates user to the about page | Pass |
+| Suggest | Navigates user to the Suggest page if logged in or the log in page if not signed in | Pass |
+| Log in | Navigates the user to log in page | Pass |
+| Log out | Navigates the user to log out page | Pass |
+| Edit Submission | Navigates user to edit contact query submission page (secure)| Pass |
+| Delete Submission | Navigates user to Delete contact query submission page (secure) | Pass |
+| Register | Navigates the user to the sign up page | Pass |
+| Sign up | Navigates the user to the sign up page | Pass |
+| Contact | Navigates the user to contact page if logged in or the log in page if not signed in | Pass |
+
+# Testing
 
 The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
 
@@ -352,24 +367,21 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 | Page 	 |  W3C  URL | 	Screenshot | Notes  | 
 | ------ | --------- | ----------- |--------| 
 | Home Page  |  [W3C  URL](https://validator.w3.org/nu/?doc=https%3A%2F%2Fthebookbooth1-559d9131718c.herokuapp.com%2Faccounts%2Fsignup%2F) | ![image](https://github.com/rach4el/codeblog/assets/98865636/4754b0fe-67ca-4b82-a0b1-2f9ef9d1ae19) | Pass  | 
-| Post Detail	 |  [W3C  URL](https://validator.w3.org/nu/?doc=https%3A%2F%2Fthebookbooth1-559d9131718c.herokuapp.com%2Faccounts%2Fsignup%2F) | ![image](https://github.com/rach4el/codeblog/assets/98865636/8bc47ca5-b7d6-4890-9600-bcdcd1f3071c)
-| Pass | 
-| Create	 |  [W3C  URL](https://validator.w3.org/nu/?doc=https%3A%2F%2Fthebookbooth1-559d9131718c.herokuapp.com%2Faccounts%2Fsignup%2F) | 	![image](https://github.com/rach4el/codeblog/assets/98865636/1147e72d-4e7c-4ff9-b325-cc30499e71f4)
-| Pass | 
-| About	 |  [W3C  URL](https://validator.w3.org/nu/?doc=https%3A%2F%2Fthebookbooth1-559d9131718c.herokuapp.com%2Faccounts%2Fsignup%2F) | ![image](https://github.com/rach4el/codeblog/assets/98865636/4f37c766-ddfe-4cb5-9d73-1d2df3d738f8)
- | Pass | 
+| Post Detail	 |  [W3C  URL](https://validator.w3.org/nu/?doc=https%3A%2F%2Fthebookbooth1-559d9131718c.herokuapp.com%2Faccounts%2Fsignup%2F) | ![image](https://github.com/rach4el/codeblog/assets/98865636/8bc47ca5-b7d6-4890-9600-bcdcd1f3071c) | Pass | 
+| Create	 |  [W3C  URL](https://validator.w3.org/nu/?doc=https%3A%2F%2Fthebookbooth1-559d9131718c.herokuapp.com%2Faccounts%2Fsignup%2F) | 	![image](https://github.com/rach4el/codeblog/assets/98865636/1147e72d-4e7c-4ff9-b325-cc30499e71f4) | Pass | 
+| About	 |  [W3C  URL](https://validator.w3.org/nu/?doc=https%3A%2F%2Fthebookbooth1-559d9131718c.herokuapp.com%2Faccounts%2Fsignup%2F) | ![image](https://github.com/rach4el/codeblog/assets/98865636/4f37c766-ddfe-4cb5-9d73-1d2df3d738f8) | Pass | 
 | Suggest	 |  [W3C  URL](https://validator.w3.org/nu/?doc=https%3A%2F%2Fthebookbooth1-559d9131718c.herokuapp.com%2Faccounts%2Fsignup%2F) | ![image](https://github.com/rach4el/codeblog/assets/98865636/918c6739-4869-4c36-a6bb-622774b33dfd) | Pass  | 
 | Contact 	 |  [W3C  URL](https://validator.w3.org/nu/?doc=https%3A%2F%2Fthebookbooth1-559d9131718c.herokuapp.com%2Faccounts%2Fsignup%2F) | ![image](https://github.com/rach4el/codeblog/assets/98865636/efb18b52-553f-4465-a626-f9795103d79f) | Pass | 
 | Log In	 |  [W3C  URL](https://validator.w3.org/nu/?doc=https%3A%2F%2Fthebookbooth1-559d9131718c.herokuapp.com%2Faccounts%2Fsignup%2F)  | ![image](https://github.com/rach4el/codeblog/assets/98865636/246d0c4a-5556-440a-91a8-576edaf28283) | Pass
-| Sign Up |  [W3C  URL](https://validator.w3.org/nu/?doc=https%3A%2F%2Fthebookbooth1-559d9131718c.herokuapp.com%2Faccounts%2Fsignup%2F) | 	![image](https://github.com/rach4el/codeblog/assets/98865636/6110962d-4360-4db1-b558-500a4044e746) | Errors in signup form linked uneditable from workspace | 
+| Sign Up |  [W3C  URL](https://validator.w3.org/nu/?doc=https%3A%2F%2Fthebookbooth1-559d9131718c.herokuapp.com%2Faccounts%2Fsignup%2F) | 	![image](https://github.com/rach4el/codeblog/assets/98865636/6110962d-4360-4db1-b558-500a4044e746) | Errors in signup form linked uneditable from workspace | Fail |
 | Log out |  [W3C  URL](https://validator.w3.org/nu/?doc=https%3A%2F%2Fthebookbooth1-559d9131718c.herokuapp.com%2Faccounts%2Fsignup%2F) | ![image](https://github.com/rach4el/codeblog/assets/98865636/d6067c4b-6f7b-4d68-9b41-4da36a13fd61) | Pass  | 
 | Edit Submission |  [W3C  URL](https://validator.w3.org/nu/?doc=https%3A%2F%2Fthebookbooth1-559d9131718c.herokuapp.com%2Faccounts%2Fsignup%2F) | ![image](https://github.com/rach4el/codeblog/assets/98865636/29e14d6a-2b5a-46c2-8ada-6b238250f0d8) | Pass  | 
 | Delete Submisson |  [W3C  URL](https://validator.w3.org/nu/?doc=https%3A%2F%2Fthebookbooth1-559d9131718c.herokuapp.com%2Faccounts%2Fsignup%2F) | 	![image](https://github.com/rach4el/codeblog/assets/98865636/1f319c0c-b018-4db0-a5f8-177fa67e73b6) | Pass | 
 
 # CSS
-| Page 	 | ![image] | Notes |
+| Page 	 | Image  | Notes |
 | ------ | ----------- |--------| 
-| style.css  | Screenshot | Corrected all site errors however still showing error report for font awesome association (errors for effects not used in project) Pass as all project errors corrected | 
+| style.css  | ![image](https://github.com/rach4el/codeblog/assets/98865636/c1a7088f-16d1-4f5b-a398-39675c815c9e) | Corrected all site errors however still showing error report for font awesome association (errors for effects not used in project) Pass as all project errors corrected | 
 # Python
 | File	|	Screenshot	| Notes |
 | ------ | ----------- |--------| 
@@ -381,6 +393,32 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 -   The website was viewed on a variety of devices such as Desktop, Laptop, iPhone14, iPhone SE, Google Nest Hub, Galaxy, IPhone 14 Pro Max, Ipad Mini, Surface Pro 7, Asus Zenbook fold, & more.
 -   A large amount of testing was done to ensure that all pages were linking correctly.
 -   Friends and family members were asked to visit the site and documentation to point out any bugs and/or user experience issues.
+
+### Feature Testing
+
+| Feature | Expected Outcome | Screenshot |	Grade |
+| ------ | ----------- |--------| --------| 
+| Modal 	| 	A message will appear informing the user of a successful action throughout all forms on the site including edit and delete confirmation messages on comments and contact queries | ![image](https://github.com/rach4el/codeblog/assets/98865636/5c937061-4799-487f-bb1e-a2d32eeca197)  | Pass  | 
+| User Logged in 	| 	Text displays the user logged in with their username | ![image](https://github.com/rach4el/codeblog/assets/98865636/5c937061-4799-487f-bb1e-a2d32eeca197) | Pass  | 
+| View posts 	| 	User see published post list | ![image]![image]![image](https://github.com/rach4el/codeblog/assets/98865636/d1838870-7f64-4249-92f9-ac119457dbbd) | Pass  | 
+| Create post 	| 	User can complete a form to submit a post to be published after view by admin | ![image](https://github.com/rach4el/codeblog/assets/98865636/b1966564-7b25-4eed-8eb5-7db6b2f428f8) | Pass  | 
+| Suggest post form	| 	Users can complete a form to suggest post to be submitted to be published after view by admin | ![image](https://github.com/rach4el/codeblog/assets/98865636/eb68ddfc-5993-4b49-a599-74ed62360aa3) | Pass  | 
+| Contact Query view and form | Users can use the contact form to contact admin and view their query submissions |  ![image](https://github.com/rach4el/codeblog/assets/98865636/0aae75bb-588b-4a1f-9026-ddd54b2140fa)![image](https://github.com/rach4el/codeblog/assets/98865636/6de1070e-410c-44a7-b0fe-228d5b672772) | Pass  | 
+| Collaborate Request	| Users can submit a form to contact admin for potential collaboration |  ![image](https://github.com/rach4el/codeblog/assets/98865636/8ec643f8-85e1-462c-ac2c-6658e6328ff0) | Pass  | 
+| Category filter | Users can filter the post list display to match specific criteria to their needs / wants. |  ![image](https://github.com/rach4el/codeblog/assets/98865636/0f71d4bd-45cb-4085-87bc-a5e9d7c9bd27) | Pass  | 
+| site buttons | Users can use buttons throughout site successfully to navigate between pages (next, previous, sites pages, nav bar, site links), Edit buttons, delete buttons, confirm delete buttons, cancel buttons, form submit buttons, navbar expand button and filter button. | !![image](https://github.com/rach4el/codeblog/assets/98865636/30097800-1201-41b7-969c-fcd247629122) ![image](https://github.com/rach4el/codeblog/assets/98865636/a9975354-81df-4b49-9a5c-f5980d531654) | Pass  | 
+| Social links work | The social links on the navbar navigate to new tab or window to take to their symbolised pages. |  ![image](https://github.com/rach4el/codeblog/assets/98865636/3bd38b49-94d5-47d5-9a0f-6b36bc6a4323) | Pass  | 
+| Footer | The footer contains and displays social media icons |  ![image]![image](https://github.com/rach4el/codeblog/assets/98865636/8c68f8e0-c583-4858-8abd-e292f6fdb28c) | Pass  | 
+| Grid display | A CSS grid will display the posts list and site feautures in a clear, responsive format |  ![image](https://github.com/rach4el/codeblog/assets/98865636/d505eb7b-e8fb-4801-b692-1ad9866c0c12) | Pass  | 
+| Log out | Users get logged out after clicking "Log out" |  ![image](https://github.com/rach4el/codeblog/assets/98865636/d505eb7b-e8fb-4801-b692-1ad9866c0c12) | Pass  | 
+| Log in | Users can log in using a form after clicking "Log in" |  ![image]![image](https://github.com/rach4el/codeblog/assets/98865636/bd8f487f-d281-4a3b-a27b-0c72da4eb000) | Pass  |
+| Registration | New users can access a registration form from the "Register" link in navbar or sign up link in other areas of the site |  ![image](https://github.com/rach4el/codeblog/assets/98865636/b0f48b13-60b1-4b37-a19e-59abfd8c14b0) | Pass  |
+| Delete a contact query | A user who added a contact query can delete it prompted by confirm delete page or an admin can delete a contact query and admin can edit and respond to a contact query as well as change to open query status to resolved. If deleleted it will be delete from the database |  ![image](https://github.com/rach4el/codeblog/assets/98865636/70020750-f7a5-4ede-b41c-150c0515ff63)![image](https://github.com/rach4el/codeblog/assets/98865636/02ba60d3-c8d1-43f8-881d-ba045c05ca41) | Pass  |
+| Edit a contact query | A user who added a contact query can Edit it prompted by edit submission page or an admin can edit a contact query and admin can delete and respond to a contact query as well as change to open query status to resolved. If edited the query will be updated in the database. |  ![image](https://github.com/rach4el/codeblog/assets/98865636/e073c760-7c2a-4471-800a-f232df107a40) ![image](https://github.com/rach4el/codeblog/assets/98865636/2a269927-a270-4417-9035-03b7b7395809) | Pass  |
+| Admin has access to crud functionality of all additions | Admin can edit, update, or delete any comment, post, contact query, suggestion pos, or collaboration request. Admin can change the status of models including suggested riding ability of suggestion posts and create posts, admin can also change that status of create posts to published or drafts, additionally by admin, can approve, any suggestion post or comment to be published. Admin can also set status of any contact query to either open query or resolve and respond to show user their reponse on the contact page for the user to see.  |  ![image](https://github.com/rach4el/codeblog/assets/98865636/8a5d6ec6-bb14-42eb-bb9e-8739cde5cfed) | Pass  |
+| Post detail | Users can see the post detail page by clicking on a post link, the detail page has the main information on routes for reaching the sites goals and user wants, users can like and dislike a post by clicking the icons for like and dislike next to their count, the buttons are located after the end of the post body text, on the same row is a count of comments. Under that section is the display of comments and a leave a comment field and submit button, users can also edit and delete their comments using the buttons displayed under their own comments. | ![image](https://github.com/rach4el/codeblog/assets/98865636/88707771-9129-43c8-92d6-d39b3b77674b)  | Pass  |
+| Post comments | Users can see the post detail page by clicking on a post link, the detail page has the user see the comment count for all published or approved comments, located after the end of the post body text. Under that section is the display of comments and a leave a comment field and submit button, users can also edit and delete their comments using the buttons displayed under their own comments, delete button prompts a user to confirm delete to avoid accidental delete. |  ![image](https://github.com/rach4el/codeblog/assets/98865636/77421c53-eaa9-4348-bb3c-b4bed37c2efc) | Pass  |
+| Navbar | Containes links to pages such as Logo for homepage, home, Create, About, Suggest, Register and  Log in. on smaller devices the navbar collapses into an icon and when clicks expand for good functionality and accesibility. | ![image]![image](https://github.com/rach4el/codeblog/assets/98865636/2f6799a1-6f68-4356-b11e-36d6965342a4) | Pass  |
 
 ## Responsiveness:
 - Google chrome was used throughout the project to check responsiveness on different devices as listing above in the testing section, this included varies screen sizes for mobile, labtop, and tablet devices and media queries were created to ensure good visabilty and responsiveness.
@@ -415,6 +453,43 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
   ![image](https://github.com/rach4el/codeblog/assets/98865636/12fde13d-29e8-4680-80ba-04c18c43e71c)
   ![image](https://github.com/rach4el/codeblog/assets/98865636/ee771bea-b8be-4f93-b1ee-4534fe899f83)
 
+  ## Google Lighthouse Audit
+I tested my deployed project on heroku using the google lighthouse tools in devtools window.
+
+  # Home
+![image](https://github.com/rach4el/codeblog/assets/98865636/cfffcf79-6362-4d62-9209-e1209239f90b)
+
+  # Create Page
+   ![image](https://github.com/rach4el/codeblog/assets/98865636/be008c88-87b2-4379-8aeb-2dab0a5522bc)
+
+  # About Page
+![image](https://github.com/rach4el/codeblog/assets/98865636/b3b0ef0b-102e-41d3-aeb8-1ce8b1f74cbc)
+
+  # Suggest Page
+![image](https://github.com/rach4el/codeblog/assets/98865636/f04baaaf-54d3-4c7b-b927-64e27bb9ef49)
+
+ # Sign Up Page
+ ![image](https://github.com/rach4el/codeblog/assets/98865636/8b42c6a8-96e5-46c1-98d1-445ecf4e1278)
+
+ # Sign Out Page
+![image](https://github.com/rach4el/codeblog/assets/98865636/664a3a3d-bd18-49f0-bb4a-5bab6212caa2)
+
+ # Log In Page
+![image](https://github.com/rach4el/codeblog/assets/98865636/8548694b-35ed-4210-8a7e-b2ea7b0f34b9)
+
+ # Edit Submission Page
+![image](https://github.com/rach4el/codeblog/assets/98865636/7d36cc21-7066-4248-b01f-fbab5f7a1d04)
+
+ # Delete Submission Page
+![image](https://github.com/rach4el/codeblog/assets/98865636/13a34c0a-4a31-4ac0-b46c-c90ad04854da)
+
+  # Contact Page
+ ![image](https://github.com/rach4el/codeblog/assets/98865636/5ac9fc86-bfd1-4e32-939a-cca9d83c6f9d)
+
+  # Post Detail Page
+![image](https://github.com/rach4el/codeblog/assets/98865636/f61a7aa9-8bed-431b-a573-227a74ac141a)
+
+
 ### Known Bugs
 
 -   On some devices the footer becomes very small and can be hard to see, a lot of media queries were created to aid in solving this bug although the testing of this available and was not done on every device manufactured.
@@ -437,7 +512,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 ### Other Code Inspiration:
 
-- I found this site veyr useful to help make CSS media query for ipad:
+- I found this site very useful to help make CSS media query for ipad:
 https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariCSSRef/Articles/OtherStandardCSS3Features.html
 
 - I also found this video on media queries to help understand and make other media queries and container queries:
