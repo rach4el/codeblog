@@ -390,19 +390,16 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 | blog urls.py |  ![Blog URLS py](https://github.com/rach4el/codeblog/assets/98865636/b9a6c9b2-43ca-468b-8b12-47d105fb962f) | Pass  | 
 | blog forms.py |  ![Blog Forms py](https://github.com/rach4el/codeblog/assets/98865636/e544bed2-6a45-4224-97c9-471f6dba42e3) | Pass  | 
 | blog models.py |  ![Blog Models py](https://github.com/rach4el/codeblog/assets/98865636/10258719-ae45-4d16-b2cf-e85d7fa1cf02) | Pass  | 
-
 | contact wiews.py | ![Contact Views py ](https://github.com/rach4el/codeblog/assets/98865636/bb62ff35-d4b4-448a-a6b2-10e4b57e81cf) | Pass  | 
 | contact admin.py |  ![contact Admin py](https://github.com/rach4el/codeblog/assets/98865636/2d1e2dac-bb80-42a6-ad8e-86cbe21a8970) | Pass  | 
-| contact urls.py |   | Pass  | 
+| contact urls.py | ![Contact URLs py ](https://github.com/rach4el/codeblog/assets/98865636/d0644594-e158-4de8-8e8e-5766506fbb9a) | Pass  | 
 | contact forms.py | ![Contact Forms py ](https://github.com/rach4el/codeblog/assets/98865636/58d566c4-39a8-439d-bd48-f1e9c8a3f3c5)  | Pass  | 
 | contact models.py | ![Contact Models py ](https://github.com/rach4el/codeblog/assets/98865636/72c7c871-b4fc-47fc-9172-fd13a292e0d4) | Pass  | 
-
 | trails wiews.py |  ![Trails views py](https://github.com/rach4el/codeblog/assets/98865636/3c819b2c-74f0-487c-93c1-c2b35a2af408) | Pass  | 
 | trails admin.py | ![Trails admin py](https://github.com/rach4el/codeblog/assets/98865636/04abcf6c-90f8-494f-972c-8d4ad0892196) | Pass  | 
 | trails urls.py |![Trails Urls py](https://github.com/rach4el/codeblog/assets/98865636/67314c0c-7b9e-4331-803e-9c19052b92be) | Pass  | 
 | trails forms.py | ![Trails form py](https://github.com/rach4el/codeblog/assets/98865636/5a0109cc-d0a8-4d8a-b5f5-bf0a07a291dc) | Pass  | 
 | trails models.py | ![Trails models py](https://github.com/rach4el/codeblog/assets/98865636/b8bc372a-afb4-4f11-9fc3-ff51116cbb43) | Pass  | 
-
 | about wiews.py | ![About Views py](https://github.com/rach4el/codeblog/assets/98865636/bedf454d-9c4a-4c56-88f0-7d0f3717f8a4)  | Pass  | 
 | about admin.py | ![About Admin py](https://github.com/rach4el/codeblog/assets/98865636/4f054e4d-ad8e-4881-9726-ba63d54e828d)  | Pass  | 
 | about urls.py |  ![About URLS py](https://github.com/rach4el/codeblog/assets/98865636/bc737f40-a28a-43d2-aab6-3c88c56b10b9) | Pass  | 
