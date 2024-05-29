@@ -351,18 +351,25 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 | Page 	 |  W3C  URL | 	Screenshot | Notes  | 
 | ------ | --------- | ----------- |--------| 
-| Home Page  |  [W3C  URL](https://validator.w3.org/nu/?doc=https%3A%2F%2Fthebookbooth1-559d9131718c.herokuapp.com%2Faccounts%2Fsignup%2F) | 	Screenshot | Notes  | 
+| Home Page  |  [W3C  URL](https://validator.w3.org/nu/?doc=https%3A%2F%2Fthebookbooth1-559d9131718c.herokuapp.com%2Faccounts%2Fsignup%2F) | ![image](https://github.com/rach4el/codeblog/assets/98865636/4754b0fe-67ca-4b82-a0b1-2f9ef9d1ae19) | Pass  | 
 | Post Detail	 |  [W3C  URL](https://validator.w3.org/nu/?doc=https%3A%2F%2Fthebookbooth1-559d9131718c.herokuapp.com%2Faccounts%2Fsignup%2F) | ![image](https://github.com/rach4el/codeblog/assets/98865636/ad924e7f-6d64-45c1-83d2-d8c5b3f5a92e) | Pass | 
-| Page 	 |  [W3C  URL](https://validator.w3.org/nu/?doc=https%3A%2F%2Fthebookbooth1-559d9131718c.herokuapp.com%2Faccounts%2Fsignup%2F) | 	Screenshot | Notes  | 
-| Create	 |  [W3C  URL](https://validator.w3.org/nu/?doc=https%3A%2F%2Fthebookbooth1-559d9131718c.herokuapp.com%2Faccounts%2Fsignup%2F) | 	Screenshot | Notes  | 
-| About	 |  [W3C  URL](https://validator.w3.org/nu/?doc=https%3A%2F%2Fthebookbooth1-559d9131718c.herokuapp.com%2Faccounts%2Fsignup%2F) | 	Screenshot | Notes  | 
-| Suggest	 |  [W3C  URL](https://validator.w3.org/nu/?doc=https%3A%2F%2Fthebookbooth1-559d9131718c.herokuapp.com%2Faccounts%2Fsignup%2F) | 	Screenshot | Notes  | 
-| Contact 	 |  [W3C  URL](https://validator.w3.org/nu/?doc=https%3A%2F%2Fthebookbooth1-559d9131718c.herokuapp.com%2Faccounts%2Fsignup%2F) | 	Screenshot | Notes  | 
-| Log In	 |  [W3C  URL](https://validator.w3.org/nu/?doc=https%3A%2F%2Fthebookbooth1-559d9131718c.herokuapp.com%2Faccounts%2Fsignup%2F) | 	Screenshot | Notes  | 
-| Log Out |  [W3C  URL](https://validator.w3.org/nu/?doc=https%3A%2F%2Fthebookbooth1-559d9131718c.herokuapp.com%2Faccounts%2Fsignup%2F) | 	Screenshot | Notes  | 
-| Register |  [W3C  URL](https://validator.w3.org/nu/?doc=https%3A%2F%2Fthebookbooth1-559d9131718c.herokuapp.com%2Faccounts%2Fsignup%2F) | 	Screenshot | Notes  | 
-| Edit Submission |  [W3C  URL](https://validator.w3.org/nu/?doc=https%3A%2F%2Fthebookbooth1-559d9131718c.herokuapp.com%2Faccounts%2Fsignup%2F) | 	Screenshot | Notes  | 
-| Delete Submisson |  [W3C  URL](https://validator.w3.org/nu/?doc=https%3A%2F%2Fthebookbooth1-559d9131718c.herokuapp.com%2Faccounts%2Fsignup%2F) | 	Screenshot | Notes  | 
+| Create	 |  [W3C  URL](https://validator.w3.org/nu/?doc=https%3A%2F%2Fthebookbooth1-559d9131718c.herokuapp.com%2Faccounts%2Fsignup%2F) | 	Screenshot | Pass | 
+| About	 |  [W3C  URL](https://validator.w3.org/nu/?doc=https%3A%2F%2Fthebookbooth1-559d9131718c.herokuapp.com%2Faccounts%2Fsignup%2F) | ![image](https://github.com/rach4el/codeblog/assets/98865636/4f37c766-ddfe-4cb5-9d73-1d2df3d738f8)
+ | Pass | 
+| Suggest	 |  [W3C  URL](https://validator.w3.org/nu/?doc=https%3A%2F%2Fthebookbooth1-559d9131718c.herokuapp.com%2Faccounts%2Fsignup%2F) | 	![image](https://github.com/rach4el/codeblog/assets/98865636/918c6739-4869-4c36-a6bb-622774b33dfd)
+ | Pass  | 
+| Contact 	 |  [W3C  URL](https://validator.w3.org/nu/?doc=https%3A%2F%2Fthebookbooth1-559d9131718c.herokuapp.com%2Faccounts%2Fsignup%2F) | ![image](https://github.com/rach4el/codeblog/assets/98865636/efb18b52-553f-4465-a626-f9795103d79f)
+ | Pass | 
+| Log In	 |  [W3C  URL](https://validator.w3.org/nu/?doc=https%3A%2F%2Fthebookbooth1-559d9131718c.herokuapp.com%2Faccounts%2Fsignup%2F) | Pass | ![image](https://github.com/rach4el/codeblog/assets/98865636/246d0c4a-5556-440a-91a8-576edaf28283)
+  | 
+| Sign Up |  [W3C  URL](https://validator.w3.org/nu/?doc=https%3A%2F%2Fthebookbooth1-559d9131718c.herokuapp.com%2Faccounts%2Fsignup%2F) | 	![image](https://github.com/rach4el/codeblog/assets/98865636/6110962d-4360-4db1-b558-500a4044e746)
+ | Errors in signup form linked uneditable from workspace | 
+| Log out |  [W3C  URL](https://validator.w3.org/nu/?doc=https%3A%2F%2Fthebookbooth1-559d9131718c.herokuapp.com%2Faccounts%2Fsignup%2F) | 	![image](https://github.com/rach4el/codeblog/assets/98865636/d6067c4b-6f7b-4d68-9b41-4da36a13fd61)
+ | Pass  | 
+| Edit Submission |  [W3C  URL](https://validator.w3.org/nu/?doc=https%3A%2F%2Fthebookbooth1-559d9131718c.herokuapp.com%2Faccounts%2Fsignup%2F) | 	![image](https://github.com/rach4el/codeblog/assets/98865636/29e14d6a-2b5a-46c2-8ada-6b238250f0d8)
+ | Pass  | 
+| Delete Submisson |  [W3C  URL](https://validator.w3.org/nu/?doc=https%3A%2F%2Fthebookbooth1-559d9131718c.herokuapp.com%2Faccounts%2Fsignup%2F) | 	![image](https://github.com/rach4el/codeblog/assets/98865636/1f319c0c-b018-4db0-a5f8-177fa67e73b6)
+ | Pass | 
 
 # CSS
 | Page 	 |  Jigsaw URL | 	Screenshot | Notes  | 
