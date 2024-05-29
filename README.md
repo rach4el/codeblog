@@ -349,6 +349,10 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 # HTML
 
+| Page 	 |  W3C  URL | 	Screenshot | Notes  | 
+| ------ | --------- | ----------- |--------| 
+| Page 	 |  W3C  URL | 	Screenshot | Notes  | 
+
 # CSS
 
 # Python
