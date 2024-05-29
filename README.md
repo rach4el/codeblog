@@ -384,10 +384,9 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 | Delete Submisson |  [W3C  URL](https://validator.w3.org/nu/?doc=https%3A%2F%2Fthebookbooth1-559d9131718c.herokuapp.com%2Faccounts%2Fsignup%2F) | 	![image](https://github.com/rach4el/codeblog/assets/98865636/1f319c0c-b018-4db0-a5f8-177fa67e73b6) | Pass | 
 
 # CSS
-| Page 	 | Image| Notes |
+| Page 	 | Image  | Notes |
 | ------ | ----------- |--------| 
-| style.css  | ![image](https://github.com/rach4el/codeblog/assets/98865636/c1a7088f-16d1-4f5b-a398-39675c815c9e)
- | Corrected all site errors however still showing error report for font awesome association (errors for effects not used in project) Pass as all project errors corrected | 
+| style.css  | ![image](https://github.com/rach4el/codeblog/assets/98865636/c1a7088f-16d1-4f5b-a398-39675c815c9e) | Corrected all site errors however still showing error report for font awesome association (errors for effects not used in project) Pass as all project errors corrected | 
 # Python
 | File	|	Screenshot	| Notes |
 | ------ | ----------- |--------| 
@@ -419,8 +418,8 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 | Log out | Users get logged out after clicking "Log out" |  ![image](https://github.com/rach4el/codeblog/assets/98865636/d505eb7b-e8fb-4801-b692-1ad9866c0c12) | Pass  | 
 | Log in | Users can log in using a form after clicking "Log in" |  ![image]![image](https://github.com/rach4el/codeblog/assets/98865636/bd8f487f-d281-4a3b-a27b-0c72da4eb000) | Pass  |
 | Registration | New users can access a registration form from the "Register" link in navbar or sign up link in other areas of the site |  ![image](https://github.com/rach4el/codeblog/assets/98865636/b0f48b13-60b1-4b37-a19e-59abfd8c14b0) | Pass  |
-| Delete a contact query | A user who added a contact query can delete it prompted by confirm delete page or an admin can delete a contact query and admin can edit and respond to a contact query as well as change to open query status to resolved. If deleleted it will be delete from the database |  ![image](https://github.com/rach4el/codeblog/assets/98865636/70020750-f7a5-4ede-b41c-150c0515ff63)
-![image](https://github.com/rach4el/codeblog/assets/98865636/02ba60d3-c8d1-43f8-881d-ba045c05ca41) | Pass  |
+| Delete a contact query | A user who added a contact query can delete it prompted by confirm delete page or an admin can delete a contact query and admin can edit and respond to a contact query as well as change to open query status to resolved. If deleleted it will be delete from the database |  ![image](https://github.com/rach4el/codeblog/assets/98865636/70020750-f7a5-4ede-b41c-150c0515ff63)![image](https://github.com/rach4el/codeblog/assets/98865636/02ba60d3-c8d1-43f8-881d-ba045c05ca41)
+ | Pass  |
 | Edit a contact query | A user who added a contact query can Edit it prompted by edit submission page or an admin can edit a contact query and admin can delete and respond to a contact query as well as change to open query status to resolved. If edited the query will be updated in the database. |  ![image](https://github.com/rach4el/codeblog/assets/98865636/e073c760-7c2a-4471-800a-f232df107a40) ![image](https://github.com/rach4el/codeblog/assets/98865636/2a269927-a270-4417-9035-03b7b7395809) | Pass  |
 | Admin has access to crud functionality of all additions | Admin can edit, update, or delete any comment, post, contact query, suggestion pos, or collaboration request. Admin can change the status of models including suggested riding ability of suggestion posts and create posts, admin can also change that status of create posts to published or drafts, additionally by admin, can approve, any suggestion post or comment to be published. Admin can also set status of any contact query to either open query or resolve and respond to show user their reponse on the contact page for the user to see.  |  ![image](https://github.com/rach4el/codeblog/assets/98865636/8a5d6ec6-bb14-42eb-bb9e-8739cde5cfed) | Pass  |
 | Post detail | Users can see the post detail page by clicking on a post link, the detail page has the main information on routes for reaching the sites goals and user wants, users can like and dislike a post by clicking the icons for like and dislike next to their count, the buttons are located after the end of the post body text, on the same row is a count of comments. Under that section is the display of comments and a leave a comment field and submit button, users can also edit and delete their comments using the buttons displayed under their own comments. | ![image](https://github.com/rach4el/codeblog/assets/98865636/8a5d6ec6-bb14-42eb-bb9e-8739cde5cfed) | Pass  |
