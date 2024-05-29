@@ -367,14 +367,13 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 | Delete Submisson |  [W3C  URL](https://validator.w3.org/nu/?doc=https%3A%2F%2Fthebookbooth1-559d9131718c.herokuapp.com%2Faccounts%2Fsignup%2F) | 	![image](https://github.com/rach4el/codeblog/assets/98865636/1f319c0c-b018-4db0-a5f8-177fa67e73b6) | Pass | 
 
 # CSS
-| Page 	 |  Jigsaw URL | 	Screenshot | Notes  | 
-| ------ | --------- | ----------- |--------| 
- | style.css	 | [Jigsaw URL](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fthebookbooth1-559d9131718c.herokuapp.com%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=enhttps://jigsaw.w3.org/css-validator/validator) | Screenshot | Notes | 
+| Page 	 | ![image] | Notes |
+| ------ | ----------- |--------| 
+| style.css  | Screenshot | Corrected all site errors however still showing error report for font awesome association (errors for effects not used in project) Pass as all project errors corrected | 
 # Python
-File		Screenshot	Notes
-| Page 	 |  CI URL | 	Screenshot | Notes  |
-| ------ | --------- | ----------- |--------| 
-| Page 	 | [ W3C  URL ](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/hiboibrahim/thebookbooth1/main/run.py) | 	Screenshot | Notes  | 
+| File	|	Screenshot	| Notes |
+| ------ | ----------- |--------| 
+| Page 	| 	Screenshot | Notes  | 
 
 ### Testing
 
