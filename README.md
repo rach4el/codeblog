@@ -351,13 +351,29 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 | Page 	 |  W3C  URL | 	Screenshot | Notes  | 
 | ------ | --------- | ----------- |--------| 
-| Page 	 |  W3C  URL | 	Screenshot | Notes  | 
+| Home Page  |  [W3C  URL](https://validator.w3.org/nu/?doc=https%3A%2F%2Fthebookbooth1-559d9131718c.herokuapp.com%2Faccounts%2Fsignup%2F) | 	Screenshot | Notes  | 
+| Post Detail	 |  [W3C  URL](https://validator.w3.org/nu/?doc=https%3A%2F%2Fthebookbooth1-559d9131718c.herokuapp.com%2Faccounts%2Fsignup%2F) | 	![image](https://github.com/rach4el/codeblog/assets/98865636/791b3801-cba5-4030-92d3-00cc75921247)
+| Pass an a elemt is nested inside div alement with closing tag to link user to homepage | 
+| Page 	 |  [W3C  URL](https://validator.w3.org/nu/?doc=https%3A%2F%2Fthebookbooth1-559d9131718c.herokuapp.com%2Faccounts%2Fsignup%2F) | 	Screenshot | Notes  | 
+| Create	 |  [W3C  URL](https://validator.w3.org/nu/?doc=https%3A%2F%2Fthebookbooth1-559d9131718c.herokuapp.com%2Faccounts%2Fsignup%2F) | 	Screenshot | Notes  | 
+| About	 |  [W3C  URL](https://validator.w3.org/nu/?doc=https%3A%2F%2Fthebookbooth1-559d9131718c.herokuapp.com%2Faccounts%2Fsignup%2F) | 	Screenshot | Notes  | 
+| Suggest	 |  [W3C  URL](https://validator.w3.org/nu/?doc=https%3A%2F%2Fthebookbooth1-559d9131718c.herokuapp.com%2Faccounts%2Fsignup%2F) | 	Screenshot | Notes  | 
+| Contact 	 |  [W3C  URL](https://validator.w3.org/nu/?doc=https%3A%2F%2Fthebookbooth1-559d9131718c.herokuapp.com%2Faccounts%2Fsignup%2F) | 	Screenshot | Notes  | 
+| Log In	 |  [W3C  URL](https://validator.w3.org/nu/?doc=https%3A%2F%2Fthebookbooth1-559d9131718c.herokuapp.com%2Faccounts%2Fsignup%2F) | 	Screenshot | Notes  | 
+| Log Out |  [W3C  URL](https://validator.w3.org/nu/?doc=https%3A%2F%2Fthebookbooth1-559d9131718c.herokuapp.com%2Faccounts%2Fsignup%2F) | 	Screenshot | Notes  | 
+| Register |  [W3C  URL](https://validator.w3.org/nu/?doc=https%3A%2F%2Fthebookbooth1-559d9131718c.herokuapp.com%2Faccounts%2Fsignup%2F) | 	Screenshot | Notes  | 
+| Edit Submission |  [W3C  URL](https://validator.w3.org/nu/?doc=https%3A%2F%2Fthebookbooth1-559d9131718c.herokuapp.com%2Faccounts%2Fsignup%2F) | 	Screenshot | Notes  | 
+| Delete Submisson |  [W3C  URL](https://validator.w3.org/nu/?doc=https%3A%2F%2Fthebookbooth1-559d9131718c.herokuapp.com%2Faccounts%2Fsignup%2F) | 	Screenshot | Notes  | 
 
 # CSS
-
+| Page 	 |  Jigsaw URL | 	Screenshot | Notes  | 
+| ------ | --------- | ----------- |--------| 
+ | style.css	 | [Jigsaw URL](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fthebookbooth1-559d9131718c.herokuapp.com%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=enhttps://jigsaw.w3.org/css-validator/validator) | Screenshot | Notes | 
 # Python
-
-# Javascript
+File		Screenshot	Notes
+| Page 	 |  CI URL | 	Screenshot | Notes  |
+| ------ | --------- | ----------- |--------| 
+| Page 	 | [ W3C  URL ](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/hiboibrahim/thebookbooth1/main/run.py) | 	Screenshot | Notes  | 
 
 ### Testing
 
