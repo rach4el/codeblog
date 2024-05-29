@@ -8,31 +8,28 @@
 <div class="text-center about-text container">
   <div class="row">
     <div class="col-md-8 mt-3 offset-md-2">
-      <h3 class=" about-title about-underline">{% trans "Sign Up" %}</h3>
+      <h3 class="about-title about-underline">{% trans "Sign Up" %}</h3>
 
-      <p>{% blocktrans %} <strong>Welcome back to the Riding Reader Community!</strong>
-      <p>To contact our team, create, suggest, comment or like a post, please Sign up below. </p>
+      {% blocktrans %} 
+      <p><strong>Welcome back to the Riding Reader Community!</strong></p>
+      <p>To contact our team, create, suggest, comment or like a post, please Sign up below.</p>
       <p>Do you already have an account?</p>
-      <p>Then please <a class="link-colour" href="{{ login_url }}">Log in</a> instead.
-      {% endblocktrans %}</p>
+      <p>Then please <a class="link-colour" href="{{ login_url }}">Log in</a> instead.</p>
+      {% endblocktrans %}
     </div>
   </div>
   <div class="row">
     <div class="col-md-8 mt-3 offset-md-2">
-      <form class="signup" id="signup_form" method="post"
-        action="{% url 'account_signup' %}">
+      <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
         {% csrf_token %}
         {{ form.as_p }}
         {% if redirect_field_value %}
-        <input type="hidden" name="{{ redirect_field_name }}"
-          value="{{ redirect_field_value }}" />
+        <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}">
         {% endif %}
-        <button class="btn btn-signup right" type="submit">
-          {% trans "Sign Up" %} &raquo;</button>
+        <button class="btn btn-signup right" type="submit">{% trans "Sign Up" %} &raquo;</button>
       </form>
       <br>
     </div>
   </div>
 </div>
-
 {% endblock %}

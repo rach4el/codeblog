@@ -15,7 +15,7 @@
             <p>{% blocktrans %}<strong>Welcome back to the Riding Reader Community!</strong> </p>
             <p>To contact our team, create, suggest, comment or vote on a post, please log in below. </p>
             <p>Don't have an account yet? Then please <a class="link-colour" href="{{ signup_url }}">Sign up</a> first.</p>
-            {% endblocktrans %}</p>
+            {% endblocktrans %}
     </div>
     <div class="row">
         <div class="col-md-8 mt-3 offset-md-2">
@@ -23,7 +23,7 @@
                 {% csrf_token %}
                 {{ form.as_p }}
                 {% if redirect_field_value %}
-                <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+                <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" >
                 {% endif %}
                 <button class="btn btn-signup right" type="submit">{% trans "Sign In" %}</button>
             </form>

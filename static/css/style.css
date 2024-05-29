@@ -44,13 +44,10 @@ body {
 .nav-desc {
     display: flex;
     margin-right: 3vh;
-    justify-content: text-end;
 }
 
 .nav-font:active,
 .nav-font:hover {
-    scale: 130%;
-    text-shadow: 3px;
     display: inline-block;
 
 }
@@ -237,7 +234,6 @@ footer {
 .masthead-image {
     position: relative;
     overflow: hidden;
-    scale: 75%;
     max-width: 1000px;
     border-radius: 40px;
     justify-content: center;
@@ -252,7 +248,6 @@ footer {
     content: "";
     position: relative;
     top: auto;
-    scale: 100%;
 }
 
 @media (min-width: 768px) {
@@ -539,7 +534,7 @@ footer {
 }
 
 .about-container {
-    display: flexbox;
+    display: flex;
     margin: 5px;
     padding: 20px;
     background: #F9F6F7;
@@ -596,7 +591,6 @@ footer {
     }
 
     .updated-on {
-        bottom: 0;
         left: 5;
         margin-left: 3%;
     }
@@ -619,7 +613,6 @@ footer {
         flex-direction: column;
         padding-top: 1vh;
         line-height: 20px;
-        scale: 95%
     }
 
     .footer-container {

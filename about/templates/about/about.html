@@ -14,6 +14,8 @@
             <img src="{{ about.profile_image.url }}" class="img-about" style="width: 95%;" alt="{{ about.title }}">
             {% endif %}
         </div>
+    </div>
+    
         <div class="col-8">
             <!-- About page title -->
             <h2>
@@ -32,14 +34,12 @@
                         <h2 class="about-title about-underline">About Us</h2>
                     {% endif %}
                     {% if about.content %}
-                        <h4 class="about-text">{{ about.content | safe}}</h4>
+                        <div class="about-text">{{ about.content | safe }}</div>
                     {% else %}
-                        <h4 class="about-text">
-                            RidingReader is designed to be for local equestrians wanting to discover the best trail routes in their area in the countryside.
-                            <br>
-                            <br>
-                            RidingReader offers valuable knowledge of routes to maximize enjoyment and minimize risks, welcoming riders of all levels to join in with the local community.
-                        </h4>
+                        <div class="about-text">
+                            <p>RidingReader is designed to be for local equestrians wanting to discover the best trail routes in their area in the countryside.</p>
+                            <p>RidingReader offers valuable knowledge of routes to maximize enjoyment and minimize risks, welcoming riders of all levels to join in with the local community.</p>
+                        </div>
                     {% endif %}
                 </div>
             </div>
@@ -51,88 +51,54 @@
             <p class="text-end updated-on"><em>{{ about.updated_on }} </em></p>
         </div>
     </div>
-    <br>
-    <hr>
-    <br>
-    <br>
+<br>
+<hr>
+<br>
+<br>
+<div class="container mt-5">
     <div class="faq-border justify-content-center about-collaborate row">
         <div class="about-collaborate row justify-content-center">
-            <div class="col-12 text-center my-5">>
-                <h3 class="about-title about-underline" style="font-variant: small-caps; font-size: 35px;">
-                        Frequently Asked Questions
-                </h3>
+            <div class="col-12 text-center my-5">
+                <h3 class="about-title about-underline" style="font-variant: small-caps; font-size: 35px;">Frequently Asked Questions</h3>
                 <br>
-                <h5 class="about-text">
-                    Here you'll find answers to our most frquently asked questions!
-                </h5>
-                <h5 class="about-text about-underline">
-                    What are the riding level categories?
-                </h5>
-                <h5 class="about-var about-text">
-                    <strong>All Levels: </strong> Suitable for everyone, from beginners to advanced riders.
-                </h5>
-                <h5 class="about-var about-text">
-                    <strong>Beginner: </strong> These routes are mostly flat trails with minimal obstacles.
-                </h5>
-                <h5 class="about-var about-text">
-                    <strong>Novice: </strong> Routes for those posessing the ability to trot and short canter.
-                </h5>
-                <h5 class="about-var about-text">
-                    <strong>Intermediate:  </strong> Riders who can easily walk, trot and gallop over different terrain.
-                </h5>
-                <h5 class="about-var about-text">
-                    <strong>Advanced:  </strong> For experienced riders, these routes may be physically challenging.
-                </h5>
+                <h5 class="about-text">Here you'll find answers to our most frequently asked questions!</h5>
+                <h5 class="about-text about-underline">What are the riding level categories?</h5>
+                <h5 class="about-var about-text"><strong>All Levels:</strong> Suitable for everyone, from beginners to advanced riders.</h5>
+                <h5 class="about-var about-text"><strong>Beginner:</strong> These routes are mostly flat trails with minimal obstacles.</h5>
+                <h5 class="about-var about-text"><strong>Novice:</strong> Routes for those possessing the ability to trot and short canter.</h5>
+                <h5 class="about-var about-text"><strong>Intermediate:</strong> Riders who can easily walk, trot, and gallop over different terrain.</h5>
+                <h5 class="about-var about-text"><strong>Advanced:</strong> For experienced riders, these routes may be physically challenging.</h5>
                 <br>
                 <br>
-                <h5 class="about-text about-underline">
-                    What are the guidelines for posting comments or creating trail routes?
-                </h5>
-                <h5 class="about-text">
-                    All content must be respectful and relevant. The admin team reviews all submissions.
-                </h5>
-                <h5 class="about-text about-underline">
-                    How can I stay updated on the newest trails?
-                </h5>
-                <h5 class="about-text">
-                    Our trails are always listed in order of newest first, you can also use our category filter to see the newest posts for your level or area to that way you'll always be presented with the newest posts first!
-                </h5>
-                <h5 class="about-text about-underline">
-                    Can I add comments to a trail post?
-                </h5>
-                <h5 class="about-text">
-                    Yes, you can. Once logged in, click on a trail post to add your comment. It will be reviewed by the admin before being published.
-                </h5>
+                <h5 class="about-text about-underline">What are the guidelines for posting comments or creating trail routes?</h5>
+                <h5 class="about-text">All content must be respectful and relevant. The admin team reviews all submissions.</h5>
+                <h5 class="about-text about-underline">How can I stay updated on the newest trails?</h5>
+                <h5 class="about-text">Our trails are always listed in order of newest first, you can also use our category filter to see the newest posts for your level or area so that way you'll always be presented with the newest posts first!</h5>
+                <h5 class="about-text about-underline">Can I add comments to a trail post?</h5>
+                <h5 class="about-text">Yes, you can. Once logged in, click on a trail post to add your comment. It will be reviewed by the admin before being published.</h5>
                 <br>
-                <h5 class="about-text about-underline">
-                    How can I contact you if i have a question?
-                </h5>
-                <h5 class="about-text">
-                    Log in or sign up, visit our <a href="{% url 'contact_us' %}" class="link-colour">"Contact"</a> section. Fill in and complete a contact request, once submitted, you can edit delete, or view an admin's response.
-                </h5>
+                <h5 class="about-text about-underline">How can I contact you if I have a question?</h5>
+                <h5 class="about-text">Log in or sign up, visit our <a href="/contact/contact_us/" class="link-colour">"Contact"</a> section. Fill in and complete a contact request. Once submitted, you can edit, delete, or view an admin's response.</h5>
                 <br>
-                <h5 class="about-text about-underline">
-                    How can I contribute by posting a new trail route?
-                </h5>
-                <h5 class="about-text">
-                    <a href="{% url 'account_login' %}" class="link-colour">Log in</a> or <a href="{% url 'account_signup' %}" class="link-colour">Sign up</a> and visit our <a href="{% url 'create_post' %}" class="link-colour"> "Create" </a> section. Fill in the trail details and submit. The admin team will review your post, if approved it will be posted!
-                </h5>
+                <h5 class="about-text about-underline">How can I contribute by posting a new trail route?</h5>
+                <h5 class="about-text"><a href="{% url 'account_login' %}" class="link-colour">Log in</a> or <a href="{% url 'account_signup' %}" class="link-colour">Sign up</a> and visit our <a href="{% url 'create_post' %}" class="link-colour"> "Create" </a> section. Fill in the trail details and submit. The admin team will review your post, if approved it will be posted!</h5>
                 <br>
                 <br>
             </div>
         </div>
     </div>
-    <br>
-    <br>
-    <br>
-    <hr>
-    <!-- Collaborate request form-->
+</div>
+<br>
+<br>
+<br>
+<hr>
+<!-- Collaborate request form-->
+<div  class="container mt-5">  
     <div class="about-collaborate row justify-content-center">
         <div class="col-12 text-center my-5">
             <h2 class="about-text">Code Collaborate Form</h2>
             <p class="about-text">I believe in the power of shared knowledge and collective effort.
-                Whether you have want to collaborate on a code project in mind, wish to co-create and project or simply want to brainstorm some code ideas I'm excited to hear from you. Fill out the form
-                and we can get the ball rolling!</p>
+                Whether you want to collaborate on a code project, wish to co-create a project, or simply want to brainstorm some code ideas, I'm excited to hear from you. Fill out the form and we can get the ball rolling!</p>
             <form method="post">
                 {{ collaborate_form | crispy }}
                 {% csrf_token %}
@@ -140,4 +106,5 @@
             </form>
         </div>
     </div>
+</div>
 {% endblock content %}
