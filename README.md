@@ -361,6 +361,9 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 -   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/)
 
 ## Validation
+ - For HTML Validation I used the recommended (https://validator.w3.org/nu/)
+ - For Validating CSS I used the recommended (https://jigsaw.w3.org/css-validator/)
+ - For Python validation I used the recommended CI Python Liner (https://pep8ci.herokuapp.com/)
 
 # HTML
 
@@ -440,7 +443,9 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 | Navbar | Containes links to pages such as Logo for homepage, home, Create, About, Suggest, Register and  Log in. on smaller devices the navbar collapses into an icon and when clicks expand for good functionality and accesibility. | ![image]![image](https://github.com/rach4el/codeblog/assets/98865636/2f6799a1-6f68-4356-b11e-36d6965342a4) | Pass  |
 
 ## Responsiveness:
-- Google chrome was used throughout the project to check responsiveness on different devices as listing above in the testing section, this included varies screen sizes for mobile, labtop, and tablet devices and media queries were created to ensure good visabilty and responsiveness.
+- Google chrome was used throughout the project to check responsiveness on different devices as listing above in the testing section, this included varies screen sizes for mobile, labtop, and tablet devices and media queries were created to ensure good visabilty and responsiveness please see above testing section for specific detail of devices tested
+- . Here are the outputs on two of the tested browers:
+  
   # Google Chrome
   ![image](https://github.com/rach4el/codeblog/assets/98865636/240bb160-6220-482e-87ce-b66baed30111)
   ![image](https://github.com/rach4el/codeblog/assets/98865636/ba721dc7-98fa-4181-8140-1ef5e4b3de7e)
