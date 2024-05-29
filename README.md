@@ -336,9 +336,26 @@ Google and Stack: Used for research, bug resolution, information gathering and o
       
 1. [Balsamiq:](https://www.lucidchart.com/)
     - Balsamiq was used to create the [wireframes](https://github.com/) during the design process.
-      
 
-## Testing
+## Links
+| Link | Expected Outcome | Grade |
+| --- | ---| ---- |
+| Logo | Navigates user to home posts lists view | Pass |
+| Home | Navigates the user to home posts lists view | Pass |
+| Create | Navigates the user to Create Page if logged in or the log in page if not signed in| Pass |
+| About | Navigates user to the about page | Pass |
+| Suggest | Navigates user to the Suggest page if logged in or the log in page if not signed in | Pass |
+| Log in | Navigates the user to log in page | Pass |
+| Log out | Navigates the user to log out page | Pass |
+| Edit Submission | Navigates user to edit contact query submission page (secure)| Pass |
+| Delete Submission | Navigates user to Delete contact query submission page (secure) | Pass |
+| Register | Navigates the user to the sign up page | Pass |
+| Sign up | Navigates the user to the sign up page | Pass |
+| Contact | Navigates the user to contact page if logged in or the log in page if not signed in | Pass |
+
+
+#![289034769-01cc3a5b-db46-4742-a8e1-cf715d78c89b](https://github.com/rach4el/codeblog/assets/98865636/1ec831f0-dd92-48eb-aaed-198880891093)
+# Testing
 
 The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
 
@@ -367,9 +384,10 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 | Delete Submisson |  [W3C  URL](https://validator.w3.org/nu/?doc=https%3A%2F%2Fthebookbooth1-559d9131718c.herokuapp.com%2Faccounts%2Fsignup%2F) | 	![image](https://github.com/rach4el/codeblog/assets/98865636/1f319c0c-b018-4db0-a5f8-177fa67e73b6) | Pass | 
 
 # CSS
-| Page 	 | ![image] | Notes |
+| Page 	 | Image| Notes |
 | ------ | ----------- |--------| 
-| style.css  | Screenshot | Corrected all site errors however still showing error report for font awesome association (errors for effects not used in project) Pass as all project errors corrected | 
+| style.css  | ![image](https://github.com/rach4el/codeblog/assets/98865636/c1a7088f-16d1-4f5b-a398-39675c815c9e)
+ | Corrected all site errors however still showing error report for font awesome association (errors for effects not used in project) Pass as all project errors corrected | 
 # Python
 | File	|	Screenshot	| Notes |
 | ------ | ----------- |--------| 
@@ -414,6 +432,56 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
   ![image](https://github.com/rach4el/codeblog/assets/98865636/9795e0ba-6fda-4d06-978d-aa62719cfe21)
   ![image](https://github.com/rach4el/codeblog/assets/98865636/12fde13d-29e8-4680-80ba-04c18c43e71c)
   ![image](https://github.com/rach4el/codeblog/assets/98865636/ee771bea-b8be-4f93-b1ee-4534fe899f83)
+
+  ## Google Lighthouse Audi
+  -I've tested my deployed project on heroku using the google lighthouse tools in devtools window.
+
+  # Home
+![image](https://github.com/rach4el/codeblog/assets/98865636/cfffcf79-6362-4d62-9209-e1209239f90b)
+
+
+  # Create Page
+   ![image](https://github.com/rach4el/codeblog/assets/98865636/be008c88-87b2-4379-8aeb-2dab0a5522bc)
+
+
+  # About Page
+![image](https://github.com/rach4el/codeblog/assets/98865636/b3b0ef0b-102e-41d3-aeb8-1ce8b1f74cbc)
+
+
+  # Suggest Page
+![image](https://github.com/rach4el/codeblog/assets/98865636/f04baaaf-54d3-4c7b-b927-64e27bb9ef49)
+
+
+ # Sign Up Page
+ ![image](https://github.com/rach4el/codeblog/assets/98865636/8b42c6a8-96e5-46c1-98d1-445ecf4e1278)
+
+
+ # Sign Out Page
+![image](https://github.com/rach4el/codeblog/assets/98865636/664a3a3d-bd18-49f0-bb4a-5bab6212caa2)
+
+
+ # Log In Page
+![image](https://github.com/rach4el/codeblog/assets/98865636/8548694b-35ed-4210-8a7e-b2ea7b0f34b9)
+
+
+ # Edit Submission Page
+![image](https://github.com/rach4el/codeblog/assets/98865636/7d36cc21-7066-4248-b01f-fbab5f7a1d04)
+
+
+ # Delete Submission Page
+![image](https://github.com/rach4el/codeblog/assets/98865636/13a34c0a-4a31-4ac0-b46c-c90ad04854da)
+
+
+  # Contact Page
+ ![image](https://github.com/rach4el/codeblog/assets/98865636/5ac9fc86-bfd1-4e32-939a-cca9d83c6f9d)
+
+
+
+
+  # Post Detail Page
+![image](https://github.com/rach4el/codeblog/assets/98865636/f61a7aa9-8bed-431b-a573-227a74ac141a)
+
+
 
 ### Known Bugs
 
