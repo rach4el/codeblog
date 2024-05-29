@@ -1,24 +1,29 @@
 from .models import Comment, Post
 from django import forms
 
+
 class PostForm(forms.ModelForm):
     class Meta:
         model = Post
-        fields = ['title', 'suggested_riding_ability', 'featured_image', 'content', 'county', 'excerpt']
-        exclude = ['slug', 'status', 'author']  
+        fields = [
+            'title', 'suggested_riding_ability',
+            'featured_image', 'content',
+            'county', 'excerpt']
+        exclude = ['slug', 'status', 'author']
 
     def __init__(self, *args, **kwargs):
         super(PostForm, self).__init__(*args, **kwargs)
-        self.fields['excerpt'].label = 'Summary:'  
+        self.fields['excerpt'].label = 'Summary:'
 
     def save(self, commit=True):
         post = super(PostForm, self).save(commit=False)
         post.author = self.request.user
-        post.slug = self.cleaned_data['title'].lower().replace(' ', '-')  
+        post.slug = self.cleaned_data['title'].lower().replace(' ', '-')
         post.status = 0
         if commit:
             post.save()
         return post
+
 
 class CommentForm(forms.ModelForm):
     class Meta:

@@ -9,10 +9,9 @@ from django.shortcuts import redirect
 from django.urls import reverse
 
 
-
 # Create your views here.
 
-# Upvote /downvote 
+# Upvote /downvote
 
 @login_required
 def upvote_post(request, slug):
@@ -22,6 +21,7 @@ def upvote_post(request, slug):
     if not Upvote.objects.filter(user=request.user, post=post).exists():
         Upvote.objects.create(user=request.user, post=post)
     return redirect('post_detail', slug=slug)
+
 
 @login_required
 def downvote_post(request, slug):
@@ -34,28 +34,32 @@ def downvote_post(request, slug):
 
 # Post form function
 
+
 @login_required
 def create_post(request):
     if request.method == 'POST':
         form = PostForm(request.POST, request.FILES)
         if form.is_valid():
-            form.request = request  
+            form.request = request
             post = form.save(commit=False)
             post.status = 3
             post.save()
-            messages.add_message(request, messages.SUCCESS, 'Thank you for your post submission. Your post has been submitted successfully and is awaiting approval!')
-            return redirect('/create/') 
+            messages.add_message(
+                request, messages.SUCCESS,
+                'Thank you for your post submission.Your post has been submitted successfully and is awaiting approval!')
+            return redirect('/create/')
         else:
             print("form invalid")
             for field, errors in form.errors.items():
                 for error in errors:
                     print(f"Error in {field}: {error}")
     else:
-        
+
         form = PostForm()
     return render(request, 'create_post.html', {'form': form})
 
 # Post list view
+
 
 class PostList(generic.ListView):
     queryset = Post.objects.filter(status=1).order_by("-created_on")
@@ -79,8 +83,10 @@ class PostList(generic.ListView):
         context['SUGGESTED_RIDING_ABILITY'] = dict(SUGGESTED_RIDING_ABILITY)
         context['counties'] = Post.objects.values_list('county', flat=True).distinct()
         return context
-    
+
 # Post detail function
+
+
 def post_detail(request, slug):
     """
     Display an individual :model:`blog.Post`.
@@ -110,7 +116,7 @@ def post_detail(request, slug):
                 request, messages.SUCCESS,
                 'Comment submitted and awaiting approval'
             )
-    
+
     comment_form = CommentForm()
 
     return render(
@@ -123,6 +129,7 @@ def post_detail(request, slug):
             "comment_form": comment_form,
         },
     )
+
 
 def comment_edit(request, slug, comment_id):
     """
@@ -142,12 +149,15 @@ def comment_edit(request, slug, comment_id):
             comment.save()
             messages.add_message(request, messages.SUCCESS, 'Comment Updated!')
         else:
-            messages.add_message(request, messages.ERROR, 'Error updating comment!')
+            messages.add_message(
+                request, messages.ERROR,
+                'Error updating comment!')
 
     return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
+
 def comment_delete(request, slug, comment_id):
-    
+
     """
     view to delete comment
     """
@@ -159,6 +169,7 @@ def comment_delete(request, slug, comment_id):
         comment.delete()
         messages.add_message(request, messages.SUCCESS, 'Comment deleted!')
     else:
-        messages.add_message(request, messages.ERROR, 'You can only delete your own comments!')
+        messages.add_message(
+            request, messages.ERROR, 'You can only delete your own comments!')
 
     return HttpResponseRedirect(reverse('post_detail', args=[slug]))

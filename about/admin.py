@@ -10,6 +10,7 @@ class AboutAdmin(SummernoteModelAdmin):
 # admin.ModelAdmin is the standard way of registering
 #       our model with the admin panel. Customisation format below.
 
+
 @admin.register(CollaborateRequest)
 class CollaborateRequestAdmin(admin.ModelAdmin):
 

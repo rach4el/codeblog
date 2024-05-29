@@ -5,6 +5,7 @@ from .forms import CollaborateForm
 
 # About page information text and collaborate form
 
+
 def about_me(request):
     """
     Renders the About page
@@ -13,7 +14,9 @@ def about_me(request):
         collaborate_form = CollaborateForm(data=request.POST)
         if collaborate_form.is_valid():
             collaborate_form.save()
-            messages.add_message(request, messages.SUCCESS, "Thank you for submitting your collaboration request, please await a response within 3 business days")
+            messages.add_message(request,
+                                 messages.SUCCESS,
+                                 "Thank you for submitting your collaboration request, please await a response within 3 business days")
 
     about = About.objects.all().order_by('-updated_on').first()
     collaborate_form = CollaborateForm()

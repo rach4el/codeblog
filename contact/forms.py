@@ -3,6 +3,7 @@ from .models import ContactUs
 
 # Model for contact us form
 
+
 class ContactUsForm(forms.ModelForm):
     class Meta:
         model = ContactUs
