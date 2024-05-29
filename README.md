@@ -353,8 +353,6 @@ Google and Stack: Used for research, bug resolution, information gathering and o
 | Sign up | Navigates the user to the sign up page | Pass |
 | Contact | Navigates the user to contact page if logged in or the log in page if not signed in | Pass |
 
-
-#![289034769-01cc3a5b-db46-4742-a8e1-cf715d78c89b](https://github.com/rach4el/codeblog/assets/98865636/1ec831f0-dd92-48eb-aaed-198880891093)
 # Testing
 
 The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
