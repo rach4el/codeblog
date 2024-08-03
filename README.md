@@ -526,7 +526,87 @@ I tested my deployed project on heroku using the google lighthouse tools in devt
 
 ## Deployment
 
-- I followed the deployment steps used for CodeInstitutes Django blog to deploy this application. The instructions were primarily sourced from the follow-along videos and text steps provided on the Code Institute LMS.
+- I followed the deployment steps used for CodeInstitutes Django blog to deploy this application. The instructions were primarily sourced from the follow-along videos and text steps provided on the Code Institute LMS. Please see below for details of setup.
+
+### To start the project in code environment 
+
+- In the command line, type in: python3 manage.py createsuperuser
+
+(This will prompt you to create a username and password and email to create an admin log in for authorisation and to make changes to the site as owner/superuser)
+
+### Adding pages using base template or boilerplate in Gitpod.
+
+using {% extends 'base.html' %} and {% load static %} to the top of file to ensure that the themes of the site such as the nav bar, header, links, log in, sign up and error pages are loaded from static files and a consistent site feel is replicated throughout site use.
+
+- If using if or else statements or crispy forms on the new page, type them on a new line under the other boilerplate text and insert them at the top of document to ensure the page is loaded correctly such as {% load static %} or {% load crispy_form_tags %}
+
+- You can also use {% block content %} at the top of the start of code on a new page and at end of content code as a fallback to inherit characteristics of the parent template.
+
+
+### Adjusting settings in Heroku to deploy the site to Heroku App. 
+
+- You will need to add a few variables to the config var section of your apps conflict var section of your deployment settings tab;
+
+- Add the value "DISABLE_COLLECTSTATIC" with the value set to 1. 
+
+- To Ready to app for secure deployment and to make sure any sensitive data is kept secret to only the authorised user, a procfile and env file (which will not shared or viable in Heroku or GitHub repository) must be created.
+
+- To connect the app to the database selected the env file in the database must be implemented in the database section of the settings.py file.
+
+-In the env file insert:
+
+"import os 
+
+os.environ.setdefault(
+	“DATABASE_URL", "(YOUR DATABASE URL"))
+
+- You must also add your database's secure url (Using cloudinary in this apps example) add the url to the settings tab of the Heroku apps settings when readying for deployment to Heroku. 
+
+- To add your database to the config vars section of the settings tab use "DATABASE_URL" in the name and accompanying value of your exact unique database url as the value.
+
+- You must also set a secret key which is specified in your env file and will be added to the conflict vars area of heroku deployment settings.
+
+- In Heroku conflict vars section of settings tab the name will be "SECRET KEY" and value will be your specified secret key.
+
+- In your env file on a new line insert: "os.environ.setdefauly("SECRET_KEY", "YOUR SPECIFIED SECRET KEY HERE")
+
+- You must ensure you updated your code ready for deployment installing the required packages in your project as specified in the requirements.text
+
+- To do this for Heroku deployment you must declare the process as web by:
+
+Insert "pip3 install gunicorn~=20.1" into the command line and hit enter.
+
+Then, after the gunicorn package has been installed correctly (viable in the command line) insert into the command line "pip3 freeze --local > requirements.txt" which will add the required package to the requirements.txt file of your project. 
+
+-Once a Procfile is created at the root of your projects directory, the process needs to be declared as web a long with your app's name for example, in the procfile type on one line: web: gunicorn ridingreader.wsgi
+
+- When deploying to Heroku you must set debug in your settings file to "false" 
+
+- The link to the gitpod runserver port, herokuapp.com and heroku deployed site url must also be added to the allowed hosts. For 
+example: 'herokuapp.com', 'gitpod server url port', 'heroku deployed url',
+
+- Each url must be contained in '' with a new line for each url and a comma after each link, all contained instead the square brackets for allowed hosts e.g.  ALLOWED_HOSTS = [ 
+  'herokuapp.com',
+]
+
+### Final Push to GitHub
+
+- Once you have followed those steps after your code has been finished editing and is ready for deployment you should do a final push to GitHub:
+
+-In the command line insert: 
+git add .
+git commit -m"Readying Code for deployment"
+git push origin main 
+
+- This will save changes directly to your main repository ready for heroku to deploy.
+
+### Deploying to Heroku
+
+-Once the above has been accomplished you can deploy your app by clicking to deploy tab, a manual deploy can be an easier way to have more control in version control as manual deploy was used in this project. 
+
+-Next ensure the Heroku app is connected to Github repository with the implemented changes and click deploy branch.
+
+-Once the process has shown successfully deployed to heroku and the process is complete you can click the open app button to view your live site.
 
 ## Credits
 
