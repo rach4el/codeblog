@@ -570,7 +570,7 @@ os.environ.setdefault(
 
 - In Heroku conflict vars section of settings tab the name will be "SECRET KEY" and value will be your specified secret key.
 
-- In your env file on a new line insert: "os.environ.setdefauly("SECRET_KEY", "YOUR SPECIFIED SECRET KEY HERE")
+- In your env file on a new line insert: "os.environ.setdefault("SECRET_KEY", "YOUR SPECIFIED SECRET KEY HERE")
 
 - You must ensure you updated your code ready for deployment installing the required packages in your project as specified in the requirements.text
 
