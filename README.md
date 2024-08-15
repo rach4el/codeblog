@@ -528,6 +528,13 @@ I tested my deployed project on heroku using the google lighthouse tools in devt
 
 - I followed the deployment steps used for CodeInstitutes Django blog to deploy this application. The instructions were primarily sourced from the follow-along videos and text steps provided on the Code Institute LMS. Please see below for details of setup.
 
+### Creating the App through Heroku
+You will need to join Heroku by signing up or logging in to Heroku.
+After you have logged in or signed upnto create an account you can access the Heroku Dashboard, you must click 'New' button and chose the option 'Create New App'.
+Entitle your project with a unique name, for example 'RidingReader'
+Select your current region, e.g. EU, then click "Create App".
+In the Deploy tab, choose GitHub as the deployment method, this may require you to authorise Heroku with Github Access, so you will need to follow the on screen steps to sign and select the chosen repository for creating the app.
+
 ### To start the project in code environment 
 
 In the command line, type in: python3 manage.py createsuperuser
@@ -591,6 +598,8 @@ example: 'herokuapp.com', 'gitpod server url port', 'heroku deployed url',
   'herokuapp.com',
 ]
 
+in your setting.py file adjust the configuration of your apps settings by setting the location of your static files to match where they are located within your app.  You will also need to do this for your template directories.
+
 ### Final Push to GitHub
 
 - Once you have followed those steps after your code has been finished editing and is ready for deployment you should do a final push to GitHub:
@@ -608,7 +617,28 @@ git push origin main
 
 - Next ensure the Heroku app is connected to Github repository with the implemented changes and click deploy branch.
 
+- While Heroku manually builds and connects to host your app, monitor the progress of your build log to check for any errors if they occur.
+
 - Once the process has shown successfully deployed to heroku and the process is complete you can click the open app button to view your live site.
+
+### Creating a Fork of the Repository
+You can create a fork of a GitHub Repository which allows you to create a copy of the original repository, making a new version to edit, immend or improve without changing the original copy of the repository. This can be useful for adding features or practising changes that you don't want to occur in the original state of the repository. This can be done by:
+
+Initial authroisation of Github by logging in or signing up to make an account. Then navigate to the page link of the desired original repository you want to make a fork copy.
+At the top of the repository click click the Fork button.
+
+### Cloning a Repository
+You can make a local copy or clone of a repository which allows you to credit a repository and copy an entire repository without affecting the original.
+
+To do this, you will need an initial authroisation of Github by logging in or signing up to make an account. 
+
+Then navigate to the page link of the desired original repository you want to make a clone copy.
+
+At the top of the repository, click the '<>Code button.'
+Next, find the tab entitled Local, and select the HTTPS option and copy the url.
+
+You will need to open a new terminal and designate a location to save the local copy of the files.
+Then use the process git clone followed by the copied repository url.
 
 ## Credits
 
